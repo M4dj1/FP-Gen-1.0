@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.printPnl = new System.Windows.Forms.Panel();
+            this.printAddBtn2 = new System.Windows.Forms.Button();
+            this.printAddBtn1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.prevBtn = new System.Windows.Forms.Button();
@@ -37,15 +39,21 @@
             this.qBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.mainPnl = new System.Windows.Forms.Panel();
             this.hisBtnPnl = new System.Windows.Forms.Panel();
+            this.hisBtn = new System.Windows.Forms.Button();
             this.addCusBtnPnl = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.extBtnPnl = new System.Windows.Forms.Panel();
+            this.extBtn = new System.Windows.Forms.Button();
             this.abtBtnPnl = new System.Windows.Forms.Panel();
+            this.abtBtn = new System.Windows.Forms.Button();
             this.listBtnPnl = new System.Windows.Forms.Panel();
+            this.listBtn = new System.Windows.Forms.Button();
             this.addBtnPnl = new System.Windows.Forms.Panel();
+            this.addBtn = new System.Windows.Forms.Button();
             this.printBtnPnl = new System.Windows.Forms.Panel();
+            this.printShBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -59,8 +67,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.addItCancelBtn = new System.Windows.Forms.Button();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
@@ -85,9 +93,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.addCusCancelBtn = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.addCusSaveBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
             this.hisPnl = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
@@ -97,15 +105,7 @@
             this.item1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dim1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.qua = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button9 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.hisBtn = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.extBtn = new System.Windows.Forms.Button();
-            this.abtBtn = new System.Windows.Forms.Button();
-            this.listBtn = new System.Windows.Forms.Button();
-            this.addBtn = new System.Windows.Forms.Button();
-            this.printShBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.printPnl.SuspendLayout();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -120,8 +120,8 @@
             // 
             // printPnl
             // 
-            this.printPnl.Controls.Add(this.button9);
-            this.printPnl.Controls.Add(this.button8);
+            this.printPnl.Controls.Add(this.printAddBtn2);
+            this.printPnl.Controls.Add(this.printAddBtn1);
             this.printPnl.Controls.Add(this.label3);
             this.printPnl.Controls.Add(this.comboBox3);
             this.printPnl.Controls.Add(this.prevBtn);
@@ -135,6 +135,37 @@
             this.printPnl.Name = "printPnl";
             this.printPnl.Size = new System.Drawing.Size(528, 351);
             this.printPnl.TabIndex = 14;
+            // 
+            // printAddBtn2
+            // 
+            this.printAddBtn2.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.printAddBtn2.FlatAppearance.BorderSize = 0;
+            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn2.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.printAddBtn2.Location = new System.Drawing.Point(434, 132);
+            this.printAddBtn2.Name = "printAddBtn2";
+            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn2.TabIndex = 31;
+            this.printAddBtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn2.UseVisualStyleBackColor = false;
+            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
+            // 
+            // printAddBtn1
+            // 
+            this.printAddBtn1.FlatAppearance.BorderSize = 0;
+            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn1.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.printAddBtn1.Location = new System.Drawing.Point(434, 92);
+            this.printAddBtn1.Name = "printAddBtn1";
+            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn1.TabIndex = 30;
+            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn1.UseVisualStyleBackColor = true;
+            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
             // 
             // label3
             // 
@@ -184,6 +215,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(286, 24);
             this.comboBox1.TabIndex = 17;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // qBox
             // 
@@ -212,16 +244,6 @@
             this.label2.Size = new System.Drawing.Size(37, 15);
             this.label2.TabIndex = 12;
             this.label2.Text = "Item :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(71, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(66, 15);
-            this.label1.TabIndex = 11;
-            this.label1.Text = "Customer :";
             // 
             // mainPnl
             // 
@@ -255,6 +277,22 @@
             this.hisBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.hisBtnPnl.TabIndex = 28;
             // 
+            // hisBtn
+            // 
+            this.hisBtn.FlatAppearance.BorderSize = 0;
+            this.hisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hisBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hisBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.hisBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__1_;
+            this.hisBtn.Location = new System.Drawing.Point(0, 107);
+            this.hisBtn.Name = "hisBtn";
+            this.hisBtn.Size = new System.Drawing.Size(196, 33);
+            this.hisBtn.TabIndex = 29;
+            this.hisBtn.Text = " History";
+            this.hisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.hisBtn.UseVisualStyleBackColor = true;
+            this.hisBtn.Click += new System.EventHandler(this.hisBtn_Click);
+            // 
             // addCusBtnPnl
             // 
             this.addCusBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -262,6 +300,22 @@
             this.addCusBtnPnl.Name = "addCusBtnPnl";
             this.addCusBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.addCusBtnPnl.TabIndex = 26;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_5_;
+            this.button5.Location = new System.Drawing.Point(0, 225);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(244, 33);
+            this.button5.TabIndex = 27;
+            this.button5.Text = " Add Customer";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // extBtnPnl
             // 
@@ -271,6 +325,22 @@
             this.extBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.extBtnPnl.TabIndex = 24;
             // 
+            // extBtn
+            // 
+            this.extBtn.FlatAppearance.BorderSize = 0;
+            this.extBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.extBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.extBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_6_;
+            this.extBtn.Location = new System.Drawing.Point(0, 343);
+            this.extBtn.Name = "extBtn";
+            this.extBtn.Size = new System.Drawing.Size(196, 33);
+            this.extBtn.TabIndex = 25;
+            this.extBtn.Text = " Exit";
+            this.extBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.extBtn.UseVisualStyleBackColor = true;
+            this.extBtn.Click += new System.EventHandler(this.extBtn_Click);
+            // 
             // abtBtnPnl
             // 
             this.abtBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -278,6 +348,22 @@
             this.abtBtnPnl.Name = "abtBtnPnl";
             this.abtBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.abtBtnPnl.TabIndex = 22;
+            // 
+            // abtBtn
+            // 
+            this.abtBtn.FlatAppearance.BorderSize = 0;
+            this.abtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.abtBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_8_;
+            this.abtBtn.Location = new System.Drawing.Point(0, 304);
+            this.abtBtn.Name = "abtBtn";
+            this.abtBtn.Size = new System.Drawing.Size(218, 33);
+            this.abtBtn.TabIndex = 23;
+            this.abtBtn.Text = " About App";
+            this.abtBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.abtBtn.UseVisualStyleBackColor = true;
+            this.abtBtn.Click += new System.EventHandler(this.abtBtn_Click);
             // 
             // listBtnPnl
             // 
@@ -287,6 +373,22 @@
             this.listBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.listBtnPnl.TabIndex = 20;
             // 
+            // listBtn
+            // 
+            this.listBtn.FlatAppearance.BorderSize = 0;
+            this.listBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.listBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_7_;
+            this.listBtn.Location = new System.Drawing.Point(0, 185);
+            this.listBtn.Name = "listBtn";
+            this.listBtn.Size = new System.Drawing.Size(218, 33);
+            this.listBtn.TabIndex = 21;
+            this.listBtn.Text = " Item List";
+            this.listBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.listBtn.UseVisualStyleBackColor = true;
+            this.listBtn.Click += new System.EventHandler(this.listBtn_Click);
+            // 
             // addBtnPnl
             // 
             this.addBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -295,6 +397,22 @@
             this.addBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.addBtnPnl.TabIndex = 18;
             // 
+            // addBtn
+            // 
+            this.addBtn.FlatAppearance.BorderSize = 0;
+            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.addBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtoolsff;
+            this.addBtn.Location = new System.Drawing.Point(0, 265);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(209, 33);
+            this.addBtn.TabIndex = 19;
+            this.addBtn.Text = " Add Item";
+            this.addBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
             // printBtnPnl
             // 
             this.printBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -302,6 +420,22 @@
             this.printBtnPnl.Name = "printBtnPnl";
             this.printBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.printBtnPnl.TabIndex = 16;
+            // 
+            // printShBtn
+            // 
+            this.printShBtn.FlatAppearance.BorderSize = 0;
+            this.printShBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printShBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printShBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.printShBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_2_;
+            this.printShBtn.Location = new System.Drawing.Point(0, 146);
+            this.printShBtn.Name = "printShBtn";
+            this.printShBtn.Size = new System.Drawing.Size(229, 33);
+            this.printShBtn.TabIndex = 17;
+            this.printShBtn.Text = " Print Sheet";
+            this.printShBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printShBtn.UseVisualStyleBackColor = true;
+            this.printShBtn.Click += new System.EventHandler(this.printShBtn_Click);
             // 
             // panel2
             // 
@@ -366,8 +500,8 @@
             this.addPnl.Controls.Add(this.label12);
             this.addPnl.Controls.Add(this.comboBox2);
             this.addPnl.Controls.Add(this.textBox1);
-            this.addPnl.Controls.Add(this.button3);
-            this.addPnl.Controls.Add(this.button4);
+            this.addPnl.Controls.Add(this.addItCancelBtn);
+            this.addPnl.Controls.Add(this.saveBtn);
             this.addPnl.Controls.Add(this.textBox2);
             this.addPnl.Controls.Add(this.label10);
             this.addPnl.Controls.Add(this.label11);
@@ -399,7 +533,6 @@
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
-            "--Type--",
             "CardBoard (GC)",
             "CardBoard (B)",
             "CardBoard (E)",
@@ -459,27 +592,27 @@
             this.textBox1.Size = new System.Drawing.Size(286, 22);
             this.textBox1.TabIndex = 40;
             // 
-            // button3
+            // addItCancelBtn
             // 
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(319, 289);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 32);
-            this.button3.TabIndex = 39;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.addItCancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addItCancelBtn.Location = new System.Drawing.Point(319, 289);
+            this.addItCancelBtn.Name = "addItCancelBtn";
+            this.addItCancelBtn.Size = new System.Drawing.Size(88, 32);
+            this.addItCancelBtn.TabIndex = 39;
+            this.addItCancelBtn.Text = "Cancel";
+            this.addItCancelBtn.UseVisualStyleBackColor = true;
+            this.addItCancelBtn.Click += new System.EventHandler(this.addItCancelBtn_Click);
             // 
-            // button4
+            // saveBtn
             // 
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(139, 289);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(88, 32);
-            this.button4.TabIndex = 35;
-            this.button4.Text = "Save";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.saveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveBtn.Location = new System.Drawing.Point(139, 289);
+            this.saveBtn.Name = "saveBtn";
+            this.saveBtn.Size = new System.Drawing.Size(88, 32);
+            this.saveBtn.TabIndex = 35;
+            this.saveBtn.Text = "Save";
+            this.saveBtn.UseVisualStyleBackColor = true;
+            this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
             // 
             // textBox2
             // 
@@ -675,9 +808,9 @@
             this.addCusPnl.Controls.Add(this.label14);
             this.addCusPnl.Controls.Add(this.textBox5);
             this.addCusPnl.Controls.Add(this.textBox6);
-            this.addCusPnl.Controls.Add(this.button6);
+            this.addCusPnl.Controls.Add(this.addCusCancelBtn);
             this.addCusPnl.Controls.Add(this.label8);
-            this.addCusPnl.Controls.Add(this.button7);
+            this.addCusPnl.Controls.Add(this.addCusSaveBtn);
             this.addCusPnl.Controls.Add(this.label16);
             this.addCusPnl.Location = new System.Drawing.Point(177, 38);
             this.addCusPnl.Name = "addCusPnl";
@@ -711,15 +844,16 @@
             this.textBox6.Size = new System.Drawing.Size(286, 24);
             this.textBox6.TabIndex = 41;
             // 
-            // button6
+            // addCusCancelBtn
             // 
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(322, 207);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(88, 32);
-            this.button6.TabIndex = 39;
-            this.button6.Text = "Cancel";
-            this.button6.UseVisualStyleBackColor = true;
+            this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCusCancelBtn.Location = new System.Drawing.Point(322, 207);
+            this.addCusCancelBtn.Name = "addCusCancelBtn";
+            this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
+            this.addCusCancelBtn.TabIndex = 39;
+            this.addCusCancelBtn.Text = "Cancel";
+            this.addCusCancelBtn.UseVisualStyleBackColor = true;
+            this.addCusCancelBtn.Click += new System.EventHandler(this.addCusCancelBtn_Click);
             // 
             // label8
             // 
@@ -731,16 +865,16 @@
             this.label8.TabIndex = 37;
             this.label8.Text = "Address :";
             // 
-            // button7
+            // addCusSaveBtn
             // 
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(142, 207);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(88, 32);
-            this.button7.TabIndex = 35;
-            this.button7.Text = "Save";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.addCusSaveBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCusSaveBtn.Location = new System.Drawing.Point(142, 207);
+            this.addCusSaveBtn.Name = "addCusSaveBtn";
+            this.addCusSaveBtn.Size = new System.Drawing.Size(88, 32);
+            this.addCusSaveBtn.TabIndex = 35;
+            this.addCusSaveBtn.Text = "Save";
+            this.addCusSaveBtn.UseVisualStyleBackColor = true;
+            this.addCusSaveBtn.Click += new System.EventHandler(this.addCusSaveBtn_Click);
             // 
             // label16
             // 
@@ -813,148 +947,15 @@
             this.qua.Text = "Quantity";
             this.qua.Width = 94;
             // 
-            // button9
+            // label1
             // 
-            this.button9.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.button9.Location = new System.Drawing.Point(434, 132);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 35);
-            this.button9.TabIndex = 31;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.button8.Location = new System.Drawing.Point(434, 92);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(35, 35);
-            this.button8.TabIndex = 30;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // hisBtn
-            // 
-            this.hisBtn.FlatAppearance.BorderSize = 0;
-            this.hisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hisBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hisBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.hisBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__1_;
-            this.hisBtn.Location = new System.Drawing.Point(0, 107);
-            this.hisBtn.Name = "hisBtn";
-            this.hisBtn.Size = new System.Drawing.Size(196, 33);
-            this.hisBtn.TabIndex = 29;
-            this.hisBtn.Text = " History";
-            this.hisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.hisBtn.UseVisualStyleBackColor = true;
-            this.hisBtn.Click += new System.EventHandler(this.hisBtn_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_5_;
-            this.button5.Location = new System.Drawing.Point(0, 225);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 33);
-            this.button5.TabIndex = 27;
-            this.button5.Text = " Add Customer";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // extBtn
-            // 
-            this.extBtn.FlatAppearance.BorderSize = 0;
-            this.extBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.extBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.extBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_6_;
-            this.extBtn.Location = new System.Drawing.Point(0, 343);
-            this.extBtn.Name = "extBtn";
-            this.extBtn.Size = new System.Drawing.Size(196, 33);
-            this.extBtn.TabIndex = 25;
-            this.extBtn.Text = " Exit";
-            this.extBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.extBtn.UseVisualStyleBackColor = true;
-            this.extBtn.Click += new System.EventHandler(this.extBtn_Click);
-            // 
-            // abtBtn
-            // 
-            this.abtBtn.FlatAppearance.BorderSize = 0;
-            this.abtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.abtBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.abtBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.abtBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_8_;
-            this.abtBtn.Location = new System.Drawing.Point(0, 304);
-            this.abtBtn.Name = "abtBtn";
-            this.abtBtn.Size = new System.Drawing.Size(218, 33);
-            this.abtBtn.TabIndex = 23;
-            this.abtBtn.Text = " About App";
-            this.abtBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.abtBtn.UseVisualStyleBackColor = true;
-            this.abtBtn.Click += new System.EventHandler(this.abtBtn_Click);
-            // 
-            // listBtn
-            // 
-            this.listBtn.FlatAppearance.BorderSize = 0;
-            this.listBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.listBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_7_;
-            this.listBtn.Location = new System.Drawing.Point(0, 185);
-            this.listBtn.Name = "listBtn";
-            this.listBtn.Size = new System.Drawing.Size(218, 33);
-            this.listBtn.TabIndex = 21;
-            this.listBtn.Text = " Item List";
-            this.listBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.listBtn.UseVisualStyleBackColor = true;
-            this.listBtn.Click += new System.EventHandler(this.listBtn_Click);
-            // 
-            // addBtn
-            // 
-            this.addBtn.FlatAppearance.BorderSize = 0;
-            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.addBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtoolsff;
-            this.addBtn.Location = new System.Drawing.Point(0, 265);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(209, 33);
-            this.addBtn.TabIndex = 19;
-            this.addBtn.Text = " Add Item";
-            this.addBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
-            // 
-            // printShBtn
-            // 
-            this.printShBtn.FlatAppearance.BorderSize = 0;
-            this.printShBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printShBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printShBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.printShBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_2_;
-            this.printShBtn.Location = new System.Drawing.Point(0, 146);
-            this.printShBtn.Name = "printShBtn";
-            this.printShBtn.Size = new System.Drawing.Size(229, 33);
-            this.printShBtn.TabIndex = 17;
-            this.printShBtn.Text = " Print Sheet";
-            this.printShBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.printShBtn.UseVisualStyleBackColor = true;
-            this.printShBtn.Click += new System.EventHandler(this.printShBtn_Click);
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(71, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(66, 15);
+            this.label1.TabIndex = 11;
+            this.label1.Text = "Customer :";
             // 
             // main
             // 
@@ -962,13 +963,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
-            this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.addPnl);
+            this.Controls.Add(this.addCusPnl);
+            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.listPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
@@ -1006,7 +1007,6 @@
         private System.Windows.Forms.TextBox qBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel mainPnl;
         private System.Windows.Forms.Button printShBtn;
         private System.Windows.Forms.Panel panel2;
@@ -1034,8 +1034,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button addItCancelBtn;
+        private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
@@ -1047,9 +1047,8 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button addCusCancelBtn;
+        private System.Windows.Forms.Button addCusSaveBtn;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label3;
@@ -1075,8 +1074,10 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button printAddBtn1;
+        private System.Windows.Forms.Button printAddBtn2;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label1;
     }
 }
 

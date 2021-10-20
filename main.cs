@@ -13,10 +13,11 @@ namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amadj\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dehmane\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
         public main()
         {
             InitializeComponent();
+            displayPrintCusCombo();
             printBtnPnl.Visible = false;
             addBtnPnl.Visible = false;
             listBtnPnl.Visible = false;
@@ -24,14 +25,10 @@ namespace FP_Gen_1._0
             addCusBtnPnl.Visible = false;
             hisBtnPnl.Visible = true;
         }
-        private void label1_Click(object sender, EventArgs e)
+
+        private void main_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
+            
         }
 
         private void printShBtn_Click(object sender, EventArgs e)
@@ -98,24 +95,21 @@ namespace FP_Gen_1._0
             hisPnl.Visible = false;
         }
 
-        private void extBtn_Click(object sender, EventArgs e)
+
+        private void hisBtn_Click(object sender, EventArgs e)
         {
-            this.Close();   
-        }
-
-        private void label12_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
+            printBtnPnl.Visible = false;
+            hisBtnPnl.Visible = true;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = false;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = true;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -134,7 +128,7 @@ namespace FP_Gen_1._0
             hisPnl.Visible = false;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void addItCancelBtn_Click(object sender, EventArgs e)
         {
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = true;
@@ -148,11 +142,6 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -171,42 +160,7 @@ namespace FP_Gen_1._0
             hisPnl.Visible = false;
         }
 
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hisBtn_Click(object sender, EventArgs e)
-        {
-            printBtnPnl.Visible = false;
-            hisBtnPnl.Visible = true;
-            addCusBtnPnl.Visible = false;
-            addBtnPnl.Visible = false;
-            listBtnPnl.Visible = false;
-            abtBtnPnl.Visible = false;
-            printPnl.Visible = false;
-            addPnl.Visible = false;
-            listPnl.Visible = false;
-            abtPnl.Visible = false;
-            addCusPnl.Visible = false;
-            hisPnl.Visible = true;
-        }
-
-        private void button7_Click(object sender, EventArgs e)
-        {
-            connection.Open();
-            SqlCommand cmd = connection.CreateCommand ();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into [customer] (name, address) values ('" + textBox5.Text + "','" + textBox6.Text + "')";
-            cmd.ExecuteNonQuery ();
-            connection.Close ();
-            textBox5.Text = "";
-            textBox6.Text = "";
-            displayCombos();
-            MessageBox.Show("Data Inserted Successfully !");
-        }
-
-        private void button8_Click(object sender, EventArgs e)
+        private void printAddBtn1_Click(object sender, EventArgs e)
         {
             printBtnPnl.Visible = false;
             hisBtnPnl.Visible = false;
@@ -222,7 +176,7 @@ namespace FP_Gen_1._0
             hisPnl.Visible = false;
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void printAddBtn2_Click(object sender, EventArgs e)
         {
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
@@ -238,23 +192,35 @@ namespace FP_Gen_1._0
             hisPnl.Visible = false;
         }
 
-        private void addPnl_Paint(object sender, PaintEventArgs e)
-        {
 
+
+        private void addCusSaveBtn_Click(object sender, EventArgs e)
+        {
+            displayPrintCusCombo();
+
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand ();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into [customer] (name, address) values ('" + textBox5.Text + "','" + textBox6.Text + "')";
+            cmd.ExecuteNonQuery ();
+            connection.Close ();
+
+            textBox5.Text = "";
+            textBox6.Text = "";
+            MessageBox.Show("Data Inserted Successfully !");
         }
 
-        private void main_Load(object sender, EventArgs e)
-        {
-            displayCombos();
-        }
 
-        public void displayCombos()
+
+        public void displayPrintCusCombo()
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select id,name from [customer]";
+            cmd.CommandText = "select id,name,address from [customer]";
             cmd.ExecuteNonQuery();
+            connection.Close();
+
             DataTable table1 = new DataTable();
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(table1);
@@ -267,10 +233,11 @@ namespace FP_Gen_1._0
             comboBox2.DataSource = table1;
             comboBox2.DisplayMember = "name";
             comboBox2.ValueMember = "id";
-            connection.Close();
+            comboBox3.Enabled = false;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+
+        private void saveBtn_Click(object sender, EventArgs e)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
@@ -278,18 +245,76 @@ namespace FP_Gen_1._0
             cmd.CommandText = "insert into [item] (item, type, form, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
+
             textBox1.Text = "";
             textBox2.Text = "";
             comboBox4.Text = "-------------------------------Type-------------------------------";
             comboBox5.Text = "-------------------------------Color-------------------------------";
-
-            displayCombos();
             MessageBox.Show("Data Inserted Successfully !");
         }
 
         private void hisPnl_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label17_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label14_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void extBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void addCusCancelBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedValue.ToString() != null)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select id,item,type,form,dimensions from [item]";
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                DataTable table1 = new DataTable();
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(table1);
+                DataRow itemrow = table1.NewRow();
+                itemrow[1] = "---------------------------Item---------------------------";
+                table1.Rows.InsertAt(itemrow, 0);
+                comboBox3.Enabled = true;
+                comboBox3.DataSource = table1;
+                comboBox3.DisplayMember = "item";
+                comboBox3.ValueMember = "id";
+            }
         }
     }
 }

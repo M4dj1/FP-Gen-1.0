@@ -189,5 +189,10 @@ namespace FP_Gen_1._0
             addCusPnl.Visible = false;
             hisPnl.Visible = true;
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

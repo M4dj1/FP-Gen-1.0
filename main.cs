@@ -7,11 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amadj\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
         public main()
         {
             InitializeComponent();
@@ -192,7 +194,16 @@ namespace FP_Gen_1._0
 
         private void button7_Click(object sender, EventArgs e)
         {
-
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand ();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into [customer] (name, address) values ('" + textBox5.Text + "','" + textBox6.Text + "')";
+            cmd.ExecuteNonQuery ();
+            connection.Close ();
+            textBox5.Text = "";
+            textBox6.Text = "";
+            displayCombos();
+            MessageBox.Show("Data Inserted Successfully !");
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -225,6 +236,38 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+        }
+
+        private void addPnl_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void main_Load(object sender, EventArgs e)
+        {
+            displayCombos();
+        }
+
+        public void displayCombos()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select id,name from [customer]";
+            cmd.ExecuteNonQuery();
+            DataTable table1 = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(table1);
+            DataRow itemRow = table1.NewRow();
+            itemRow[1] = "--------------------Select Customer--------------------";
+            table1.Rows.InsertAt(itemRow,0);
+            comboBox1.DataSource = table1;
+            comboBox1.DisplayMember = "name";
+            comboBox1.ValueMember = "id";
+            comboBox2.DataSource = table1;
+            comboBox2.DisplayMember = "name";
+            comboBox2.ValueMember = "id";
+            connection.Close();
         }
     }
 }

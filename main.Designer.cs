@@ -376,6 +376,7 @@
             this.addPnl.Name = "addPnl";
             this.addPnl.Size = new System.Drawing.Size(528, 348);
             this.addPnl.TabIndex = 21;
+            this.addPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.addPnl_Paint);
             // 
             // comboBox4
             // 
@@ -950,18 +951,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
-            this.Controls.Add(this.addPnl);
-            this.Controls.Add(this.printPnl);
             this.Controls.Add(this.addCusPnl);
-            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.mainPnl);
+            this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.addPnl);
+            this.Controls.Add(this.topPnl);
+            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.abtPnl);
             this.Controls.Add(this.listPnl);
-            this.Controls.Add(this.topPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FP Gen 1.0";
+            this.Load += new System.EventHandler(this.main_Load);
             this.printPnl.ResumeLayout(false);
             this.printPnl.PerformLayout();
             this.mainPnl.ResumeLayout(false);

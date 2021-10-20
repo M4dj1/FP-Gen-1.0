@@ -272,6 +272,16 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\output-onlinepngtools %288%29.png" />
+    <None Include="Resources\output-onlinepngtools %289%29.png" />
+    <None Include="Resources\output-onlinepngtools %287%29.png" />
+    <None Include="Resources\output-onlinepngtools %286%29.png" />
+    <None Include="Resources\output-onlinepngtools %284%29.png" />
+    <None Include="Resources\output-onlinepngtools %285%29.png" />
+    <None Include="Resources\output-onlinepngtools %282%291.png" />
+    <None Include="Resources\output-onlinepngtools %283%29.png" />
+    <None Include="Resources\output-onlinepngtools %282%29.png" />
+    <None Include="Resources\add-user.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

@@ -194,5 +194,37 @@ namespace FP_Gen_1._0
         {
 
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            printBtnPnl.Visible = false;
+            hisBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = true;
+            addBtnPnl.Visible = false;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = true;
+            hisPnl.Visible = false;
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            hisBtnPnl.Visible = false;
+            printBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = true;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = true;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = false;
+        }
     }
 }

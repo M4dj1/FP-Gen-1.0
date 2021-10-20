@@ -258,6 +258,9 @@ namespace FP_Gen_1._0
             DataTable table1 = new DataTable();
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(table1);
+            DataRow itemrow = table1.NewRow();
+            itemrow[1] = "---------------------------Customer---------------------------";
+            table1.Rows.InsertAt(itemrow, 0);
             comboBox1.DataSource = table1;
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "id";
@@ -272,13 +275,21 @@ namespace FP_Gen_1._0
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into [item] (item, color, type, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
+            cmd.CommandText = "insert into [item] (item, type, form, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
             cmd.ExecuteNonQuery();
             connection.Close();
             textBox1.Text = "";
             textBox2.Text = "";
+            comboBox4.Text = "-------------------------------Type-------------------------------";
+            comboBox5.Text = "-------------------------------Color-------------------------------";
+
             displayCombos();
             MessageBox.Show("Data Inserted Successfully !");
+        }
+
+        private void hisPnl_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

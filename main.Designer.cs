@@ -380,19 +380,23 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Items.AddRange(new object[] {
             "Brown",
             "White"});
             this.comboBox4.Location = new System.Drawing.Point(181, 166);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(104, 21);
+            this.comboBox4.Size = new System.Drawing.Size(104, 23);
             this.comboBox4.TabIndex = 50;
+            this.comboBox4.Text = "------Color------";
             // 
             // comboBox5
             // 
+            this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Items.AddRange(new object[] {
+            "--Type--",
             "(GC)",
             "(B)",
             "(E)",
@@ -400,8 +404,9 @@
             "DD (C+B)"});
             this.comboBox5.Location = new System.Drawing.Point(363, 166);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(104, 21);
+            this.comboBox5.Size = new System.Drawing.Size(104, 23);
             this.comboBox5.TabIndex = 49;
+            this.comboBox5.Text = "-----Type-----";
             // 
             // label23
             // 
@@ -441,6 +446,7 @@
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(286, 24);
             this.comboBox2.TabIndex = 43;
+            this.comboBox2.Text = "------------------------Customer------------------------";
             // 
             // textBox1
             // 
@@ -470,6 +476,7 @@
             this.button4.TabIndex = 35;
             this.button4.Text = "Save";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox2
             // 
@@ -951,10 +958,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
+            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.abtPnl);

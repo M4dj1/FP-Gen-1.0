@@ -258,9 +258,6 @@ namespace FP_Gen_1._0
             DataTable table1 = new DataTable();
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(table1);
-            DataRow itemRow = table1.NewRow();
-            itemRow[1] = "--------------------Select Customer--------------------";
-            table1.Rows.InsertAt(itemRow,0);
             comboBox1.DataSource = table1;
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "id";
@@ -268,6 +265,20 @@ namespace FP_Gen_1._0
             comboBox2.DisplayMember = "name";
             comboBox2.ValueMember = "id";
             connection.Close();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "insert into [item] (item, color, type, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            textBox1.Text = "";
+            textBox2.Text = "";
+            displayCombos();
+            MessageBox.Show("Data Inserted Successfully !");
         }
     }
 }

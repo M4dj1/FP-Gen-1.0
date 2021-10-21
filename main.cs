@@ -27,11 +27,6 @@ namespace FP_Gen_1._0
             hisBtnPnl.Visible = true;
         }
 
-        private void main_Load(object sender, EventArgs e)
-        {
-            
-        }
-
         private void printShBtn_Click(object sender, EventArgs e)
         {
             hisBtnPnl.Visible = false;
@@ -264,45 +259,10 @@ namespace FP_Gen_1._0
             }
         }
 
-        private void hisPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label17_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label14_Click(object sender, EventArgs e)
-        {
-
-        }
-
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addPnl_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
         private void extBtn_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void addCusCancelBtn_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -353,9 +313,13 @@ namespace FP_Gen_1._0
             connection.Close();
         }
 
-        private void printBtn_Click(object sender, EventArgs e)
+        private void timer3_tick(object sender, EventArgs e)
         {
-
+            if (Opacity == 1)
+            {
+                timer3.Stop();
+            }
+            Opacity += .2;
         }
     }
 }

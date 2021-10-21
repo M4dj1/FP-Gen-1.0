@@ -17,6 +17,14 @@ namespace FP_Gen_1._0
             InitializeComponent();
         }
 
+        private void timer2_Tick_1(object sender, EventArgs e)
+        {
+            if (Opacity == 1)
+            {
+                timer2.Stop();
+            }
+            Opacity += .15;
+        }
         private void timer1_Tick_1(object sender, EventArgs e)
         {
             panel2.Width += 3;
@@ -27,6 +35,15 @@ namespace FP_Gen_1._0
                 m.Show();
                 this.Hide();
             }
+            
         }
+
+        private void progress_Load(object sender, EventArgs e)
+        {
+            label1.Parent = pictureBox1;
+            label2.Parent = pictureBox1;
+            label1.BackColor = Color.Transparent; label2.BackColor = Color.Transparent; 
+        }
+
     }
 }

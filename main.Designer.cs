@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.printPnl = new System.Windows.Forms.Panel();
             this.printAddBtn2 = new System.Windows.Forms.Button();
             this.printAddBtn1 = new System.Windows.Forms.Button();
@@ -83,6 +84,8 @@
             this.address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.type = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.form = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dimensions = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.abtPnl = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
@@ -106,8 +109,7 @@
             this.item1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dim1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.qua = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.form = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dimensions = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl.SuspendLayout();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -187,7 +189,6 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(286, 24);
             this.comboBox3.TabIndex = 2;
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // prevBtn
             // 
@@ -208,7 +209,6 @@
             this.printBtn.TabIndex = 4;
             this.printBtn.Text = "Print";
             this.printBtn.UseVisualStyleBackColor = true;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // comboBox1
             // 
@@ -523,7 +523,6 @@
             this.addPnl.Name = "addPnl";
             this.addPnl.Size = new System.Drawing.Size(528, 348);
             this.addPnl.TabIndex = 21;
-            this.addPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.addPnl_Paint);
             // 
             // comboBox4
             // 
@@ -694,7 +693,6 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click_1);
             // 
             // button1
             // 
@@ -742,6 +740,16 @@
             // 
             this.type.Text = "Type";
             this.type.Width = 70;
+            // 
+            // form
+            // 
+            this.form.Text = "Form";
+            this.form.Width = 110;
+            // 
+            // dimensions
+            // 
+            this.dimensions.Text = "dimensions";
+            this.dimensions.Width = 100;
             // 
             // abtPnl
             // 
@@ -806,7 +814,6 @@
             this.label17.Size = new System.Drawing.Size(82, 16);
             this.label17.TabIndex = 1;
             this.label17.Text = "Contact Info :";
-            this.label17.Click += new System.EventHandler(this.label17_Click);
             // 
             // label9
             // 
@@ -841,7 +848,6 @@
             this.label14.Size = new System.Drawing.Size(304, 16);
             this.label14.TabIndex = 0;
             this.label14.Text = "Please enter the customer name and his address :";
-            this.label14.Click += new System.EventHandler(this.label14_Click);
             // 
             // textBox5
             // 
@@ -868,7 +874,6 @@
             this.addCusCancelBtn.TabIndex = 11;
             this.addCusCancelBtn.Text = "Cancel";
             this.addCusCancelBtn.UseVisualStyleBackColor = true;
-            this.addCusCancelBtn.Click += new System.EventHandler(this.addCusCancelBtn_Click);
             // 
             // label8
             // 
@@ -909,7 +914,6 @@
             this.hisPnl.Name = "hisPnl";
             this.hisPnl.Size = new System.Drawing.Size(527, 347);
             this.hisPnl.TabIndex = 44;
-            this.hisPnl.Paint += new System.Windows.Forms.PaintEventHandler(this.hisPnl_Paint);
             // 
             // label21
             // 
@@ -962,15 +966,10 @@
             this.qua.Text = "Quantity";
             this.qua.Width = 94;
             // 
-            // form
+            // timer3
             // 
-            this.form.Text = "Form";
-            this.form.Width = 110;
-            // 
-            // dimensions
-            // 
-            this.dimensions.Text = "dimensions";
-            this.dimensions.Width = 100;
+            this.timer3.Enabled = true;
+            this.timer3.Tick += new System.EventHandler(this.timer3_tick);
             // 
             // main
             // 
@@ -978,19 +977,19 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
+            this.Controls.Add(this.mainPnl);
+            this.Controls.Add(this.topPnl);
             this.Controls.Add(this.printPnl);
             this.Controls.Add(this.listPnl);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.addPnl);
             this.Controls.Add(this.addCusPnl);
-            this.Controls.Add(this.mainPnl);
-            this.Controls.Add(this.topPnl);
             this.Controls.Add(this.abtPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
+            this.Opacity = 0D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FP Gen 1.0";
-            this.Load += new System.EventHandler(this.main_Load);
             this.printPnl.ResumeLayout(false);
             this.printPnl.PerformLayout();
             this.mainPnl.ResumeLayout(false);
@@ -1095,6 +1094,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ColumnHeader form;
         private System.Windows.Forms.ColumnHeader dimensions;
+        private System.Windows.Forms.Timer timer3;
     }
 }
 

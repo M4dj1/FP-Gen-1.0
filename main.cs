@@ -13,11 +13,12 @@ namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dehmane\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amadj\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
         public main()
         {
             InitializeComponent();
             displayPrintCusCombo();
+            displayListView();
             printBtnPnl.Visible = false;
             addBtnPnl.Visible = false;
             listBtnPnl.Visible = false;
@@ -65,6 +66,7 @@ namespace FP_Gen_1._0
 
         private void listBtn_Click(object sender, EventArgs e)
         {
+            displayListView();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -208,6 +210,7 @@ namespace FP_Gen_1._0
             textBox5.Text = "";
             textBox6.Text = "";
             MessageBox.Show("Data Inserted Successfully !");
+            displayPrintCusCombo();
         }
 
 
@@ -239,18 +242,26 @@ namespace FP_Gen_1._0
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            connection.Open();
-            SqlCommand cmd = connection.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "insert into [item] (item, type, form, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
-            cmd.ExecuteNonQuery();
-            connection.Close();
+            if (textBox1.Text != null && textBox2.Text != null &&
+                comboBox4.SelectedItem != null && comboBox5.SelectedItem != null
+                && comboBox2.SelectedItem != null)
+            { connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into [item] (item, type, form, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
+                cmd.ExecuteNonQuery();
+                connection.Close();
 
-            textBox1.Text = "";
-            textBox2.Text = "";
-            comboBox4.Text = "-------------------------------Type-------------------------------";
-            comboBox5.Text = "-------------------------------Color-------------------------------";
-            MessageBox.Show("Data Inserted Successfully !");
+                textBox1.Text = "";
+                textBox2.Text = "";
+                comboBox2.Text = "---------------------------Customer---------------------------";
+                comboBox4.Text = "-------------------------------Type-------------------------------";
+                comboBox5.Text = "-------------------------------Color-------------------------------";
+                MessageBox.Show("Data Inserted Successfully !");
+            } else
+            {
+                MessageBox.Show("Please fill all the required fields !");
+            }
         }
 
         private void hisPnl_Paint(object sender, PaintEventArgs e)
@@ -315,6 +326,36 @@ namespace FP_Gen_1._0
                 comboBox3.DisplayMember = "item";
                 comboBox3.ValueMember = "id";
             }
+        }
+
+        public void displayListView()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select customer.name, customer.address, item.item," +
+                "item.type, item.form, item.dimensions from [customer] " +
+                "inner join item ON customer.id = item.customerid ORDER BY customer.id";
+            SqlDataReader reader = cmd.ExecuteReader();
+            listView1.Items.Clear();
+
+            while (reader.Read())
+            {
+                ListViewItem lv = new ListViewItem(reader.GetString(0));
+                lv.SubItems.Add(reader.GetString(1));
+                lv.SubItems.Add(reader.GetString(2));
+                lv.SubItems.Add(reader.GetString(3));
+                lv.SubItems.Add(reader.GetString(4));
+                lv.SubItems.Add(reader.GetString(5));
+                listView1.Items.Add(lv);
+            }
+            reader.Close();
+            connection.Close();
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

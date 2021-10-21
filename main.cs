@@ -17,7 +17,6 @@ namespace FP_Gen_1._0
         public main()
         {
             InitializeComponent();
-            displayPrintCusCombo();
             displayListView();
             printBtnPnl.Visible = false;
             addBtnPnl.Visible = false;
@@ -29,6 +28,7 @@ namespace FP_Gen_1._0
 
         private void printShBtn_Click(object sender, EventArgs e)
         {
+            displayPrintCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = true;
             addCusBtnPnl.Visible = false;
@@ -45,6 +45,7 @@ namespace FP_Gen_1._0
 
         private void addBtn_Click(object sender, EventArgs e)
         {
+            displayAddCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -175,6 +176,7 @@ namespace FP_Gen_1._0
 
         private void printAddBtn2_Click(object sender, EventArgs e)
         {
+            displayAddCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -193,8 +195,6 @@ namespace FP_Gen_1._0
 
         private void addCusSaveBtn_Click(object sender, EventArgs e)
         {
-            displayPrintCusCombo();
-
             connection.Open();
             SqlCommand cmd = connection.CreateCommand ();
             cmd.CommandType = CommandType.Text;
@@ -223,15 +223,32 @@ namespace FP_Gen_1._0
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(table1);
             DataRow itemrow = table1.NewRow();
-            itemrow[1] = "---------------------------Customer---------------------------";
+            itemrow[1] = "- Select Customer...";
             table1.Rows.InsertAt(itemrow, 0);
             comboBox1.DataSource = table1;
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "id";
+            comboBox3.Enabled = false;
+        }
+
+        public void displayAddCusCombo()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select id,name,address from [customer]";
+            cmd.ExecuteNonQuery();
+            connection.Close();
+
+            DataTable table1 = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(table1);
+            DataRow itemrow = table1.NewRow();
+            itemrow[1] = "- Select Customer...";
+            table1.Rows.InsertAt(itemrow, 0);
             comboBox2.DataSource = table1;
             comboBox2.DisplayMember = "name";
             comboBox2.ValueMember = "id";
-            comboBox3.Enabled = false;
         }
 
 
@@ -249,10 +266,11 @@ namespace FP_Gen_1._0
 
                 textBox1.Text = "";
                 textBox2.Text = "";
-                comboBox2.Text = "---------------------------Customer---------------------------";
-                comboBox4.Text = "-------------------------------Type-------------------------------";
-                comboBox5.Text = "-------------------------------Color-------------------------------";
+                comboBox2.Text = "- Select Customer...";
+                comboBox4.Text = "- Select Type...";
+                comboBox5.Text = "- Select Color...";
                 MessageBox.Show("Data Inserted Successfully !");
+                displayAddCusCombo();
             } else
             {
                 MessageBox.Show("Please fill all the required fields !");
@@ -279,7 +297,7 @@ namespace FP_Gen_1._0
                 SqlDataAdapter ada = new SqlDataAdapter(cmd);
                 ada.Fill(table1);
                 DataRow itemrow = table1.NewRow();
-                itemrow[1] = "---------------------------Item---------------------------";
+                itemrow[1] = "- Select Item...";
                 table1.Rows.InsertAt(itemrow, 0);
                 comboBox3.Enabled = true;
                 comboBox3.DataSource = table1;
@@ -320,6 +338,21 @@ namespace FP_Gen_1._0
                 timer3.Stop();
             }
             Opacity += .2;
+        }
+
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

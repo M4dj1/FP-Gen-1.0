@@ -106,10 +106,10 @@
             this.listView2 = new System.Windows.Forms.ListView();
             this.cus1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adr1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.item1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dim1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.qua = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.dat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ite = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.typ = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.printPnl.SuspendLayout();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -189,6 +189,8 @@
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(286, 24);
             this.comboBox3.TabIndex = 2;
+            this.comboBox3.Text = "- Select Item...";
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // prevBtn
             // 
@@ -218,6 +220,7 @@
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(286, 24);
             this.comboBox1.TabIndex = 1;
+            this.comboBox1.Text = "- Select customer...";
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // qBox
@@ -538,7 +541,8 @@
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(286, 23);
             this.comboBox4.TabIndex = 15;
-            this.comboBox4.Text = "-------------------------------Color-------------------------------";
+            this.comboBox4.Text = "- Select type...";
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
             // 
             // comboBox5
             // 
@@ -554,7 +558,8 @@
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(286, 23);
             this.comboBox5.TabIndex = 14;
-            this.comboBox5.Text = "-------------------------------Type-------------------------------";
+            this.comboBox5.Text = "- Select form...";
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
             // 
             // label23
             // 
@@ -588,13 +593,13 @@
             // 
             // comboBox2
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(181, 76);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(286, 24);
+            this.comboBox2.Size = new System.Drawing.Size(286, 23);
             this.comboBox2.TabIndex = 12;
-            this.comboBox2.Text = "---------------------------Customer---------------------------";
+            this.comboBox2.Text = "- Select customer...";
             // 
             // textBox1
             // 
@@ -767,7 +772,7 @@
             this.panel1.Controls.Add(this.label20);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label19);
-            this.panel1.Location = new System.Drawing.Point(181, 144);
+            this.panel1.Location = new System.Drawing.Point(183, 96);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(173, 92);
             this.panel1.TabIndex = 5;
@@ -809,7 +814,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(45, 106);
+            this.label17.Location = new System.Drawing.Point(47, 58);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(82, 16);
             this.label17.TabIndex = 1;
@@ -819,7 +824,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(127, 67);
+            this.label9.Location = new System.Drawing.Point(129, 23);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(298, 15);
             this.label9.TabIndex = 0;
@@ -930,13 +935,13 @@
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.cus1,
             this.adr1,
-            this.item1,
-            this.dim1,
-            this.qua});
+            this.ite,
+            this.typ,
+            this.dat});
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(33, 58);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(471, 260);
+            this.listView2.Size = new System.Drawing.Size(459, 260);
             this.listView2.TabIndex = 27;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -944,32 +949,32 @@
             // cus1
             // 
             this.cus1.Text = "Customer";
-            this.cus1.Width = 80;
+            this.cus1.Width = 90;
             // 
             // adr1
             // 
             this.adr1.Text = "Address";
             this.adr1.Width = 90;
             // 
-            // item1
-            // 
-            this.item1.Text = "Item";
-            this.item1.Width = 100;
-            // 
-            // dim1
-            // 
-            this.dim1.Text = "Dimesions";
-            this.dim1.Width = 100;
-            // 
-            // qua
-            // 
-            this.qua.Text = "Quantity";
-            this.qua.Width = 94;
-            // 
             // timer3
             // 
             this.timer3.Enabled = true;
             this.timer3.Tick += new System.EventHandler(this.timer3_tick);
+            // 
+            // dat
+            // 
+            this.dat.Text = "Date";
+            this.dat.Width = 90;
+            // 
+            // ite
+            // 
+            this.ite.Text = "Item";
+            this.ite.Width = 90;
+            // 
+            // typ
+            // 
+            this.typ.Text = "Type";
+            this.typ.Width = 90;
             // 
             // main
             // 
@@ -979,10 +984,10 @@
             this.ClientSize = new System.Drawing.Size(703, 388);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.topPnl);
-            this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.hisPnl);
+            this.Controls.Add(this.printPnl);
             this.Controls.Add(this.addPnl);
+            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.abtPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -1081,9 +1086,6 @@
         private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.ColumnHeader cus1;
         private System.Windows.Forms.ColumnHeader adr1;
-        private System.Windows.Forms.ColumnHeader item1;
-        private System.Windows.Forms.ColumnHeader dim1;
-        private System.Windows.Forms.ColumnHeader qua;
         private System.Windows.Forms.ComboBox comboBox4;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label23;
@@ -1095,6 +1097,9 @@
         private System.Windows.Forms.ColumnHeader form;
         private System.Windows.Forms.ColumnHeader dimensions;
         private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.ColumnHeader ite;
+        private System.Windows.Forms.ColumnHeader typ;
+        private System.Windows.Forms.ColumnHeader dat;
     }
 }
 

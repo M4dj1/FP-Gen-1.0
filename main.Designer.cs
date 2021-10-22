@@ -106,10 +106,10 @@
             this.listView2 = new System.Windows.Forms.ListView();
             this.cus1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adr1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.timer3 = new System.Windows.Forms.Timer(this.components);
-            this.dat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ite = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.typ = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.dat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl.SuspendLayout();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -956,16 +956,6 @@
             this.adr1.Text = "Address";
             this.adr1.Width = 90;
             // 
-            // timer3
-            // 
-            this.timer3.Enabled = true;
-            this.timer3.Tick += new System.EventHandler(this.timer3_tick);
-            // 
-            // dat
-            // 
-            this.dat.Text = "Date";
-            this.dat.Width = 90;
-            // 
             // ite
             // 
             this.ite.Text = "Item";
@@ -975,6 +965,16 @@
             // 
             this.typ.Text = "Type";
             this.typ.Width = 90;
+            // 
+            // dat
+            // 
+            this.dat.Text = "Date";
+            this.dat.Width = 90;
+            // 
+            // timer3
+            // 
+            this.timer3.Enabled = true;
+            this.timer3.Tick += new System.EventHandler(this.timer3_tick);
             // 
             // main
             // 

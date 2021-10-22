@@ -13,7 +13,7 @@ namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amadj\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dehmane\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
         public main()
         {
             InitializeComponent();
@@ -225,9 +225,9 @@ namespace FP_Gen_1._0
             DataRow itemrow = table1.NewRow();
             itemrow[1] = "- Select Customer...";
             table1.Rows.InsertAt(itemrow, 0);
-            comboBox1.DataSource = table1;
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "id";
+            comboBox1.DataSource = table1;
             comboBox3.Enabled = false;
         }
 
@@ -246,9 +246,9 @@ namespace FP_Gen_1._0
             DataRow itemrow = table1.NewRow();
             itemrow[1] = "- Select Customer...";
             table1.Rows.InsertAt(itemrow, 0);
-            comboBox2.DataSource = table1;
             comboBox2.DisplayMember = "name";
             comboBox2.ValueMember = "id";
+            comboBox2.DataSource = table1;
         }
 
 
@@ -290,7 +290,9 @@ namespace FP_Gen_1._0
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select id,item,type,form,dimensions from [item]";
+                cmd.CommandText = "select id,item,type,form,dimensions,customerid from [item] where customerid = @cusid";
+                cmd.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
+
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 DataTable table1 = new DataTable();
@@ -300,9 +302,9 @@ namespace FP_Gen_1._0
                 itemrow[1] = "- Select Item...";
                 table1.Rows.InsertAt(itemrow, 0);
                 comboBox3.Enabled = true;
-                comboBox3.DataSource = table1;
                 comboBox3.DisplayMember = "item";
                 comboBox3.ValueMember = "id";
+                comboBox3.DataSource = table1;
             }
         }
 

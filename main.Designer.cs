@@ -916,6 +916,7 @@
             this.printBtn.TabIndex = 4;
             this.printBtn.Text = "Print";
             this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click);
             // 
             // prevBtn
             // 

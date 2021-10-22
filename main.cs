@@ -8,6 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Reflection;
+using System.IO;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace FP_Gen_1._0
 {
@@ -380,6 +383,85 @@ namespace FP_Gen_1._0
             }
             dr.Close();
             connection.Close();
+        }
+
+        private void FindAndReplace(Word.Application wordApp, object ToFindText, object replaceWithText)
+        {
+            object matchCase = true;
+            object matchWholeWord = true;
+            object matchWildCards = false;
+            object matchSoundLike = false;
+            object nmatchAllforms = false;
+            object forward = true;
+            object format = false;
+            object matchKashida = false;
+            object matchDiactitics = false;
+            object matchAlefHamza = false;
+            object matchControl = false;
+            object read_only = false;
+            object visible = true;
+            object replace = 2;
+            object wrap = 1;
+
+            wordApp.Selection.Find.Execute(ref ToFindText,
+                ref matchCase, ref matchWholeWord,
+                ref matchWildCards, ref matchSoundLike,
+                ref nmatchAllforms, ref forward,
+                ref wrap, ref format, ref replaceWithText,
+                ref replace, ref matchKashida,
+                ref matchDiactitics, ref matchAlefHamza,
+                ref matchControl);
+        }
+
+        //Creeate the Doc Method
+        private void CreateWordDocument(object filename, object SaveAs)
+        {
+            Word.Application wordApp = new Word.Application();
+            object missing = Missing.Value;
+            Word.Document myWordDoc = null;
+
+            if (File.Exists((string)filename))
+            {
+                object readOnly = false;
+                object isVisible = false;
+                wordApp.Visible = false;
+
+                myWordDoc = wordApp.Documents.Open(ref filename, ref missing, ref readOnly,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing, ref missing);
+                myWordDoc.Activate();
+
+                //find and replace
+                this.FindAndReplace(wordApp, "<cus>", this.comboBox1.GetItemText(this.comboBox1.SelectedItem));
+                this.FindAndReplace(wordApp, "<add>", adrTxtBx.Text);
+                this.FindAndReplace(wordApp, "<ite>", this.comboBox3.GetItemText(this.comboBox3.SelectedItem));
+                this.FindAndReplace(wordApp, "<typ>", typTxtBx.Text);
+                this.FindAndReplace(wordApp, "<for>", frmTxtBx.Text);
+                this.FindAndReplace(wordApp, "<dim>", dimTxtBx.Text);
+                this.FindAndReplace(wordApp, "<qua>", qBox.Text);
+            }
+            else
+            {
+                MessageBox.Show("File not Found!");
+            }
+
+            //Save as
+            myWordDoc.SaveAs(ref SaveAs, ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing);
+
+            myWordDoc.Close();
+            wordApp.Quit();
+            MessageBox.Show("File Created!");
+        }
+
+        private void printBtn_Click(object sender, EventArgs e)
+        {
+            CreateWordDocument(@"C:\Users\Dehmane\source\repos\M4dj1\FP-Gen-1.0\temp.docx", @"C:\Users\Dehmane\source\repos\M4dj1\FP-Gen-1.0\gen.docx");
         }
     }
 }

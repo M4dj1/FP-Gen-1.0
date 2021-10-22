@@ -292,7 +292,6 @@ namespace FP_Gen_1._0
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "select id,item,type,form,dimensions,customerid from [item] where customerid = @cusid";
                 cmd.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
-
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 DataTable table1 = new DataTable();
@@ -305,6 +304,19 @@ namespace FP_Gen_1._0
                 comboBox3.DisplayMember = "item";
                 comboBox3.ValueMember = "id";
                 comboBox3.DataSource = table1;
+
+                connection.Open();
+                SqlCommand cmd1 = connection.CreateCommand();
+                cmd1.CommandType = CommandType.Text;
+                cmd1.CommandText = "select address from [customer] where id = @cusid";
+                cmd1.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
+                SqlDataReader dr = cmd1.ExecuteReader();
+                while (dr.Read())
+                {
+                    adrTxtBx.Text = dr.GetValue(0).ToString();
+                }
+                dr.Close();
+                connection.Close();
             }
         }
 
@@ -354,7 +366,20 @@ namespace FP_Gen_1._0
 
         private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select type,form,dimensions from [item] where id = @itid";
+            cmd.Parameters.AddWithValue("@itid", comboBox3.SelectedValue.ToString());
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                typTxtBx.Text = dr.GetValue(0).ToString();
+                frmTxtBx.Text = dr.GetValue(1).ToString();
+                dimTxtBx.Text = dr.GetValue(2).ToString();
+            }
+            dr.Close();
+            connection.Close();
         }
     }
 }

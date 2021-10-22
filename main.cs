@@ -441,7 +441,7 @@ namespace FP_Gen_1._0
                 this.FindAndReplace(wordApp, "<for>", frmTxtBx.Text);
                 this.FindAndReplace(wordApp, "<dim>", dimTxtBx.Text);
                 this.FindAndReplace(wordApp, "<qua>", qBox.Text);
-                this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("MM/dd/yyyy"));
+                this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("dd/MM/yyyy"));
             }
             else
             {

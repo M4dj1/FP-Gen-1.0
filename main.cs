@@ -11,6 +11,10 @@ using System.Data.SqlClient;
 using System.Reflection;
 using System.IO;
 using Word = Microsoft.Office.Interop.Word;
+using Spire.Doc;
+using System.Drawing.Printing;
+
+
 
 namespace FP_Gen_1._0
 {
@@ -462,7 +466,12 @@ namespace FP_Gen_1._0
 
         private void printBtn_Click(object sender, EventArgs e)
         {
-            CreateWordDocument(@"C:\Users\Dehmane\source\repos\M4dj1\FP-Gen-1.0\temp.docx", @"C:\Users\Dehmane\source\repos\M4dj1\FP-Gen-1.0\gen.docx");
+            CreateWordDocument(@"C:\Users\amadj\source\repos\M4dj1\FP-Gen-1.0\temp.docx", @"C:\Users\amadj\source\repos\M4dj1\FP-Gen-1.0\gen.docx");
+            Document doc = new Document();
+            doc.LoadFromFile(@"C:\Users\amadj\source\repos\M4dj1\FP-Gen-1.0\gen.docx");
+            PrintDocument printDoc = doc.PrintDocument;
+            printDoc.PrintController = new StandardPrintController();
+            printDoc.Print();
         }
     }
 }

@@ -98,7 +98,6 @@
             this.cus1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.adr1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ite = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.typ = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl = new System.Windows.Forms.Panel();
@@ -107,6 +106,8 @@
             this.PFPnlBtn = new System.Windows.Forms.Panel();
             this.prntPFBtn = new System.Windows.Forms.Button();
             this.addSF = new System.Windows.Forms.Panel();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label41 = new System.Windows.Forms.Label();
             this.comboBox6 = new System.Windows.Forms.ComboBox();
             this.comboBox7 = new System.Windows.Forms.ComboBox();
             this.label33 = new System.Windows.Forms.Label();
@@ -160,8 +161,6 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
@@ -864,17 +863,17 @@
             // 
             // listView2
             // 
+            this.listView2.BackColor = System.Drawing.SystemColors.InactiveCaption;
             this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.cus1,
             this.adr1,
             this.ite,
-            this.typ,
             this.dat});
             this.listView2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.listView2.HideSelection = false;
             this.listView2.Location = new System.Drawing.Point(34, 59);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(459, 260);
+            this.listView2.Size = new System.Drawing.Size(404, 260);
             this.listView2.TabIndex = 27;
             this.listView2.UseCompatibleStateImageBehavior = false;
             this.listView2.View = System.Windows.Forms.View.Details;
@@ -882,27 +881,22 @@
             // cus1
             // 
             this.cus1.Text = "Customer";
-            this.cus1.Width = 90;
+            this.cus1.Width = 100;
             // 
             // adr1
             // 
             this.adr1.Text = "Address";
-            this.adr1.Width = 90;
+            this.adr1.Width = 100;
             // 
             // ite
             // 
             this.ite.Text = "Item";
-            this.ite.Width = 90;
-            // 
-            // typ
-            // 
-            this.typ.Text = "Type";
-            this.typ.Width = 90;
+            this.ite.Width = 100;
             // 
             // dat
             // 
             this.dat.Text = "Date";
-            this.dat.Width = 90;
+            this.dat.Width = 100;
             // 
             // timer3
             // 
@@ -990,6 +984,24 @@
             this.addSF.Name = "addSF";
             this.addSF.Size = new System.Drawing.Size(528, 348);
             this.addSF.TabIndex = 48;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(166, 104);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(286, 23);
+            this.textBox7.TabIndex = 49;
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.Location = new System.Drawing.Point(85, 111);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(41, 17);
+            this.label41.TabIndex = 48;
+            this.label41.Text = "Item :";
             // 
             // comboBox6
             // 
@@ -1194,7 +1206,6 @@
             this.SF.Name = "SF";
             this.SF.Size = new System.Drawing.Size(469, 270);
             this.SF.TabIndex = 42;
-            this.SF.Paint += new System.Windows.Forms.PaintEventHandler(this.SF_Paint);
             // 
             // label40
             // 
@@ -1315,7 +1326,7 @@
             // 
             // button8
             // 
-            this.button8.BackColor = System.Drawing.Color.Transparent;
+            this.button8.BackColor = System.Drawing.Color.SlateGray;
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1325,8 +1336,9 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(35, 35);
             this.button8.TabIndex = 63;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click_1);
             // 
             // button9
             // 
@@ -1341,6 +1353,7 @@
             this.button9.TabIndex = 62;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click_1);
             // 
             // comboBox4
             // 
@@ -1521,7 +1534,7 @@
             // 
             // printAddBtn2
             // 
-            this.printAddBtn2.BackColor = System.Drawing.Color.Transparent;
+            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
             this.printAddBtn2.FlatAppearance.BorderSize = 0;
             this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1531,8 +1544,9 @@
             this.printAddBtn2.Name = "printAddBtn2";
             this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
             this.printAddBtn2.TabIndex = 45;
-            this.printAddBtn2.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn2.Text = "+";
             this.printAddBtn2.UseVisualStyleBackColor = false;
+            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
             // 
             // printAddBtn1
             // 
@@ -1547,6 +1561,7 @@
             this.printAddBtn1.TabIndex = 44;
             this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.printAddBtn1.UseVisualStyleBackColor = true;
+            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
             // 
             // prevBtn
             // 
@@ -1600,34 +1615,16 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Customer :";
             // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(166, 104);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(286, 23);
-            this.textBox7.TabIndex = 49;
-            // 
-            // label41
-            // 
-            this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(85, 111);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(41, 17);
-            this.label41.TabIndex = 48;
-            this.label41.Text = "Item :";
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
+            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.listPnl);
             this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
@@ -1733,7 +1730,6 @@
         private System.Windows.Forms.ColumnHeader dimensions;
         private System.Windows.Forms.Timer timer3;
         private System.Windows.Forms.ColumnHeader ite;
-        private System.Windows.Forms.ColumnHeader typ;
         private System.Windows.Forms.ColumnHeader dat;
         private System.Windows.Forms.Panel printPnl;
         private System.Windows.Forms.Panel addSF;

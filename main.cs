@@ -256,6 +256,47 @@ namespace FP_Gen_1._0
             PF.Visible = false;
         }
 
+        private void button9_Click_1(object sender, EventArgs e)
+        {
+            printBtnPnl.Visible = false;
+            hisBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = true;
+            addBtnPnl.Visible = false;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = true;
+            hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
+        private void button8_Click_1(object sender, EventArgs e)
+        {
+            displayAddCusCombo();
+            hisBtnPnl.Visible = false;
+            printBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = true;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = false;
+            addSF.Visible = true;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
         private void printAddBtn1_Click(object sender, EventArgs e)
         {
             printBtnPnl.Visible = false;
@@ -286,13 +327,13 @@ namespace FP_Gen_1._0
             listBtnPnl.Visible = false;
             abtBtnPnl.Visible = false;
             printPnl.Visible = false;
-            addPnl.Visible = true;
+            addPnl.Visible = false;
             listPnl.Visible = false;
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
             addSF.Visible = false;
-            addPF.Visible = false;
+            addPF.Visible = true;
             SF.Visible = false;
             PF.Visible = false;
         }
@@ -724,11 +765,6 @@ namespace FP_Gen_1._0
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();
-        }
-
-        private void SF_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

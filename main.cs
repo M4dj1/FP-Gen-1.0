@@ -24,6 +24,7 @@ namespace FP_Gen_1._0
         {
             InitializeComponent();
             displayListView();
+            displayListView1();
             printBtnPnl.Visible = false;
             addBtnPnl.Visible = false;
             listBtnPnl.Visible = false;
@@ -41,12 +42,34 @@ namespace FP_Gen_1._0
             addBtnPnl.Visible = false;
             listBtnPnl.Visible = false;    
             abtBtnPnl.Visible = false;  
-            printPnl.Visible=true; 
-            addPnl.Visible=false;   
+            printPnl.Visible=true;
+            addPnl.Visible = false;   
             listPnl.Visible=false;  
             abtPnl.Visible=false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = true;
+            SFPnlBtn.Visible = false;
+            PFPnlBtn.Visible = true;
+        }
+
+        private void prntSFBtn_Click(object sender, EventArgs e)
+        {
+            SF.Visible = true;
+            PF.Visible = false;
+            PFPnlBtn.Visible = false;
+            SFPnlBtn.Visible = true;
+        }
+
+        private void prntPFBtn_Click(object sender, EventArgs e)
+        {
+            SF.Visible = false;
+            PF.Visible = true;
+            SFPnlBtn.Visible = false;
+            PFPnlBtn.Visible = true;
         }
 
         private void addBtn_Click(object sender, EventArgs e)
@@ -64,11 +87,56 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
+        private void sfBtn_Click(object sender, EventArgs e)
+        {
+            hisBtnPnl.Visible = false;
+            printBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = true;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = false;
+            addSF.Visible = true;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
+        private void fpBtn_Click(object sender, EventArgs e)
+        {
+            hisBtnPnl.Visible = false;
+            printBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = true;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = false;
+            addPF.Visible = true;
+            addSF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void listBtn_Click(object sender, EventArgs e)
         {
             displayListView();
+            displayListView1();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -81,6 +149,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void abtBtn_Click(object sender, EventArgs e)
@@ -97,6 +169,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = true;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
 
@@ -114,6 +190,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = true;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -130,6 +210,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void addItCancelBtn_Click(object sender, EventArgs e)
@@ -146,6 +230,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -162,6 +250,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = true;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void printAddBtn1_Click(object sender, EventArgs e)
@@ -178,6 +270,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = true;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
         private void printAddBtn2_Click(object sender, EventArgs e)
@@ -195,6 +291,10 @@ namespace FP_Gen_1._0
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
         }
 
 
@@ -234,7 +334,11 @@ namespace FP_Gen_1._0
             comboBox1.DisplayMember = "name";
             comboBox1.ValueMember = "id";
             comboBox1.DataSource = table1;
+            comboBox5.DisplayMember = "name";
+            comboBox5.ValueMember = "id";
+            comboBox5.DataSource = table1;
             comboBox3.Enabled = false;
+            comboBox4.Enabled = false;
         }
 
         public void displayAddCusCombo()
@@ -255,29 +359,54 @@ namespace FP_Gen_1._0
             comboBox2.DisplayMember = "name";
             comboBox2.ValueMember = "id";
             comboBox2.DataSource = table1;
+            comboBox8.DisplayMember = "name";
+            comboBox8.ValueMember = "id";
+            comboBox8.DataSource = table1;
         }
 
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null && textBox2.Text != null &&
-                comboBox4.SelectedItem != null && comboBox5.SelectedItem != null
+            if (textBox1.Text != null && textBox2.Text != null
                 && comboBox2.SelectedItem != null)
             { connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "insert into [item] (item, type, form, dimensions, customerid) values ('" + textBox1.Text + "','" + comboBox4.SelectedItem.ToString() + "','" + comboBox5.SelectedItem.ToString() + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
+                cmd.CommandText = "insert into [item] (itname, dimensions, customerid) values ('" + textBox1.Text + "','" + textBox2.Text + "','" + int.Parse(comboBox2.SelectedIndex.ToString()) + "')";
                 cmd.ExecuteNonQuery();
                 connection.Close();
 
                 textBox1.Text = "";
                 textBox2.Text = "";
                 comboBox2.Text = "- Select Customer...";
-                comboBox4.Text = "- Select Type...";
-                comboBox5.Text = "- Select Color...";
                 MessageBox.Show("Data Inserted Successfully !");
                 displayAddCusCombo();
             } else
+            {
+                MessageBox.Show("Please fill all the required fields !");
+            }
+        }
+
+        private void SaveBtn2_Click(object sender, EventArgs e)
+        {
+            if (textBox7.Text != null && textBox4.Text != null &&
+                comboBox6.SelectedItem != null && comboBox7.SelectedItem != null
+                && comboBox8.SelectedItem != null)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into [cardboard] (cname, type, form, dimensions, customerid) values ('" + textBox7.Text + "','" + comboBox6.SelectedItem.ToString() + "','" + comboBox7.SelectedItem.ToString() + "','" + textBox4.Text + "','" + int.Parse(comboBox8.SelectedIndex.ToString()) + "')";
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+                textBox1.Text = "";
+                textBox2.Text = "";
+                comboBox2.Text = "- Select Customer...";
+                MessageBox.Show("Data Inserted Successfully !");
+                displayAddCusCombo();
+            }
+            else
             {
                 MessageBox.Show("Please fill all the required fields !");
             }
@@ -289,14 +418,14 @@ namespace FP_Gen_1._0
             this.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (comboBox1.SelectedValue.ToString() != null)
             {
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "select id,item,type,form,dimensions,customerid from [item] where customerid = @cusid";
+                cmd.CommandText = "select id,itname,dimensions,customerid from [item] where customerid = @cusid";
                 cmd.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
                 cmd.ExecuteNonQuery();
                 connection.Close();
@@ -307,7 +436,7 @@ namespace FP_Gen_1._0
                 itemrow[1] = "- Select Item...";
                 table1.Rows.InsertAt(itemrow, 0);
                 comboBox3.Enabled = true;
-                comboBox3.DisplayMember = "item";
+                comboBox3.DisplayMember = "itname";
                 comboBox3.ValueMember = "id";
                 comboBox3.DataSource = table1;
 
@@ -326,13 +455,50 @@ namespace FP_Gen_1._0
             }
         }
 
+        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox5.SelectedValue.ToString() != null)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select id,cname,form,type,dimensions,customerid from [cardboard] where customerid = @cusid";
+                cmd.Parameters.AddWithValue("@cusid", comboBox5.SelectedValue.ToString());
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                DataTable table1 = new DataTable();
+                SqlDataAdapter ada = new SqlDataAdapter(cmd);
+                ada.Fill(table1);
+                DataRow itemrow = table1.NewRow();
+                itemrow[1] = "- Select Item...";
+                table1.Rows.InsertAt(itemrow, 0);
+                comboBox4.Enabled = true;
+                comboBox4.DisplayMember = "cname";
+                comboBox4.ValueMember = "id";
+                comboBox4.DataSource = table1;
+
+                connection.Open();
+                SqlCommand cmd1 = connection.CreateCommand();
+                cmd1.CommandType = CommandType.Text;
+                cmd1.CommandText = "select address from [customer] where id = @cusid";
+                cmd1.Parameters.AddWithValue("@cusid", comboBox5.SelectedValue.ToString());
+                SqlDataReader dr = cmd1.ExecuteReader();
+                while (dr.Read())
+                {
+                    adrTxtBx2.Text = dr.GetValue(0).ToString();
+                }
+                dr.Close();
+                connection.Close();
+            }
+        }
+
         public void displayListView()
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select customer.name, customer.address, item.item," +
-                "item.type, item.form, item.dimensions from [customer] " +
+            cmd.CommandText = "select customer.name, customer.address, item.itname," +
+                "item.dimensions from [customer] " +
                 "inner join item ON customer.id = item.customerid ORDER BY customer.id";
             SqlDataReader reader = cmd.ExecuteReader();
             listView1.Items.Clear();
@@ -343,13 +509,37 @@ namespace FP_Gen_1._0
                 lv.SubItems.Add(reader.GetString(1));
                 lv.SubItems.Add(reader.GetString(2));
                 lv.SubItems.Add(reader.GetString(3));
-                lv.SubItems.Add(reader.GetString(4));
-                lv.SubItems.Add(reader.GetString(5));
                 listView1.Items.Add(lv);
             }
             reader.Close();
             connection.Close();
         }
+
+        public void displayListView1()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select customer.name, customer.address, cardboard.cname," +
+                "cardboard.type, cardboard.form, cardboard.dimensions from [customer] " +
+                "inner join cardboard ON customer.id = cardboard.customerid ORDER BY customer.id";
+            SqlDataReader reader = cmd.ExecuteReader();
+            listView3.Items.Clear();
+
+            while (reader.Read())
+            {
+                ListViewItem lv = new ListViewItem(reader.GetString(0));
+                lv.SubItems.Add(reader.GetString(1));
+                lv.SubItems.Add(reader.GetString(2));
+                lv.SubItems.Add(reader.GetString(3));
+                lv.SubItems.Add(reader.GetString(4));
+                listView3.Items.Add(lv);
+            }
+            reader.Close();
+            connection.Close();
+        }
+
+
 
         private void timer3_tick(object sender, EventArgs e)
         {
@@ -360,34 +550,43 @@ namespace FP_Gen_1._0
             Opacity += .2;
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select type,form,dimensions from [item] where id = @itid";
+            cmd.CommandText = "select dimensions from [item] where id = @itid";
             cmd.Parameters.AddWithValue("@itid", comboBox3.SelectedValue.ToString());
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                typTxtBx.Text = dr.GetValue(0).ToString();
-                frmTxtBx.Text = dr.GetValue(1).ToString();
-                dimTxtBx.Text = dr.GetValue(2).ToString();
+                dimTxtBx.Text = dr.GetValue(0).ToString();
             }
             dr.Close();
             connection.Close();
         }
 
+        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select type,form,dimensions from [cardboard] where id = @itid";
+            cmd.Parameters.AddWithValue("@itid", comboBox4.SelectedValue.ToString());
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                textBox8.Text = dr.GetValue(0).ToString();
+                textBox11.Text = dr.GetValue(0).ToString();
+                textBox10.Text = dr.GetValue(1).ToString();
+            }
+            dr.Close();
+            connection.Close();
+        }
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
         private void FindAndReplace(Word.Application wordApp, object ToFindText, object replaceWithText)
         {
             object matchCase = true;
@@ -440,8 +639,6 @@ namespace FP_Gen_1._0
                 this.FindAndReplace(wordApp, "<cus>", this.comboBox1.GetItemText(this.comboBox1.SelectedItem));
                 this.FindAndReplace(wordApp, "<add>", adrTxtBx.Text);
                 this.FindAndReplace(wordApp, "<ite>", this.comboBox3.GetItemText(this.comboBox3.SelectedItem));
-                this.FindAndReplace(wordApp, "<typ>", typTxtBx.Text);
-                this.FindAndReplace(wordApp, "<for>", frmTxtBx.Text);
                 this.FindAndReplace(wordApp, "<dim>", dimTxtBx.Text);
                 this.FindAndReplace(wordApp, "<qua>", qBox.Text);
                 this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("dd/MM/yyyy"));
@@ -463,14 +660,75 @@ namespace FP_Gen_1._0
             MessageBox.Show("File Created!");
         }
 
-        private void printBtn_Click(object sender, EventArgs e)
+        private void CreateWordDocument2(object filename, object SaveAs)
         {
-            CreateWordDocument(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "temp.docx")), Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen.docx")));
+            Word.Application wordApp = new Word.Application();
+            object missing = Missing.Value;
+            Word.Document myWordDoc = null;
+
+            if (File.Exists((string)filename))
+            {
+                object readOnly = false;
+                object isVisible = false;
+                wordApp.Visible = false;
+
+                myWordDoc = wordApp.Documents.Open(ref filename, ref missing, ref readOnly,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing,
+                                        ref missing, ref missing, ref missing, ref missing);
+                myWordDoc.Activate();
+
+                //find and replace
+                this.FindAndReplace(wordApp, "<cus>", this.comboBox5.GetItemText(this.comboBox1.SelectedItem));
+                this.FindAndReplace(wordApp, "<add>", adrTxtBx2.Text);
+                this.FindAndReplace(wordApp, "<ite>", this.comboBox4.GetItemText(this.comboBox3.SelectedItem));
+                this.FindAndReplace(wordApp, "<typ>", textBox11.Text);
+                this.FindAndReplace(wordApp, "<for>", textBox10.Text);
+                this.FindAndReplace(wordApp, "<dim>", textBox8.Text);
+                this.FindAndReplace(wordApp, "<qua>", textBox3.Text);
+                this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("dd/MM/yyyy"));
+            }
+            else
+            {
+                MessageBox.Show("File not Found!");
+            }
+
+            //Save as
+            myWordDoc.SaveAs(ref SaveAs, ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing,
+                            ref missing, ref missing, ref missing);
+
+            myWordDoc.Close();
+            wordApp.Quit();
+            MessageBox.Show("File Created!");
+        }
+
+        private void printBtn_Click_1(object sender, EventArgs e)
+        {
+            CreateWordDocument(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "temp1.docx")), Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen1.docx")));
             Document doc = new Document();
-            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen.docx")));
+            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen1.docx")));
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();
+        }
+
+        private void printBtn1_Click(object sender, EventArgs e)
+        {
+            CreateWordDocument2(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "temp2.docx")), Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen2.docx")));
+            Document doc = new Document();
+            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location), "gen2.docx")));
+            PrintDocument printDoc = doc.PrintDocument;
+            printDoc.PrintController = new StandardPrintController();
+            printDoc.Print();
+        }
+
+        private void SF_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

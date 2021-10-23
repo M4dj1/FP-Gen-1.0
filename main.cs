@@ -16,7 +16,7 @@ namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dehmane\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\amadj\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security=True");
         public main()
         {
             InitializeComponent();

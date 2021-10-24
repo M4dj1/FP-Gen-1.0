@@ -415,11 +415,11 @@
             // 
             this.label15.AutoSize = true;
             this.label15.Cursor = System.Windows.Forms.Cursors.Default;
-            this.label15.Font = new System.Drawing.Font("Fira Sans", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.MidnightBlue;
             this.label15.Location = new System.Drawing.Point(11, 12);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(163, 18);
+            this.label15.Size = new System.Drawing.Size(179, 18);
             this.label15.TabIndex = 0;
             this.label15.Text = "- Pallet Sheet Manager";
             // 
@@ -434,7 +434,7 @@
             this.addPF.Controls.Add(this.label10);
             this.addPF.Controls.Add(this.label11);
             this.addPF.Controls.Add(this.label13);
-            this.addPF.Font = new System.Drawing.Font("Fira Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addPF.Location = new System.Drawing.Point(177, 40);
             this.addPF.Name = "addPF";
             this.addPF.Size = new System.Drawing.Size(528, 348);
@@ -979,7 +979,7 @@
             this.addSF.Controls.Add(this.textBox4);
             this.addSF.Controls.Add(this.label36);
             this.addSF.Controls.Add(this.label38);
-            this.addSF.Font = new System.Drawing.Font("Fira Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addSF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addSF.Location = new System.Drawing.Point(176, 40);
             this.addSF.Name = "addSF";
             this.addSF.Size = new System.Drawing.Size(528, 348);
@@ -1027,8 +1027,8 @@
             "(GC)",
             "(B)",
             "(E)",
-            "(B+E)",
-            "(C+B)"});
+            "DD (B+E)",
+            "DD (C+B)"});
             this.comboBox7.Location = new System.Drawing.Point(166, 150);
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(286, 25);
@@ -1129,7 +1129,7 @@
             this.addPnl.Controls.Add(this.label22);
             this.addPnl.Controls.Add(this.fpBtn);
             this.addPnl.Controls.Add(this.sfBtn);
-            this.addPnl.Font = new System.Drawing.Font("Fira Sans", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addPnl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addPnl.Location = new System.Drawing.Point(176, 41);
             this.addPnl.Name = "addPnl";
             this.addPnl.Size = new System.Drawing.Size(528, 348);
@@ -1621,12 +1621,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
+            this.Controls.Add(this.addSF);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);
             this.Controls.Add(this.listPnl);
-            this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addPnl);

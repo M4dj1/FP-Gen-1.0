@@ -761,7 +761,7 @@ namespace FP_Gen_1._0
         {
             CreateWordDocument2(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp2.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
             Document doc = new Document();
-            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "gen2.docx")));
+            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();

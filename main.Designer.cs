@@ -1013,7 +1013,7 @@
             "TB/FL/KR",
             "TE/FL/KR",
             "KR/FL/KR"});
-            this.comboBox6.Location = new System.Drawing.Point(166, 197);
+            this.comboBox6.Location = new System.Drawing.Point(166, 199);
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(286, 25);
             this.comboBox6.TabIndex = 15;
@@ -1049,7 +1049,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(85, 201);
+            this.label34.Location = new System.Drawing.Point(85, 203);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(43, 17);
             this.label34.TabIndex = 45;
@@ -1078,7 +1078,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(304, 286);
+            this.button3.Location = new System.Drawing.Point(304, 290);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 32);
             this.button3.TabIndex = 18;
@@ -1088,7 +1088,7 @@
             // SaveBtn2
             // 
             this.SaveBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn2.Location = new System.Drawing.Point(124, 286);
+            this.SaveBtn2.Location = new System.Drawing.Point(124, 290);
             this.SaveBtn2.Name = "SaveBtn2";
             this.SaveBtn2.Size = new System.Drawing.Size(88, 32);
             this.SaveBtn2.TabIndex = 17;
@@ -1099,7 +1099,7 @@
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(166, 243);
+            this.textBox4.Location = new System.Drawing.Point(166, 247);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(286, 23);
             this.textBox4.TabIndex = 16;
@@ -1108,7 +1108,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(85, 250);
+            this.label36.Location = new System.Drawing.Point(85, 254);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(82, 17);
             this.label36.TabIndex = 3;
@@ -1621,12 +1621,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
-            this.Controls.Add(this.addSF);
             this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.SF);
-            this.Controls.Add(this.PF);
-            this.Controls.Add(this.printPnl);
             this.Controls.Add(this.listPnl);
+            this.Controls.Add(this.PF);
+            this.Controls.Add(this.SF);
+            this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addPnl);

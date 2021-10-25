@@ -618,8 +618,8 @@ namespace FP_Gen_1._0
             while (dr.Read())
             {
                 textBox8.Text = dr.GetValue(0).ToString();
-                textBox11.Text = dr.GetValue(0).ToString();
-                textBox10.Text = dr.GetValue(1).ToString();
+                textBox11.Text = dr.GetValue(1).ToString();
+                textBox10.Text = dr.GetValue(2).ToString();
             }
             dr.Close();
             connection.Close();

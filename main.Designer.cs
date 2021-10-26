@@ -452,7 +452,7 @@
             this.panel6.Controls.Add(this.addItCancelBtn);
             this.panel6.Controls.Add(this.textBox2);
             this.panel6.Controls.Add(this.saveBtn);
-            this.panel6.Location = new System.Drawing.Point(35, 57);
+            this.panel6.Location = new System.Drawing.Point(35, 67);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(539, 305);
             this.panel6.TabIndex = 45;
@@ -823,7 +823,7 @@
             this.panel5.Controls.Add(this.button3);
             this.panel5.Controls.Add(this.label34);
             this.panel5.Controls.Add(this.comboBox8);
-            this.panel5.Location = new System.Drawing.Point(22, 13);
+            this.panel5.Location = new System.Drawing.Point(28, 21);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(557, 414);
             this.panel5.TabIndex = 50;
@@ -831,10 +831,10 @@
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label35.Location = new System.Drawing.Point(11, 22);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(258, 17);
+            this.label35.Size = new System.Drawing.Size(269, 17);
             this.label35.TabIndex = 44;
             this.label35.Text = "Add a cardboard to an existing Customer :";
             // 
@@ -1685,8 +1685,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
-            this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
+            this.Controls.Add(this.addSF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);

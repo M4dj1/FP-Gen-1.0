@@ -801,5 +801,10 @@ namespace FP_Gen_1._0
         {
 
         }
+
+        private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

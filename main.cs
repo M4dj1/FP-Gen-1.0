@@ -637,9 +637,9 @@ namespace FP_Gen_1._0
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                sfDimTxtBox.Text = dr.GetValue(0).ToString();
-                sfTypeTxtBox.Text = dr.GetValue(1).ToString();
-                sfFrmTxtBox.Text = dr.GetValue(2).ToString();
+                sfTypeTxtBox.Text = dr.GetValue(0).ToString();
+                sfFrmTxtBox.Text = dr.GetValue(1).ToString();
+                sfDimTxtBox.Text = dr.GetValue(2).ToString();
             }
             dr.Close();
             connection.Close();

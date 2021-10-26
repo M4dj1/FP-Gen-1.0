@@ -31,27 +31,35 @@
             this.components = new System.ComponentModel.Container();
             this.mainPnl = new System.Windows.Forms.Panel();
             this.hisBtnPnl = new System.Windows.Forms.Panel();
+            this.hisBtn = new System.Windows.Forms.Button();
             this.addCusBtnPnl = new System.Windows.Forms.Panel();
+            this.button5 = new System.Windows.Forms.Button();
             this.extBtnPnl = new System.Windows.Forms.Panel();
+            this.extBtn = new System.Windows.Forms.Button();
             this.abtBtnPnl = new System.Windows.Forms.Panel();
+            this.abtBtn = new System.Windows.Forms.Button();
             this.listBtnPnl = new System.Windows.Forms.Panel();
+            this.listBtn = new System.Windows.Forms.Button();
             this.addBtnPnl = new System.Windows.Forms.Panel();
+            this.addBtn = new System.Windows.Forms.Button();
             this.printBtnPnl = new System.Windows.Forms.Panel();
+            this.printShBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.topPnl = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.addPF = new System.Windows.Forms.Panel();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label12 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.addItCancelBtn = new System.Windows.Forms.Button();
-            this.saveBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.addItCancelBtn = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.saveBtn = new System.Windows.Forms.Button();
             this.listPnl = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
@@ -71,20 +79,22 @@
             this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.dimensions = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.abtPnl = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.addCusPnl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.addCusCancelBtn = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.addCusSaveBtn = new System.Windows.Forms.Button();
             this.label16 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.addCusSaveBtn = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.addCusCancelBtn = new System.Windows.Forms.Button();
             this.hisPnl = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
             this.listView2 = new System.Windows.Forms.ListView();
@@ -95,23 +105,29 @@
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl = new System.Windows.Forms.Panel();
             this.SFPnlBtn = new System.Windows.Forms.Panel();
+            this.prntSFBtn = new System.Windows.Forms.Button();
             this.PFPnlBtn = new System.Windows.Forms.Panel();
+            this.prntPFBtn = new System.Windows.Forms.Button();
             this.addSF = new System.Windows.Forms.Panel();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.label35 = new System.Windows.Forms.Label();
-            this.comboBox8 = new System.Windows.Forms.ComboBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.SaveBtn2 = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label36 = new System.Windows.Forms.Label();
+            this.textBox7 = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.SaveBtn2 = new System.Windows.Forms.Button();
+            this.label33 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label34 = new System.Windows.Forms.Label();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
             this.addPnl = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.label22 = new System.Windows.Forms.Label();
+            this.sfBtn = new System.Windows.Forms.Button();
+            this.fpBtn = new System.Windows.Forms.Button();
             this.SF = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.sfTypeTxtBox = new System.Windows.Forms.TextBox();
@@ -125,6 +141,8 @@
             this.sfDimTxtBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.adrTxtBx2 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.sfPrvBtn = new System.Windows.Forms.Button();
             this.printBtn1 = new System.Windows.Forms.Button();
@@ -141,50 +159,32 @@
             this.pfDimTxtBx = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
             this.pfAdrTxtBx = new System.Windows.Forms.TextBox();
+            this.printAddBtn2 = new System.Windows.Forms.Button();
+            this.printAddBtn1 = new System.Windows.Forms.Button();
             this.prevBtn = new System.Windows.Forms.Button();
             this.printBtn = new System.Windows.Forms.Button();
             this.pfCusBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.sfBtn = new System.Windows.Forms.Button();
-            this.fpBtn = new System.Windows.Forms.Button();
-            this.hisBtn = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.extBtn = new System.Windows.Forms.Button();
-            this.abtBtn = new System.Windows.Forms.Button();
-            this.listBtn = new System.Windows.Forms.Button();
-            this.addBtn = new System.Windows.Forms.Button();
-            this.printShBtn = new System.Windows.Forms.Button();
-            this.printAddBtn2 = new System.Windows.Forms.Button();
-            this.printAddBtn1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.prntSFBtn = new System.Windows.Forms.Button();
-            this.prntPFBtn = new System.Windows.Forms.Button();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
             this.addPF.SuspendLayout();
+            this.panel6.SuspendLayout();
             this.listPnl.SuspendLayout();
             this.abtPnl.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
             this.addCusPnl.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.hisPnl.SuspendLayout();
             this.printPnl.SuspendLayout();
             this.addSF.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.addPnl.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SF.SuspendLayout();
             this.PF.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPnl
@@ -219,6 +219,22 @@
             this.hisBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.hisBtnPnl.TabIndex = 28;
             // 
+            // hisBtn
+            // 
+            this.hisBtn.FlatAppearance.BorderSize = 0;
+            this.hisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hisBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.hisBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.hisBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__1_;
+            this.hisBtn.Location = new System.Drawing.Point(0, 107);
+            this.hisBtn.Name = "hisBtn";
+            this.hisBtn.Size = new System.Drawing.Size(196, 33);
+            this.hisBtn.TabIndex = 29;
+            this.hisBtn.Text = " History";
+            this.hisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.hisBtn.UseVisualStyleBackColor = true;
+            this.hisBtn.Click += new System.EventHandler(this.hisBtn_Click);
+            // 
             // addCusBtnPnl
             // 
             this.addCusBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -226,6 +242,22 @@
             this.addCusBtnPnl.Name = "addCusBtnPnl";
             this.addCusBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.addCusBtnPnl.TabIndex = 26;
+            // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button5.ForeColor = System.Drawing.SystemColors.Control;
+            this.button5.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_5_;
+            this.button5.Location = new System.Drawing.Point(0, 225);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(244, 33);
+            this.button5.TabIndex = 27;
+            this.button5.Text = " New Customer";
+            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // extBtnPnl
             // 
@@ -235,6 +267,22 @@
             this.extBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.extBtnPnl.TabIndex = 0;
             // 
+            // extBtn
+            // 
+            this.extBtn.FlatAppearance.BorderSize = 0;
+            this.extBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.extBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.extBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.extBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_6_;
+            this.extBtn.Location = new System.Drawing.Point(0, 343);
+            this.extBtn.Name = "extBtn";
+            this.extBtn.Size = new System.Drawing.Size(196, 33);
+            this.extBtn.TabIndex = 2;
+            this.extBtn.Text = " Exit";
+            this.extBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.extBtn.UseVisualStyleBackColor = true;
+            this.extBtn.Click += new System.EventHandler(this.extBtn_Click);
+            // 
             // abtBtnPnl
             // 
             this.abtBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -242,6 +290,22 @@
             this.abtBtnPnl.Name = "abtBtnPnl";
             this.abtBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.abtBtnPnl.TabIndex = 22;
+            // 
+            // abtBtn
+            // 
+            this.abtBtn.FlatAppearance.BorderSize = 0;
+            this.abtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.abtBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.abtBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.abtBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_8_;
+            this.abtBtn.Location = new System.Drawing.Point(0, 304);
+            this.abtBtn.Name = "abtBtn";
+            this.abtBtn.Size = new System.Drawing.Size(218, 33);
+            this.abtBtn.TabIndex = 4;
+            this.abtBtn.Text = " About App";
+            this.abtBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.abtBtn.UseVisualStyleBackColor = true;
+            this.abtBtn.Click += new System.EventHandler(this.abtBtn_Click);
             // 
             // listBtnPnl
             // 
@@ -251,6 +315,22 @@
             this.listBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.listBtnPnl.TabIndex = 20;
             // 
+            // listBtn
+            // 
+            this.listBtn.FlatAppearance.BorderSize = 0;
+            this.listBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.listBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.listBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.listBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_7_;
+            this.listBtn.Location = new System.Drawing.Point(0, 185);
+            this.listBtn.Name = "listBtn";
+            this.listBtn.Size = new System.Drawing.Size(218, 33);
+            this.listBtn.TabIndex = 21;
+            this.listBtn.Text = " Item List";
+            this.listBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.listBtn.UseVisualStyleBackColor = true;
+            this.listBtn.Click += new System.EventHandler(this.listBtn_Click);
+            // 
             // addBtnPnl
             // 
             this.addBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -259,6 +339,22 @@
             this.addBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.addBtnPnl.TabIndex = 6;
             // 
+            // addBtn
+            // 
+            this.addBtn.FlatAppearance.BorderSize = 0;
+            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.addBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.addBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtoolsff;
+            this.addBtn.Location = new System.Drawing.Point(0, 265);
+            this.addBtn.Name = "addBtn";
+            this.addBtn.Size = new System.Drawing.Size(209, 33);
+            this.addBtn.TabIndex = 5;
+            this.addBtn.Text = " New Item";
+            this.addBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
+            // 
             // printBtnPnl
             // 
             this.printBtnPnl.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -266,6 +362,22 @@
             this.printBtnPnl.Name = "printBtnPnl";
             this.printBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.printBtnPnl.TabIndex = 16;
+            // 
+            // printShBtn
+            // 
+            this.printShBtn.FlatAppearance.BorderSize = 0;
+            this.printShBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printShBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printShBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.printShBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_2_;
+            this.printShBtn.Location = new System.Drawing.Point(0, 146);
+            this.printShBtn.Name = "printShBtn";
+            this.printShBtn.Size = new System.Drawing.Size(229, 33);
+            this.printShBtn.TabIndex = 17;
+            this.printShBtn.Text = " Print Sheet";
+            this.printShBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printShBtn.UseVisualStyleBackColor = true;
+            this.printShBtn.Click += new System.EventHandler(this.printShBtn_Click);
             // 
             // panel2
             // 
@@ -330,6 +442,23 @@
             this.addPF.Size = new System.Drawing.Size(528, 348);
             this.addPF.TabIndex = 21;
             // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.SlateGray;
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.comboBox2);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.addItCancelBtn);
+            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Controls.Add(this.saveBtn);
+            this.panel6.Location = new System.Drawing.Point(35, 57);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(461, 234);
+            this.panel6.TabIndex = 45;
+            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -339,6 +468,16 @@
             this.label12.Size = new System.Drawing.Size(229, 17);
             this.label12.TabIndex = 44;
             this.label12.Text = "Add an Item to an existing Customer :";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(49, 63);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(71, 17);
+            this.label13.TabIndex = 27;
+            this.label13.Text = "Customer :";
             // 
             // comboBox2
             // 
@@ -350,6 +489,16 @@
             this.comboBox2.TabIndex = 12;
             this.comboBox2.Text = "- Select customer...";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(51, 103);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(41, 17);
+            this.label11.TabIndex = 28;
+            this.label11.Text = "Item :";
+            // 
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -357,6 +506,16 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(286, 23);
             this.textBox1.TabIndex = 13;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(49, 143);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(82, 17);
+            this.label10.TabIndex = 3;
+            this.label10.Text = "Dimensions :";
             // 
             // addItCancelBtn
             // 
@@ -369,6 +528,14 @@
             this.addItCancelBtn.UseVisualStyleBackColor = true;
             this.addItCancelBtn.Click += new System.EventHandler(this.addItCancelBtn_Click);
             // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(134, 141);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(286, 23);
+            this.textBox2.TabIndex = 16;
+            // 
             // saveBtn
             // 
             this.saveBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -379,44 +546,6 @@
             this.saveBtn.Text = "Save";
             this.saveBtn.UseVisualStyleBackColor = true;
             this.saveBtn.Click += new System.EventHandler(this.saveBtn_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(134, 141);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 23);
-            this.textBox2.TabIndex = 16;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(49, 143);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 17);
-            this.label10.TabIndex = 3;
-            this.label10.Text = "Dimensions :";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(51, 103);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(41, 17);
-            this.label11.TabIndex = 28;
-            this.label11.Text = "Item :";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(49, 63);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 17);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "Customer :";
             // 
             // listPnl
             // 
@@ -584,6 +713,27 @@
             this.abtPnl.Size = new System.Drawing.Size(523, 346);
             this.abtPnl.TabIndex = 21;
             // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.SlateGray;
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.panel1);
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Location = new System.Drawing.Point(30, 58);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(461, 224);
+            this.panel7.TabIndex = 6;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(96, 27);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(278, 17);
+            this.label9.TabIndex = 0;
+            this.label9.Text = "Designed and Coded By Madji Abderrahmane";
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
@@ -639,16 +789,6 @@
             this.label17.TabIndex = 1;
             this.label17.Text = "Contact Info :";
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(96, 27);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(278, 17);
-            this.label9.TabIndex = 0;
-            this.label9.Text = "Designed and Coded By Madji Abderrahmane";
-            // 
             // addCusPnl
             // 
             this.addCusPnl.Controls.Add(this.panel3);
@@ -656,6 +796,21 @@
             this.addCusPnl.Name = "addCusPnl";
             this.addCusPnl.Size = new System.Drawing.Size(528, 348);
             this.addCusPnl.TabIndex = 4;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.label14);
+            this.panel3.Controls.Add(this.label16);
+            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.addCusSaveBtn);
+            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.label8);
+            this.panel3.Controls.Add(this.addCusCancelBtn);
+            this.panel3.Location = new System.Drawing.Point(35, 49);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(454, 224);
+            this.panel3.TabIndex = 38;
             // 
             // label14
             // 
@@ -667,6 +822,16 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Please enter the customer name and his address :";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(54, 72);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(71, 17);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Customer :";
+            // 
             // textBox5
             // 
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -674,34 +839,6 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(286, 23);
             this.textBox5.TabIndex = 8;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 114);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(286, 23);
-            this.textBox6.TabIndex = 9;
-            // 
-            // addCusCancelBtn
-            // 
-            this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCusCancelBtn.Location = new System.Drawing.Point(263, 167);
-            this.addCusCancelBtn.Name = "addCusCancelBtn";
-            this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
-            this.addCusCancelBtn.TabIndex = 11;
-            this.addCusCancelBtn.Text = "Cancel";
-            this.addCusCancelBtn.UseVisualStyleBackColor = true;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(54, 119);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 17);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Address :";
             // 
             // addCusSaveBtn
             // 
@@ -714,15 +851,33 @@
             this.addCusSaveBtn.UseVisualStyleBackColor = true;
             this.addCusSaveBtn.Click += new System.EventHandler(this.addCusSaveBtn_Click);
             // 
-            // label16
+            // textBox6
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(54, 72);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 17);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Customer :";
+            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(126, 114);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(286, 23);
+            this.textBox6.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(54, 119);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 17);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Address :";
+            // 
+            // addCusCancelBtn
+            // 
+            this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCusCancelBtn.Location = new System.Drawing.Point(263, 167);
+            this.addCusCancelBtn.Name = "addCusCancelBtn";
+            this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
+            this.addCusCancelBtn.TabIndex = 11;
+            this.addCusCancelBtn.Text = "Cancel";
+            this.addCusCancelBtn.UseVisualStyleBackColor = true;
             // 
             // hisPnl
             // 
@@ -804,6 +959,23 @@
             this.SFPnlBtn.Size = new System.Drawing.Size(236, 10);
             this.SFPnlBtn.TabIndex = 30;
             // 
+            // prntSFBtn
+            // 
+            this.prntSFBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.prntSFBtn.FlatAppearance.BorderSize = 0;
+            this.prntSFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prntSFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prntSFBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.prntSFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_17_;
+            this.prntSFBtn.Location = new System.Drawing.Point(258, 19);
+            this.prntSFBtn.Name = "prntSFBtn";
+            this.prntSFBtn.Size = new System.Drawing.Size(236, 49);
+            this.prntSFBtn.TabIndex = 43;
+            this.prntSFBtn.Text = " Cardboard (SF)";
+            this.prntSFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.prntSFBtn.UseVisualStyleBackColor = false;
+            this.prntSFBtn.Click += new System.EventHandler(this.prntSFBtn_Click);
+            // 
             // PFPnlBtn
             // 
             this.PFPnlBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
@@ -811,6 +983,23 @@
             this.PFPnlBtn.Name = "PFPnlBtn";
             this.PFPnlBtn.Size = new System.Drawing.Size(236, 10);
             this.PFPnlBtn.TabIndex = 29;
+            // 
+            // prntPFBtn
+            // 
+            this.prntPFBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.prntPFBtn.FlatAppearance.BorderSize = 0;
+            this.prntPFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prntPFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prntPFBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.prntPFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_16_;
+            this.prntPFBtn.Location = new System.Drawing.Point(24, 19);
+            this.prntPFBtn.Name = "prntPFBtn";
+            this.prntPFBtn.Size = new System.Drawing.Size(236, 48);
+            this.prntPFBtn.TabIndex = 30;
+            this.prntPFBtn.Text = " Final Product (PF)";
+            this.prntPFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.prntPFBtn.UseVisualStyleBackColor = false;
+            this.prntPFBtn.Click += new System.EventHandler(this.prntPFBtn_Click);
             // 
             // addSF
             // 
@@ -821,6 +1010,37 @@
             this.addSF.Size = new System.Drawing.Size(528, 348);
             this.addSF.TabIndex = 48;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.SlateGray;
+            this.panel5.Controls.Add(this.label35);
+            this.panel5.Controls.Add(this.textBox7);
+            this.panel5.Controls.Add(this.label38);
+            this.panel5.Controls.Add(this.label41);
+            this.panel5.Controls.Add(this.label36);
+            this.panel5.Controls.Add(this.comboBox6);
+            this.panel5.Controls.Add(this.textBox4);
+            this.panel5.Controls.Add(this.comboBox7);
+            this.panel5.Controls.Add(this.SaveBtn2);
+            this.panel5.Controls.Add(this.label33);
+            this.panel5.Controls.Add(this.button3);
+            this.panel5.Controls.Add(this.label34);
+            this.panel5.Controls.Add(this.comboBox8);
+            this.panel5.Location = new System.Drawing.Point(22, 13);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(484, 318);
+            this.panel5.TabIndex = 50;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.Location = new System.Drawing.Point(11, 6);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(258, 17);
+            this.label35.TabIndex = 44;
+            this.label35.Text = "Add a cardboard to an existing Customer :";
+            // 
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -828,6 +1048,17 @@
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(286, 23);
             this.textBox7.TabIndex = 49;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(54, 49);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(71, 17);
+            this.label38.TabIndex = 27;
+            this.label38.Text = "Customer :";
+            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label41
             // 
@@ -838,6 +1069,16 @@
             this.label41.Size = new System.Drawing.Size(41, 17);
             this.label41.TabIndex = 48;
             this.label41.Text = "Item :";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(54, 239);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(82, 17);
+            this.label36.TabIndex = 3;
+            this.label36.Text = "Dimensions :";
             // 
             // comboBox6
             // 
@@ -855,6 +1096,14 @@
             this.comboBox6.TabIndex = 15;
             this.comboBox6.Text = "- Select type...";
             // 
+            // textBox4
+            // 
+            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox4.Location = new System.Drawing.Point(143, 237);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(286, 23);
+            this.textBox4.TabIndex = 16;
+            // 
             // comboBox7
             // 
             this.comboBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -871,56 +1120,6 @@
             this.comboBox7.TabIndex = 14;
             this.comboBox7.Text = "- Select form...";
             // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(54, 143);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(45, 17);
-            this.label33.TabIndex = 47;
-            this.label33.Text = "Form :";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(54, 192);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(43, 17);
-            this.label34.TabIndex = 45;
-            this.label34.Text = "Type :";
-            // 
-            // label35
-            // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(11, 6);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(258, 17);
-            this.label35.TabIndex = 44;
-            this.label35.Text = "Add a cardboard to an existing Customer :";
-            // 
-            // comboBox8
-            // 
-            this.comboBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(143, 45);
-            this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(286, 25);
-            this.comboBox8.TabIndex = 12;
-            this.comboBox8.Text = "- Select customer...";
-            // 
-            // button3
-            // 
-            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(296, 280);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(88, 32);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Cancel";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
             // SaveBtn2
             // 
             this.SaveBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -932,34 +1131,45 @@
             this.SaveBtn2.UseVisualStyleBackColor = true;
             this.SaveBtn2.Click += new System.EventHandler(this.SaveBtn2_Click);
             // 
-            // textBox4
+            // label33
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(143, 237);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(286, 23);
-            this.textBox4.TabIndex = 16;
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(54, 143);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(45, 17);
+            this.label33.TabIndex = 47;
+            this.label33.Text = "Form :";
             // 
-            // label36
+            // button3
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(54, 239);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(82, 17);
-            this.label36.TabIndex = 3;
-            this.label36.Text = "Dimensions :";
+            this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(296, 280);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(88, 32);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "Cancel";
+            this.button3.UseVisualStyleBackColor = true;
             // 
-            // label38
+            // label34
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(54, 49);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(71, 17);
-            this.label38.TabIndex = 27;
-            this.label38.Text = "Customer :";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(54, 192);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(43, 17);
+            this.label34.TabIndex = 45;
+            this.label34.Text = "Type :";
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Location = new System.Drawing.Point(143, 45);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(286, 25);
+            this.comboBox8.TabIndex = 12;
+            this.comboBox8.Text = "- Select customer...";
             // 
             // addPnl
             // 
@@ -970,6 +1180,17 @@
             this.addPnl.Size = new System.Drawing.Size(528, 348);
             this.addPnl.TabIndex = 45;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.SlateGray;
+            this.panel4.Controls.Add(this.label22);
+            this.panel4.Controls.Add(this.sfBtn);
+            this.panel4.Controls.Add(this.fpBtn);
+            this.panel4.Location = new System.Drawing.Point(40, 49);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(443, 234);
+            this.panel4.TabIndex = 46;
+            // 
             // label22
             // 
             this.label22.AutoSize = true;
@@ -979,6 +1200,40 @@
             this.label22.Size = new System.Drawing.Size(218, 17);
             this.label22.TabIndex = 45;
             this.label22.Text = "Choose from the following options :";
+            // 
+            // sfBtn
+            // 
+            this.sfBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.sfBtn.FlatAppearance.BorderSize = 0;
+            this.sfBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sfBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.sfBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtdddd;
+            this.sfBtn.Location = new System.Drawing.Point(249, 60);
+            this.sfBtn.Name = "sfBtn";
+            this.sfBtn.Size = new System.Drawing.Size(118, 134);
+            this.sfBtn.TabIndex = 30;
+            this.sfBtn.Text = "CardBoard (SF)";
+            this.sfBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.sfBtn.UseVisualStyleBackColor = false;
+            this.sfBtn.Click += new System.EventHandler(this.sfBtn_Click);
+            // 
+            // fpBtn
+            // 
+            this.fpBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.fpBtn.FlatAppearance.BorderSize = 0;
+            this.fpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fpBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fpBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.fpBtn.Image = global::FP_Gen_1._0.Properties.Resources.box__6_;
+            this.fpBtn.Location = new System.Drawing.Point(74, 60);
+            this.fpBtn.Name = "fpBtn";
+            this.fpBtn.Size = new System.Drawing.Size(118, 134);
+            this.fpBtn.TabIndex = 31;
+            this.fpBtn.Text = "Final Product (FP)";
+            this.fpBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.fpBtn.UseVisualStyleBackColor = false;
+            this.fpBtn.Click += new System.EventHandler(this.fpBtn_Click);
             // 
             // SF
             // 
@@ -1125,6 +1380,37 @@
             this.adrTxtBx2.Size = new System.Drawing.Size(121, 23);
             this.adrTxtBx2.TabIndex = 66;
             this.adrTxtBx2.TextChanged += new System.EventHandler(this.adrTxtBx2_TextChanged);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.SlateGray;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Control;
+            this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.button8.Location = new System.Drawing.Point(225, 59);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 35);
+            this.button8.TabIndex = 63;
+            this.button8.Text = "+";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.sfAddItBtn_Click_1);
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Control;
+            this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.button9.Location = new System.Drawing.Point(225, 18);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(35, 35);
+            this.button9.TabIndex = 62;
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.sfAddCusBtn_Click_1);
             // 
             // comboBox4
             // 
@@ -1303,6 +1589,37 @@
             this.pfAdrTxtBx.Size = new System.Drawing.Size(121, 23);
             this.pfAdrTxtBx.TabIndex = 48;
             // 
+            // printAddBtn2
+            // 
+            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
+            this.printAddBtn2.FlatAppearance.BorderSize = 0;
+            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.printAddBtn2.Location = new System.Drawing.Point(225, 88);
+            this.printAddBtn2.Name = "printAddBtn2";
+            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn2.TabIndex = 45;
+            this.printAddBtn2.Text = "+";
+            this.printAddBtn2.UseVisualStyleBackColor = false;
+            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
+            // 
+            // printAddBtn1
+            // 
+            this.printAddBtn1.FlatAppearance.BorderSize = 0;
+            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.printAddBtn1.Location = new System.Drawing.Point(225, 47);
+            this.printAddBtn1.Name = "printAddBtn1";
+            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn1.TabIndex = 44;
+            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn1.UseVisualStyleBackColor = true;
+            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
+            // 
             // prevBtn
             // 
             this.prevBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1355,323 +1672,6 @@
             this.label1.TabIndex = 46;
             this.label1.Text = "Customer :";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SlateGray;
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.addCusSaveBtn);
-            this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.addCusCancelBtn);
-            this.panel3.Location = new System.Drawing.Point(35, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(454, 224);
-            this.panel3.TabIndex = 38;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.SlateGray;
-            this.panel4.Controls.Add(this.label22);
-            this.panel4.Controls.Add(this.sfBtn);
-            this.panel4.Controls.Add(this.fpBtn);
-            this.panel4.Location = new System.Drawing.Point(40, 49);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(443, 234);
-            this.panel4.TabIndex = 46;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.SlateGray;
-            this.panel5.Controls.Add(this.label35);
-            this.panel5.Controls.Add(this.textBox7);
-            this.panel5.Controls.Add(this.label38);
-            this.panel5.Controls.Add(this.label41);
-            this.panel5.Controls.Add(this.label36);
-            this.panel5.Controls.Add(this.comboBox6);
-            this.panel5.Controls.Add(this.textBox4);
-            this.panel5.Controls.Add(this.comboBox7);
-            this.panel5.Controls.Add(this.SaveBtn2);
-            this.panel5.Controls.Add(this.label33);
-            this.panel5.Controls.Add(this.button3);
-            this.panel5.Controls.Add(this.label34);
-            this.panel5.Controls.Add(this.comboBox8);
-            this.panel5.Location = new System.Drawing.Point(22, 13);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(484, 318);
-            this.panel5.TabIndex = 50;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.SlateGray;
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.comboBox2);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.addItCancelBtn);
-            this.panel6.Controls.Add(this.textBox2);
-            this.panel6.Controls.Add(this.saveBtn);
-            this.panel6.Location = new System.Drawing.Point(35, 57);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(461, 234);
-            this.panel6.TabIndex = 45;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.SlateGray;
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.panel1);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Location = new System.Drawing.Point(30, 58);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(461, 224);
-            this.panel7.TabIndex = 6;
-            // 
-            // sfBtn
-            // 
-            this.sfBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.sfBtn.FlatAppearance.BorderSize = 0;
-            this.sfBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sfBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.sfBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtdddd;
-            this.sfBtn.Location = new System.Drawing.Point(249, 60);
-            this.sfBtn.Name = "sfBtn";
-            this.sfBtn.Size = new System.Drawing.Size(118, 134);
-            this.sfBtn.TabIndex = 30;
-            this.sfBtn.Text = "CardBoard (SF)";
-            this.sfBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.sfBtn.UseVisualStyleBackColor = false;
-            this.sfBtn.Click += new System.EventHandler(this.sfBtn_Click);
-            // 
-            // fpBtn
-            // 
-            this.fpBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.fpBtn.FlatAppearance.BorderSize = 0;
-            this.fpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fpBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.fpBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.fpBtn.Image = global::FP_Gen_1._0.Properties.Resources.box__6_;
-            this.fpBtn.Location = new System.Drawing.Point(74, 60);
-            this.fpBtn.Name = "fpBtn";
-            this.fpBtn.Size = new System.Drawing.Size(118, 134);
-            this.fpBtn.TabIndex = 31;
-            this.fpBtn.Text = "Final Product (FP)";
-            this.fpBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.fpBtn.UseVisualStyleBackColor = false;
-            this.fpBtn.Click += new System.EventHandler(this.fpBtn_Click);
-            // 
-            // hisBtn
-            // 
-            this.hisBtn.FlatAppearance.BorderSize = 0;
-            this.hisBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hisBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.hisBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.hisBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__1_;
-            this.hisBtn.Location = new System.Drawing.Point(0, 107);
-            this.hisBtn.Name = "hisBtn";
-            this.hisBtn.Size = new System.Drawing.Size(196, 33);
-            this.hisBtn.TabIndex = 29;
-            this.hisBtn.Text = " History";
-            this.hisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.hisBtn.UseVisualStyleBackColor = true;
-            this.hisBtn.Click += new System.EventHandler(this.hisBtn_Click);
-            // 
-            // button5
-            // 
-            this.button5.FlatAppearance.BorderSize = 0;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ForeColor = System.Drawing.SystemColors.Control;
-            this.button5.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_5_;
-            this.button5.Location = new System.Drawing.Point(0, 225);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 33);
-            this.button5.TabIndex = 27;
-            this.button5.Text = " New Customer";
-            this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // extBtn
-            // 
-            this.extBtn.FlatAppearance.BorderSize = 0;
-            this.extBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.extBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.extBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.extBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_6_;
-            this.extBtn.Location = new System.Drawing.Point(0, 343);
-            this.extBtn.Name = "extBtn";
-            this.extBtn.Size = new System.Drawing.Size(196, 33);
-            this.extBtn.TabIndex = 2;
-            this.extBtn.Text = " Exit";
-            this.extBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.extBtn.UseVisualStyleBackColor = true;
-            this.extBtn.Click += new System.EventHandler(this.extBtn_Click);
-            // 
-            // abtBtn
-            // 
-            this.abtBtn.FlatAppearance.BorderSize = 0;
-            this.abtBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.abtBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.abtBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.abtBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_8_;
-            this.abtBtn.Location = new System.Drawing.Point(0, 304);
-            this.abtBtn.Name = "abtBtn";
-            this.abtBtn.Size = new System.Drawing.Size(218, 33);
-            this.abtBtn.TabIndex = 4;
-            this.abtBtn.Text = " About App";
-            this.abtBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.abtBtn.UseVisualStyleBackColor = true;
-            this.abtBtn.Click += new System.EventHandler(this.abtBtn_Click);
-            // 
-            // listBtn
-            // 
-            this.listBtn.FlatAppearance.BorderSize = 0;
-            this.listBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.listBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.listBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_7_;
-            this.listBtn.Location = new System.Drawing.Point(0, 185);
-            this.listBtn.Name = "listBtn";
-            this.listBtn.Size = new System.Drawing.Size(218, 33);
-            this.listBtn.TabIndex = 21;
-            this.listBtn.Text = " Item List";
-            this.listBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.listBtn.UseVisualStyleBackColor = true;
-            this.listBtn.Click += new System.EventHandler(this.listBtn_Click);
-            // 
-            // addBtn
-            // 
-            this.addBtn.FlatAppearance.BorderSize = 0;
-            this.addBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.addBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.addBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtoolsff;
-            this.addBtn.Location = new System.Drawing.Point(0, 265);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(209, 33);
-            this.addBtn.TabIndex = 5;
-            this.addBtn.Text = " New Item";
-            this.addBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.addBtn.UseVisualStyleBackColor = true;
-            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
-            // 
-            // printShBtn
-            // 
-            this.printShBtn.FlatAppearance.BorderSize = 0;
-            this.printShBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printShBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printShBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.printShBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_2_;
-            this.printShBtn.Location = new System.Drawing.Point(0, 146);
-            this.printShBtn.Name = "printShBtn";
-            this.printShBtn.Size = new System.Drawing.Size(229, 33);
-            this.printShBtn.TabIndex = 17;
-            this.printShBtn.Text = " Print Sheet";
-            this.printShBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.printShBtn.UseVisualStyleBackColor = true;
-            this.printShBtn.Click += new System.EventHandler(this.printShBtn_Click);
-            // 
-            // printAddBtn2
-            // 
-            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
-            this.printAddBtn2.FlatAppearance.BorderSize = 0;
-            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.printAddBtn2.Location = new System.Drawing.Point(225, 88);
-            this.printAddBtn2.Name = "printAddBtn2";
-            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn2.TabIndex = 45;
-            this.printAddBtn2.Text = "+";
-            this.printAddBtn2.UseVisualStyleBackColor = false;
-            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
-            // 
-            // printAddBtn1
-            // 
-            this.printAddBtn1.FlatAppearance.BorderSize = 0;
-            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.printAddBtn1.Location = new System.Drawing.Point(225, 47);
-            this.printAddBtn1.Name = "printAddBtn1";
-            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn1.TabIndex = 44;
-            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.printAddBtn1.UseVisualStyleBackColor = true;
-            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
-            // 
-            // button8
-            // 
-            this.button8.BackColor = System.Drawing.Color.SlateGray;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.button8.Location = new System.Drawing.Point(225, 59);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(35, 35);
-            this.button8.TabIndex = 63;
-            this.button8.Text = "+";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.sfAddItBtn_Click_1);
-            // 
-            // button9
-            // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.button9.Location = new System.Drawing.Point(225, 18);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 35);
-            this.button9.TabIndex = 62;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.sfAddCusBtn_Click_1);
-            // 
-            // prntSFBtn
-            // 
-            this.prntSFBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.prntSFBtn.FlatAppearance.BorderSize = 0;
-            this.prntSFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prntSFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prntSFBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.prntSFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_17_;
-            this.prntSFBtn.Location = new System.Drawing.Point(258, 19);
-            this.prntSFBtn.Name = "prntSFBtn";
-            this.prntSFBtn.Size = new System.Drawing.Size(236, 49);
-            this.prntSFBtn.TabIndex = 43;
-            this.prntSFBtn.Text = " Cardboard (SF)";
-            this.prntSFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.prntSFBtn.UseVisualStyleBackColor = false;
-            this.prntSFBtn.Click += new System.EventHandler(this.prntSFBtn_Click);
-            // 
-            // prntPFBtn
-            // 
-            this.prntPFBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.prntPFBtn.FlatAppearance.BorderSize = 0;
-            this.prntPFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prntPFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prntPFBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.prntPFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_16_;
-            this.prntPFBtn.Location = new System.Drawing.Point(24, 19);
-            this.prntPFBtn.Name = "prntPFBtn";
-            this.prntPFBtn.Size = new System.Drawing.Size(236, 48);
-            this.prntPFBtn.TabIndex = 30;
-            this.prntPFBtn.Text = " Final Product (PF)";
-            this.prntPFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.prntPFBtn.UseVisualStyleBackColor = false;
-            this.prntPFBtn.Click += new System.EventHandler(this.prntPFBtn_Click);
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1701,31 +1701,31 @@
             this.topPnl.ResumeLayout(false);
             this.topPnl.PerformLayout();
             this.addPF.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
             this.listPnl.ResumeLayout(false);
             this.listPnl.PerformLayout();
             this.abtPnl.ResumeLayout(false);
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.addCusPnl.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.hisPnl.ResumeLayout(false);
             this.hisPnl.PerformLayout();
             this.printPnl.ResumeLayout(false);
             this.addSF.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.addPnl.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.SF.ResumeLayout(false);
             this.SF.PerformLayout();
             this.PF.ResumeLayout(false);
             this.PF.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
 
         }

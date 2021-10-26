@@ -473,13 +473,13 @@
             // 
             // comboBox2
             // 
+            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Location = new System.Drawing.Point(134, 76);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(349, 25);
             this.comboBox2.TabIndex = 12;
-            this.comboBox2.Text = "- Select customer...";
             // 
             // label11
             // 
@@ -873,6 +873,7 @@
             // 
             // comboBox6
             // 
+            this.comboBox6.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox6.FormattingEnabled = true;
             this.comboBox6.Items.AddRange(new object[] {
@@ -885,7 +886,6 @@
             this.comboBox6.Name = "comboBox6";
             this.comboBox6.Size = new System.Drawing.Size(357, 25);
             this.comboBox6.TabIndex = 15;
-            this.comboBox6.Text = "- Select type...";
             // 
             // textBox4
             // 
@@ -897,6 +897,7 @@
             // 
             // comboBox7
             // 
+            this.comboBox7.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox7.FormattingEnabled = true;
             this.comboBox7.Items.AddRange(new object[] {
@@ -909,7 +910,6 @@
             this.comboBox7.Name = "comboBox7";
             this.comboBox7.Size = new System.Drawing.Size(358, 25);
             this.comboBox7.TabIndex = 14;
-            this.comboBox7.Text = "- Select form...";
             // 
             // SaveBtn2
             // 
@@ -954,13 +954,13 @@
             // 
             // comboBox8
             // 
+            this.comboBox8.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox8.FormattingEnabled = true;
             this.comboBox8.Location = new System.Drawing.Point(143, 67);
             this.comboBox8.Name = "comboBox8";
             this.comboBox8.Size = new System.Drawing.Size(356, 25);
             this.comboBox8.TabIndex = 12;
-            this.comboBox8.Text = "- Select customer...";
             // 
             // addPnl
             // 
@@ -1054,13 +1054,13 @@
             // 
             // pfItemBox
             // 
+            this.pfItemBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pfItemBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pfItemBox.FormattingEnabled = true;
             this.pfItemBox.Location = new System.Drawing.Point(88, 185);
             this.pfItemBox.Name = "pfItemBox";
             this.pfItemBox.Size = new System.Drawing.Size(158, 25);
             this.pfItemBox.TabIndex = 41;
-            this.pfItemBox.Text = "- Select Item...";
             this.pfItemBox.SelectedIndexChanged += new System.EventHandler(this.pfItemBox_SelectedIndexChanged_1);
             // 
             // pfQuaTxtBox
@@ -1196,13 +1196,13 @@
             // 
             // pfCusBox
             // 
+            this.pfCusBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.pfCusBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pfCusBox.FormattingEnabled = true;
             this.pfCusBox.Location = new System.Drawing.Point(89, 73);
             this.pfCusBox.Name = "pfCusBox";
             this.pfCusBox.Size = new System.Drawing.Size(408, 25);
             this.pfCusBox.TabIndex = 40;
-            this.pfCusBox.Text = "- Select customer...";
             this.pfCusBox.SelectedIndexChanged += new System.EventHandler(this.pfCusBox_SelectedIndexChanged_1);
             // 
             // label2
@@ -1473,13 +1473,13 @@
             // 
             // comboBox4
             // 
+            this.comboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
             this.comboBox4.Location = new System.Drawing.Point(91, 131);
             this.comboBox4.Name = "comboBox4";
             this.comboBox4.Size = new System.Drawing.Size(156, 25);
             this.comboBox4.TabIndex = 59;
-            this.comboBox4.Text = "- Select Item...";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.sfItemBox_SelectedIndexChanged);
             // 
             // sfPrvBtn
@@ -1505,13 +1505,13 @@
             // 
             // comboBox5
             // 
+            this.comboBox5.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
             this.comboBox5.Location = new System.Drawing.Point(89, 73);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(158, 25);
             this.comboBox5.TabIndex = 58;
-            this.comboBox5.Text = "- Select customer...";
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.sfCusBox_SelectedIndexChanged);
             // 
             // label32

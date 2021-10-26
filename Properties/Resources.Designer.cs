@@ -73,6 +73,56 @@ namespace FP_Gen_1._0.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap box__3_ {
+            get {
+                object obj = ResourceManager.GetObject("box (3)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box__4_ {
+            get {
+                object obj = ResourceManager.GetObject("box (4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box__5_ {
+            get {
+                object obj = ResourceManager.GetObject("box (5)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap box__6_ {
+            get {
+                object obj = ResourceManager.GetObject("box (6)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtdddd {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtdddd", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap output_onlinepngtools__1_ {
             get {
                 object obj = ResourceManager.GetObject("output-onlinepngtools (1)", resourceCulture);
@@ -116,6 +166,86 @@ namespace FP_Gen_1._0.Properties {
         internal static System.Drawing.Bitmap output_onlinepngtools__13_ {
             get {
                 object obj = ResourceManager.GetObject("output-onlinepngtools (13)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__14_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (14)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__15_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (15)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__16_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (16)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__17_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (17)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__18_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (18)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__19_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (19)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__19___1_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (19) (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap output_onlinepngtools__19___2_ {
+            get {
+                object obj = ResourceManager.GetObject("output-onlinepngtools (19) (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

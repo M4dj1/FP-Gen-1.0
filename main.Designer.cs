@@ -149,12 +149,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.printAddBtn2 = new System.Windows.Forms.Button();
-            this.printAddBtn1 = new System.Windows.Forms.Button();
-            this.prntSFBtn = new System.Windows.Forms.Button();
-            this.prntPFBtn = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
             this.sfBtn = new System.Windows.Forms.Button();
             this.fpBtn = new System.Windows.Forms.Button();
             this.hisBtn = new System.Windows.Forms.Button();
@@ -164,8 +160,12 @@
             this.listBtn = new System.Windows.Forms.Button();
             this.addBtn = new System.Windows.Forms.Button();
             this.printShBtn = new System.Windows.Forms.Button();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
+            this.printAddBtn2 = new System.Windows.Forms.Button();
+            this.printAddBtn1 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.prntSFBtn = new System.Windows.Forms.Button();
+            this.prntPFBtn = new System.Windows.Forms.Button();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
@@ -1402,101 +1402,33 @@
             this.panel5.Size = new System.Drawing.Size(484, 318);
             this.panel5.TabIndex = 50;
             // 
-            // button8
+            // panel6
             // 
-            this.button8.BackColor = System.Drawing.Color.SlateGray;
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.SystemColors.Control;
-            this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.button8.Location = new System.Drawing.Point(225, 59);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(35, 35);
-            this.button8.TabIndex = 63;
-            this.button8.Text = "+";
-            this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.sfAddItBtn_Click_1);
+            this.panel6.BackColor = System.Drawing.Color.SlateGray;
+            this.panel6.Controls.Add(this.label12);
+            this.panel6.Controls.Add(this.label13);
+            this.panel6.Controls.Add(this.comboBox2);
+            this.panel6.Controls.Add(this.label11);
+            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.label10);
+            this.panel6.Controls.Add(this.addItCancelBtn);
+            this.panel6.Controls.Add(this.textBox2);
+            this.panel6.Controls.Add(this.saveBtn);
+            this.panel6.Location = new System.Drawing.Point(35, 57);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(461, 234);
+            this.panel6.TabIndex = 45;
             // 
-            // button9
+            // panel7
             // 
-            this.button9.FlatAppearance.BorderSize = 0;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ForeColor = System.Drawing.SystemColors.Control;
-            this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.button9.Location = new System.Drawing.Point(225, 18);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(35, 35);
-            this.button9.TabIndex = 62;
-            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.sfAddCusBtn_Click_1);
-            // 
-            // printAddBtn2
-            // 
-            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
-            this.printAddBtn2.FlatAppearance.BorderSize = 0;
-            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.printAddBtn2.Location = new System.Drawing.Point(225, 88);
-            this.printAddBtn2.Name = "printAddBtn2";
-            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn2.TabIndex = 45;
-            this.printAddBtn2.Text = "+";
-            this.printAddBtn2.UseVisualStyleBackColor = false;
-            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
-            // 
-            // printAddBtn1
-            // 
-            this.printAddBtn1.FlatAppearance.BorderSize = 0;
-            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.printAddBtn1.Location = new System.Drawing.Point(225, 47);
-            this.printAddBtn1.Name = "printAddBtn1";
-            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn1.TabIndex = 44;
-            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.printAddBtn1.UseVisualStyleBackColor = true;
-            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
-            // 
-            // prntSFBtn
-            // 
-            this.prntSFBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.prntSFBtn.FlatAppearance.BorderSize = 0;
-            this.prntSFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prntSFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prntSFBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.prntSFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_17_;
-            this.prntSFBtn.Location = new System.Drawing.Point(258, 19);
-            this.prntSFBtn.Name = "prntSFBtn";
-            this.prntSFBtn.Size = new System.Drawing.Size(236, 49);
-            this.prntSFBtn.TabIndex = 43;
-            this.prntSFBtn.Text = " Cardboard (SF)";
-            this.prntSFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.prntSFBtn.UseVisualStyleBackColor = false;
-            this.prntSFBtn.Click += new System.EventHandler(this.prntSFBtn_Click);
-            // 
-            // prntPFBtn
-            // 
-            this.prntPFBtn.BackColor = System.Drawing.Color.MidnightBlue;
-            this.prntPFBtn.FlatAppearance.BorderSize = 0;
-            this.prntPFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.prntPFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prntPFBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.prntPFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_16_;
-            this.prntPFBtn.Location = new System.Drawing.Point(24, 19);
-            this.prntPFBtn.Name = "prntPFBtn";
-            this.prntPFBtn.Size = new System.Drawing.Size(236, 48);
-            this.prntPFBtn.TabIndex = 30;
-            this.prntPFBtn.Text = " Final Product (PF)";
-            this.prntPFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.prntPFBtn.UseVisualStyleBackColor = false;
-            this.prntPFBtn.Click += new System.EventHandler(this.prntPFBtn_Click);
+            this.panel7.BackColor = System.Drawing.Color.SlateGray;
+            this.panel7.Controls.Add(this.label9);
+            this.panel7.Controls.Add(this.panel1);
+            this.panel7.Controls.Add(this.label17);
+            this.panel7.Location = new System.Drawing.Point(30, 58);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(461, 224);
+            this.panel7.TabIndex = 6;
             // 
             // sfBtn
             // 
@@ -1505,7 +1437,7 @@
             this.sfBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.sfBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sfBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.sfBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_13_;
+            this.sfBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtdddd;
             this.sfBtn.Location = new System.Drawing.Point(249, 60);
             this.sfBtn.Name = "sfBtn";
             this.sfBtn.Size = new System.Drawing.Size(118, 134);
@@ -1522,7 +1454,7 @@
             this.fpBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.fpBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fpBtn.ForeColor = System.Drawing.SystemColors.Control;
-            this.fpBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_15_;
+            this.fpBtn.Image = global::FP_Gen_1._0.Properties.Resources.box__6_;
             this.fpBtn.Location = new System.Drawing.Point(74, 60);
             this.fpBtn.Name = "fpBtn";
             this.fpBtn.Size = new System.Drawing.Size(118, 134);
@@ -1644,33 +1576,101 @@
             this.printShBtn.UseVisualStyleBackColor = true;
             this.printShBtn.Click += new System.EventHandler(this.printShBtn_Click);
             // 
-            // panel6
+            // printAddBtn2
             // 
-            this.panel6.BackColor = System.Drawing.Color.SlateGray;
-            this.panel6.Controls.Add(this.label12);
-            this.panel6.Controls.Add(this.label13);
-            this.panel6.Controls.Add(this.comboBox2);
-            this.panel6.Controls.Add(this.label11);
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.label10);
-            this.panel6.Controls.Add(this.addItCancelBtn);
-            this.panel6.Controls.Add(this.textBox2);
-            this.panel6.Controls.Add(this.saveBtn);
-            this.panel6.Location = new System.Drawing.Point(35, 57);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(461, 234);
-            this.panel6.TabIndex = 45;
+            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
+            this.printAddBtn2.FlatAppearance.BorderSize = 0;
+            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.printAddBtn2.Location = new System.Drawing.Point(225, 88);
+            this.printAddBtn2.Name = "printAddBtn2";
+            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn2.TabIndex = 45;
+            this.printAddBtn2.Text = "+";
+            this.printAddBtn2.UseVisualStyleBackColor = false;
+            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
             // 
-            // panel7
+            // printAddBtn1
             // 
-            this.panel7.BackColor = System.Drawing.Color.SlateGray;
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.panel1);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Location = new System.Drawing.Point(30, 58);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(461, 224);
-            this.panel7.TabIndex = 6;
+            this.printAddBtn1.FlatAppearance.BorderSize = 0;
+            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.printAddBtn1.Location = new System.Drawing.Point(225, 47);
+            this.printAddBtn1.Name = "printAddBtn1";
+            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn1.TabIndex = 44;
+            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn1.UseVisualStyleBackColor = true;
+            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
+            // 
+            // button8
+            // 
+            this.button8.BackColor = System.Drawing.Color.SlateGray;
+            this.button8.FlatAppearance.BorderSize = 0;
+            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button8.ForeColor = System.Drawing.SystemColors.Control;
+            this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.button8.Location = new System.Drawing.Point(225, 59);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(35, 35);
+            this.button8.TabIndex = 63;
+            this.button8.Text = "+";
+            this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.sfAddItBtn_Click_1);
+            // 
+            // button9
+            // 
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.SystemColors.Control;
+            this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.button9.Location = new System.Drawing.Point(225, 18);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(35, 35);
+            this.button9.TabIndex = 62;
+            this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.sfAddCusBtn_Click_1);
+            // 
+            // prntSFBtn
+            // 
+            this.prntSFBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.prntSFBtn.FlatAppearance.BorderSize = 0;
+            this.prntSFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prntSFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prntSFBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.prntSFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_17_;
+            this.prntSFBtn.Location = new System.Drawing.Point(258, 19);
+            this.prntSFBtn.Name = "prntSFBtn";
+            this.prntSFBtn.Size = new System.Drawing.Size(236, 49);
+            this.prntSFBtn.TabIndex = 43;
+            this.prntSFBtn.Text = " Cardboard (SF)";
+            this.prntSFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.prntSFBtn.UseVisualStyleBackColor = false;
+            this.prntSFBtn.Click += new System.EventHandler(this.prntSFBtn_Click);
+            // 
+            // prntPFBtn
+            // 
+            this.prntPFBtn.BackColor = System.Drawing.Color.MidnightBlue;
+            this.prntPFBtn.FlatAppearance.BorderSize = 0;
+            this.prntPFBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.prntPFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prntPFBtn.ForeColor = System.Drawing.SystemColors.Control;
+            this.prntPFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_16_;
+            this.prntPFBtn.Location = new System.Drawing.Point(24, 19);
+            this.prntPFBtn.Name = "prntPFBtn";
+            this.prntPFBtn.Size = new System.Drawing.Size(236, 48);
+            this.prntPFBtn.TabIndex = 30;
+            this.prntPFBtn.Text = " Final Product (PF)";
+            this.prntPFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.prntPFBtn.UseVisualStyleBackColor = false;
+            this.prntPFBtn.Click += new System.EventHandler(this.prntPFBtn_Click);
             // 
             // main
             // 
@@ -1678,14 +1678,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
+            this.Controls.Add(this.addPnl);
+            this.Controls.Add(this.abtPnl);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.addPF);
             this.Controls.Add(this.addSF);
             this.Controls.Add(this.addCusPnl);

@@ -152,6 +152,19 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\output-onlinepngtools %2814%29.png" />
+    <None Include="Resources\output-onlinepngtools %2815%29.png" />
+    <None Include="Resources\output-onlinepngtools %2816%29.png" />
+    <None Include="Resources\output-onlinepngtools %2817%29.png" />
+    <None Include="Resources\output-onlinepngtools %2818%29.png" />
+    <None Include="Resources\output-onlinepngtools %2819%29.png" />
+    <None Include="Resources\output-onlinepngtools %2819%29 %281%29.png" />
+    <None Include="Resources\output-onlinepngtools %2819%29 %282%29.png" />
+    <None Include="Resources\box %283%29.png" />
+    <None Include="Resources\box %284%29.png" />
+    <None Include="Resources\box %285%29.png" />
+    <None Include="Resources\box %286%29.png" />
+    <None Include="Resources\output-onlinepngtdddd.png" />
     <Content Include="temp1.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

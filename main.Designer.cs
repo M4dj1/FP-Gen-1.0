@@ -61,47 +61,23 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.saveBtn = new System.Windows.Forms.Button();
             this.listPnl = new System.Windows.Forms.Panel();
+            this.sfGridView = new System.Windows.Forms.DataGridView();
+            this.pfGridView = new System.Windows.Forms.DataGridView();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
             this.label23 = new System.Windows.Forms.Label();
-            this.listView3 = new System.Windows.Forms.ListView();
-            this.cus = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.adr = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.tp = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.frm = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dim = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label7 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.name = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.address = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.item = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dimensions = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.abtPnl = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.addCusPnl = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.addCusSaveBtn = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.addCusCancelBtn = new System.Windows.Forms.Button();
             this.hisPnl = new System.Windows.Forms.Panel();
             this.label21 = new System.Windows.Forms.Label();
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.cus1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.adr1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.ite = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.dat = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl = new System.Windows.Forms.Panel();
             this.SFPnlBtn = new System.Windows.Forms.Panel();
@@ -128,6 +104,30 @@
             this.label22 = new System.Windows.Forms.Label();
             this.sfBtn = new System.Windows.Forms.Button();
             this.fpBtn = new System.Windows.Forms.Button();
+            this.PF = new System.Windows.Forms.Panel();
+            this.pfItemBox = new System.Windows.Forms.ComboBox();
+            this.pfQuaTxtBox = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.pfDimTxtBx = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.pfAdrTxtBx = new System.Windows.Forms.TextBox();
+            this.printAddBtn2 = new System.Windows.Forms.Button();
+            this.printAddBtn1 = new System.Windows.Forms.Button();
+            this.prevBtn = new System.Windows.Forms.Button();
+            this.printBtn = new System.Windows.Forms.Button();
+            this.pfCusBox = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.addCusSaveBtn = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.addCusCancelBtn = new System.Windows.Forms.Button();
             this.SF = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
             this.sfTypeTxtBox = new System.Windows.Forms.TextBox();
@@ -149,42 +149,34 @@
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
-            this.PF = new System.Windows.Forms.Panel();
-            this.pfItemBox = new System.Windows.Forms.ComboBox();
-            this.pfQuaTxtBox = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label27 = new System.Windows.Forms.Label();
-            this.pfDimTxtBx = new System.Windows.Forms.TextBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.pfAdrTxtBx = new System.Windows.Forms.TextBox();
-            this.printAddBtn2 = new System.Windows.Forms.Button();
-            this.printAddBtn1 = new System.Windows.Forms.Button();
-            this.prevBtn = new System.Windows.Forms.Button();
-            this.printBtn = new System.Windows.Forms.Button();
-            this.pfCusBox = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.addCusPnl = new System.Windows.Forms.Panel();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
             this.addPF.SuspendLayout();
             this.panel6.SuspendLayout();
             this.listPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sfGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pfGridView)).BeginInit();
             this.abtPnl.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.addCusPnl.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.hisPnl.SuspendLayout();
             this.printPnl.SuspendLayout();
             this.addSF.SuspendLayout();
             this.panel5.SuspendLayout();
             this.addPnl.SuspendLayout();
             this.panel4.SuspendLayout();
-            this.SF.SuspendLayout();
             this.PF.SuspendLayout();
+            this.SF.SuspendLayout();
+            this.addCusPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel8.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPnl
@@ -208,7 +200,7 @@
             this.mainPnl.Dock = System.Windows.Forms.DockStyle.Left;
             this.mainPnl.Location = new System.Drawing.Point(0, 0);
             this.mainPnl.Name = "mainPnl";
-            this.mainPnl.Size = new System.Drawing.Size(177, 388);
+            this.mainPnl.Size = new System.Drawing.Size(177, 499);
             this.mainPnl.TabIndex = 15;
             // 
             // hisBtnPnl
@@ -262,7 +254,7 @@
             // extBtnPnl
             // 
             this.extBtnPnl.BackColor = System.Drawing.Color.LightCoral;
-            this.extBtnPnl.Location = new System.Drawing.Point(0, 343);
+            this.extBtnPnl.Location = new System.Drawing.Point(0, 466);
             this.extBtnPnl.Name = "extBtnPnl";
             this.extBtnPnl.Size = new System.Drawing.Size(10, 34);
             this.extBtnPnl.TabIndex = 0;
@@ -274,7 +266,7 @@
             this.extBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.extBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.extBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_6_;
-            this.extBtn.Location = new System.Drawing.Point(0, 343);
+            this.extBtn.Location = new System.Drawing.Point(0, 466);
             this.extBtn.Name = "extBtn";
             this.extBtn.Size = new System.Drawing.Size(196, 33);
             this.extBtn.TabIndex = 2;
@@ -418,7 +410,7 @@
             this.topPnl.Controls.Add(this.label15);
             this.topPnl.Location = new System.Drawing.Point(177, 0);
             this.topPnl.Name = "topPnl";
-            this.topPnl.Size = new System.Drawing.Size(528, 41);
+            this.topPnl.Size = new System.Drawing.Size(615, 41);
             this.topPnl.TabIndex = 21;
             // 
             // label15
@@ -439,7 +431,7 @@
             this.addPF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addPF.Location = new System.Drawing.Point(177, 40);
             this.addPF.Name = "addPF";
-            this.addPF.Size = new System.Drawing.Size(528, 348);
+            this.addPF.Size = new System.Drawing.Size(615, 460);
             this.addPF.TabIndex = 21;
             // 
             // panel6
@@ -456,16 +448,16 @@
             this.panel6.Controls.Add(this.saveBtn);
             this.panel6.Location = new System.Drawing.Point(35, 57);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(461, 234);
+            this.panel6.Size = new System.Drawing.Size(539, 305);
             this.panel6.TabIndex = 45;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(13, 20);
+            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(13, 29);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(229, 17);
+            this.label12.Size = new System.Drawing.Size(243, 17);
             this.label12.TabIndex = 44;
             this.label12.Text = "Add an Item to an existing Customer :";
             // 
@@ -473,7 +465,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(49, 63);
+            this.label13.Location = new System.Drawing.Point(49, 80);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(71, 17);
             this.label13.TabIndex = 27;
@@ -483,9 +475,9 @@
             // 
             this.comboBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(134, 59);
+            this.comboBox2.Location = new System.Drawing.Point(134, 76);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(286, 25);
+            this.comboBox2.Size = new System.Drawing.Size(349, 25);
             this.comboBox2.TabIndex = 12;
             this.comboBox2.Text = "- Select customer...";
             // 
@@ -493,7 +485,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(51, 103);
+            this.label11.Location = new System.Drawing.Point(51, 134);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(41, 17);
             this.label11.TabIndex = 28;
@@ -502,16 +494,16 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(134, 101);
+            this.textBox1.Location = new System.Drawing.Point(134, 132);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 23);
+            this.textBox1.Size = new System.Drawing.Size(349, 23);
             this.textBox1.TabIndex = 13;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(49, 143);
+            this.label10.Location = new System.Drawing.Point(49, 188);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(82, 17);
             this.label10.TabIndex = 3;
@@ -520,7 +512,7 @@
             // addItCancelBtn
             // 
             this.addItCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addItCancelBtn.Location = new System.Drawing.Point(274, 186);
+            this.addItCancelBtn.Location = new System.Drawing.Point(322, 242);
             this.addItCancelBtn.Name = "addItCancelBtn";
             this.addItCancelBtn.Size = new System.Drawing.Size(88, 32);
             this.addItCancelBtn.TabIndex = 18;
@@ -531,15 +523,15 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(134, 141);
+            this.textBox2.Location = new System.Drawing.Point(134, 186);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 23);
+            this.textBox2.Size = new System.Drawing.Size(349, 23);
             this.textBox2.TabIndex = 16;
             // 
             // saveBtn
             // 
             this.saveBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveBtn.Location = new System.Drawing.Point(94, 186);
+            this.saveBtn.Location = new System.Drawing.Point(142, 242);
             this.saveBtn.Name = "saveBtn";
             this.saveBtn.Size = new System.Drawing.Size(88, 32);
             this.saveBtn.TabIndex = 17;
@@ -549,23 +541,39 @@
             // 
             // listPnl
             // 
+            this.listPnl.Controls.Add(this.sfGridView);
+            this.listPnl.Controls.Add(this.pfGridView);
             this.listPnl.Controls.Add(this.button6);
             this.listPnl.Controls.Add(this.button7);
             this.listPnl.Controls.Add(this.label23);
-            this.listPnl.Controls.Add(this.listView3);
             this.listPnl.Controls.Add(this.label7);
             this.listPnl.Controls.Add(this.button2);
             this.listPnl.Controls.Add(this.button1);
-            this.listPnl.Controls.Add(this.listView1);
             this.listPnl.Location = new System.Drawing.Point(178, 41);
             this.listPnl.Name = "listPnl";
-            this.listPnl.Size = new System.Drawing.Size(527, 347);
+            this.listPnl.Size = new System.Drawing.Size(614, 458);
             this.listPnl.TabIndex = 5;
+            // 
+            // sfGridView
+            // 
+            this.sfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sfGridView.Location = new System.Drawing.Point(19, 253);
+            this.sfGridView.Name = "sfGridView";
+            this.sfGridView.Size = new System.Drawing.Size(485, 187);
+            this.sfGridView.TabIndex = 35;
+            // 
+            // pfGridView
+            // 
+            this.pfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pfGridView.Location = new System.Drawing.Point(20, 31);
+            this.pfGridView.Name = "pfGridView";
+            this.pfGridView.Size = new System.Drawing.Size(485, 187);
+            this.pfGridView.TabIndex = 34;
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(437, 260);
+            this.button6.Location = new System.Drawing.Point(525, 289);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(76, 23);
             this.button6.TabIndex = 33;
@@ -575,7 +583,7 @@
             // button7
             // 
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(437, 224);
+            this.button7.Location = new System.Drawing.Point(525, 253);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(76, 23);
             this.button7.TabIndex = 32;
@@ -586,61 +594,17 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(10, 173);
+            this.label23.Location = new System.Drawing.Point(10, 227);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(127, 17);
             this.label23.TabIndex = 31;
             this.label23.Text = "Cardboard (SF) List :";
             // 
-            // listView3
-            // 
-            this.listView3.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listView3.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.cus,
-            this.adr,
-            this.tp,
-            this.frm,
-            this.dim});
-            this.listView3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView3.GridLines = true;
-            this.listView3.HideSelection = false;
-            this.listView3.Location = new System.Drawing.Point(20, 199);
-            this.listView3.Name = "listView3";
-            this.listView3.Size = new System.Drawing.Size(403, 127);
-            this.listView3.TabIndex = 30;
-            this.listView3.UseCompatibleStateImageBehavior = false;
-            this.listView3.View = System.Windows.Forms.View.Details;
-            // 
-            // cus
-            // 
-            this.cus.Text = "Customer";
-            this.cus.Width = 80;
-            // 
-            // adr
-            // 
-            this.adr.Text = "Address";
-            this.adr.Width = 80;
-            // 
-            // tp
-            // 
-            this.tp.Text = "Type";
-            this.tp.Width = 80;
-            // 
-            // frm
-            // 
-            this.frm.Text = "Form";
-            this.frm.Width = 80;
-            // 
-            // dim
-            // 
-            this.dim.Text = "dimensions";
-            this.dim.Width = 79;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(10, 10);
+            this.label7.Location = new System.Drawing.Point(10, 7);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(136, 17);
             this.label7.TabIndex = 29;
@@ -649,7 +613,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(437, 94);
+            this.button2.Location = new System.Drawing.Point(525, 67);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 23);
             this.button2.TabIndex = 1;
@@ -659,7 +623,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(437, 58);
+            this.button1.Location = new System.Drawing.Point(525, 31);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(76, 23);
             this.button1.TabIndex = 0;
@@ -667,70 +631,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // listView1
-            // 
-            this.listView1.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.name,
-            this.address,
-            this.item,
-            this.dimensions});
-            this.listView1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(21, 34);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(403, 127);
-            this.listView1.TabIndex = 27;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // name
-            // 
-            this.name.Text = "Customer";
-            this.name.Width = 100;
-            // 
-            // address
-            // 
-            this.address.Text = "Address";
-            this.address.Width = 100;
-            // 
-            // item
-            // 
-            this.item.Text = "Item";
-            this.item.Width = 100;
-            // 
-            // dimensions
-            // 
-            this.dimensions.Text = "dimensions";
-            this.dimensions.Width = 99;
-            // 
             // abtPnl
             // 
-            this.abtPnl.Controls.Add(this.panel7);
+            this.abtPnl.Controls.Add(this.panel3);
             this.abtPnl.Location = new System.Drawing.Point(179, 41);
             this.abtPnl.Name = "abtPnl";
-            this.abtPnl.Size = new System.Drawing.Size(523, 346);
+            this.abtPnl.Size = new System.Drawing.Size(613, 459);
             this.abtPnl.TabIndex = 21;
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.SlateGray;
-            this.panel7.Controls.Add(this.label9);
-            this.panel7.Controls.Add(this.panel1);
-            this.panel7.Controls.Add(this.label17);
-            this.panel7.Location = new System.Drawing.Point(30, 58);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(461, 224);
-            this.panel7.TabIndex = 6;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(96, 27);
+            this.label9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label9.Location = new System.Drawing.Point(99, 25);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(278, 17);
+            this.label9.Size = new System.Drawing.Size(289, 17);
             this.label9.TabIndex = 0;
             this.label9.Text = "Designed and Coded By Madji Abderrahmane";
             // 
@@ -738,12 +654,13 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.MidnightBlue;
             this.panel1.Controls.Add(this.label20);
+            this.panel1.Controls.Add(this.label17);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Controls.Add(this.label19);
             this.panel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(150, 100);
+            this.panel1.Location = new System.Drawing.Point(105, 59);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(173, 92);
+            this.panel1.Size = new System.Drawing.Size(279, 136);
             this.panel1.TabIndex = 5;
             // 
             // label20
@@ -751,7 +668,7 @@
             this.label20.AutoSize = true;
             this.label20.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label20.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(14, 16);
+            this.label20.Location = new System.Drawing.Point(68, 49);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(144, 17);
             this.label20.TabIndex = 4;
@@ -762,7 +679,7 @@
             this.label18.AutoSize = true;
             this.label18.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label18.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(22, 39);
+            this.label18.Location = new System.Drawing.Point(76, 72);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(127, 17);
             this.label18.TabIndex = 2;
@@ -773,7 +690,7 @@
             this.label19.AutoSize = true;
             this.label19.BackColor = System.Drawing.Color.DeepSkyBlue;
             this.label19.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(45, 62);
+            this.label19.Location = new System.Drawing.Point(99, 95);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(78, 17);
             this.label19.TabIndex = 3;
@@ -783,157 +700,31 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(14, 62);
+            this.label17.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label17.Location = new System.Drawing.Point(13, 10);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(86, 17);
             this.label17.TabIndex = 1;
             this.label17.Text = "Contact Info :";
             // 
-            // addCusPnl
-            // 
-            this.addCusPnl.Controls.Add(this.panel3);
-            this.addCusPnl.Location = new System.Drawing.Point(177, 38);
-            this.addCusPnl.Name = "addCusPnl";
-            this.addCusPnl.Size = new System.Drawing.Size(528, 348);
-            this.addCusPnl.TabIndex = 4;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SlateGray;
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Controls.Add(this.label16);
-            this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.addCusSaveBtn);
-            this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.addCusCancelBtn);
-            this.panel3.Location = new System.Drawing.Point(35, 49);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(454, 224);
-            this.panel3.TabIndex = 38;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(12, 20);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(299, 17);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "Please enter the customer name and his address :";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(54, 72);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(71, 17);
-            this.label16.TabIndex = 27;
-            this.label16.Text = "Customer :";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(126, 69);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(286, 23);
-            this.textBox5.TabIndex = 8;
-            // 
-            // addCusSaveBtn
-            // 
-            this.addCusSaveBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCusSaveBtn.Location = new System.Drawing.Point(83, 167);
-            this.addCusSaveBtn.Name = "addCusSaveBtn";
-            this.addCusSaveBtn.Size = new System.Drawing.Size(88, 32);
-            this.addCusSaveBtn.TabIndex = 10;
-            this.addCusSaveBtn.Text = "Save";
-            this.addCusSaveBtn.UseVisualStyleBackColor = true;
-            this.addCusSaveBtn.Click += new System.EventHandler(this.addCusSaveBtn_Click);
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(126, 114);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(286, 23);
-            this.textBox6.TabIndex = 9;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(54, 119);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 17);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "Address :";
-            // 
-            // addCusCancelBtn
-            // 
-            this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCusCancelBtn.Location = new System.Drawing.Point(263, 167);
-            this.addCusCancelBtn.Name = "addCusCancelBtn";
-            this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
-            this.addCusCancelBtn.TabIndex = 11;
-            this.addCusCancelBtn.Text = "Cancel";
-            this.addCusCancelBtn.UseVisualStyleBackColor = true;
-            // 
             // hisPnl
             // 
+            this.hisPnl.Controls.Add(this.dataGridView1);
             this.hisPnl.Controls.Add(this.label21);
-            this.hisPnl.Controls.Add(this.listView2);
             this.hisPnl.Location = new System.Drawing.Point(178, 38);
             this.hisPnl.Name = "hisPnl";
-            this.hisPnl.Size = new System.Drawing.Size(527, 347);
+            this.hisPnl.Size = new System.Drawing.Size(614, 462);
             this.hisPnl.TabIndex = 44;
             // 
             // label21
             // 
             this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label21.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(16, 23);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(203, 17);
+            this.label21.Size = new System.Drawing.Size(217, 17);
             this.label21.TabIndex = 29;
             this.label21.Text = "History of previous Pallet Sheets :";
-            // 
-            // listView2
-            // 
-            this.listView2.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.cus1,
-            this.adr1,
-            this.ite,
-            this.dat});
-            this.listView2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(34, 59);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(455, 260);
-            this.listView2.TabIndex = 27;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // cus1
-            // 
-            this.cus1.Text = "Customer";
-            this.cus1.Width = 100;
-            // 
-            // adr1
-            // 
-            this.adr1.Text = "Address";
-            this.adr1.Width = 100;
-            // 
-            // ite
-            // 
-            this.ite.Text = "Item";
-            this.ite.Width = 100;
-            // 
-            // dat
-            // 
-            this.dat.Text = "Date";
-            this.dat.Width = 100;
             // 
             // timer3
             // 
@@ -948,15 +739,15 @@
             this.printPnl.Controls.Add(this.prntPFBtn);
             this.printPnl.Location = new System.Drawing.Point(177, 37);
             this.printPnl.Name = "printPnl";
-            this.printPnl.Size = new System.Drawing.Size(528, 351);
+            this.printPnl.Size = new System.Drawing.Size(615, 463);
             this.printPnl.TabIndex = 14;
             // 
             // SFPnlBtn
             // 
             this.SFPnlBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.SFPnlBtn.Location = new System.Drawing.Point(258, 58);
+            this.SFPnlBtn.Location = new System.Drawing.Point(298, 55);
             this.SFPnlBtn.Name = "SFPnlBtn";
-            this.SFPnlBtn.Size = new System.Drawing.Size(236, 10);
+            this.SFPnlBtn.Size = new System.Drawing.Size(279, 10);
             this.SFPnlBtn.TabIndex = 30;
             // 
             // prntSFBtn
@@ -967,9 +758,9 @@
             this.prntSFBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.prntSFBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.prntSFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_17_;
-            this.prntSFBtn.Location = new System.Drawing.Point(258, 19);
+            this.prntSFBtn.Location = new System.Drawing.Point(298, 19);
             this.prntSFBtn.Name = "prntSFBtn";
-            this.prntSFBtn.Size = new System.Drawing.Size(236, 49);
+            this.prntSFBtn.Size = new System.Drawing.Size(280, 49);
             this.prntSFBtn.TabIndex = 43;
             this.prntSFBtn.Text = " Cardboard (SF)";
             this.prntSFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -979,9 +770,9 @@
             // PFPnlBtn
             // 
             this.PFPnlBtn.BackColor = System.Drawing.Color.DeepSkyBlue;
-            this.PFPnlBtn.Location = new System.Drawing.Point(24, 58);
+            this.PFPnlBtn.Location = new System.Drawing.Point(24, 55);
             this.PFPnlBtn.Name = "PFPnlBtn";
-            this.PFPnlBtn.Size = new System.Drawing.Size(236, 10);
+            this.PFPnlBtn.Size = new System.Drawing.Size(276, 10);
             this.PFPnlBtn.TabIndex = 29;
             // 
             // prntPFBtn
@@ -994,7 +785,7 @@
             this.prntPFBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_16_;
             this.prntPFBtn.Location = new System.Drawing.Point(24, 19);
             this.prntPFBtn.Name = "prntPFBtn";
-            this.prntPFBtn.Size = new System.Drawing.Size(236, 48);
+            this.prntPFBtn.Size = new System.Drawing.Size(276, 48);
             this.prntPFBtn.TabIndex = 30;
             this.prntPFBtn.Text = " Final Product (PF)";
             this.prntPFBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -1007,7 +798,7 @@
             this.addSF.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addSF.Location = new System.Drawing.Point(176, 40);
             this.addSF.Name = "addSF";
-            this.addSF.Size = new System.Drawing.Size(528, 348);
+            this.addSF.Size = new System.Drawing.Size(616, 460);
             this.addSF.TabIndex = 48;
             // 
             // panel5
@@ -1028,14 +819,14 @@
             this.panel5.Controls.Add(this.comboBox8);
             this.panel5.Location = new System.Drawing.Point(22, 13);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(484, 318);
+            this.panel5.Size = new System.Drawing.Size(557, 414);
             this.panel5.TabIndex = 50;
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(11, 6);
+            this.label35.Location = new System.Drawing.Point(11, 22);
             this.label35.Name = "label35";
             this.label35.Size = new System.Drawing.Size(258, 17);
             this.label35.TabIndex = 44;
@@ -1044,16 +835,16 @@
             // textBox7
             // 
             this.textBox7.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(143, 94);
+            this.textBox7.Location = new System.Drawing.Point(143, 125);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(286, 23);
+            this.textBox7.Size = new System.Drawing.Size(356, 23);
             this.textBox7.TabIndex = 49;
             // 
             // label38
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.Location = new System.Drawing.Point(54, 49);
+            this.label38.Location = new System.Drawing.Point(54, 71);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(71, 17);
             this.label38.TabIndex = 27;
@@ -1064,7 +855,7 @@
             // 
             this.label41.AutoSize = true;
             this.label41.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(54, 98);
+            this.label41.Location = new System.Drawing.Point(54, 129);
             this.label41.Name = "label41";
             this.label41.Size = new System.Drawing.Size(41, 17);
             this.label41.TabIndex = 48;
@@ -1074,7 +865,7 @@
             // 
             this.label36.AutoSize = true;
             this.label36.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(54, 239);
+            this.label36.Location = new System.Drawing.Point(54, 307);
             this.label36.Name = "label36";
             this.label36.Size = new System.Drawing.Size(82, 17);
             this.label36.TabIndex = 3;
@@ -1090,18 +881,18 @@
             "TB/FL/KR",
             "TE/FL/KR",
             "KR/FL/KR"});
-            this.comboBox6.Location = new System.Drawing.Point(143, 189);
+            this.comboBox6.Location = new System.Drawing.Point(143, 244);
             this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(286, 25);
+            this.comboBox6.Size = new System.Drawing.Size(357, 25);
             this.comboBox6.TabIndex = 15;
             this.comboBox6.Text = "- Select type...";
             // 
             // textBox4
             // 
             this.textBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(143, 237);
+            this.textBox4.Location = new System.Drawing.Point(143, 305);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(286, 23);
+            this.textBox4.Size = new System.Drawing.Size(358, 23);
             this.textBox4.TabIndex = 16;
             // 
             // comboBox7
@@ -1114,16 +905,16 @@
             "(E)",
             "DD (B+E)",
             "DD (C+B)"});
-            this.comboBox7.Location = new System.Drawing.Point(143, 140);
+            this.comboBox7.Location = new System.Drawing.Point(143, 184);
             this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(286, 25);
+            this.comboBox7.Size = new System.Drawing.Size(358, 25);
             this.comboBox7.TabIndex = 14;
             this.comboBox7.Text = "- Select form...";
             // 
             // SaveBtn2
             // 
             this.SaveBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveBtn2.Location = new System.Drawing.Point(116, 280);
+            this.SaveBtn2.Location = new System.Drawing.Point(150, 361);
             this.SaveBtn2.Name = "SaveBtn2";
             this.SaveBtn2.Size = new System.Drawing.Size(88, 32);
             this.SaveBtn2.TabIndex = 17;
@@ -1135,7 +926,7 @@
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(54, 143);
+            this.label33.Location = new System.Drawing.Point(54, 187);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(45, 17);
             this.label33.TabIndex = 47;
@@ -1144,7 +935,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(296, 280);
+            this.button3.Location = new System.Drawing.Point(330, 361);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(88, 32);
             this.button3.TabIndex = 18;
@@ -1155,7 +946,7 @@
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(54, 192);
+            this.label34.Location = new System.Drawing.Point(54, 247);
             this.label34.Name = "label34";
             this.label34.Size = new System.Drawing.Size(43, 17);
             this.label34.TabIndex = 45;
@@ -1165,9 +956,9 @@
             // 
             this.comboBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox8.FormattingEnabled = true;
-            this.comboBox8.Location = new System.Drawing.Point(143, 45);
+            this.comboBox8.Location = new System.Drawing.Point(143, 67);
             this.comboBox8.Name = "comboBox8";
-            this.comboBox8.Size = new System.Drawing.Size(286, 25);
+            this.comboBox8.Size = new System.Drawing.Size(356, 25);
             this.comboBox8.TabIndex = 12;
             this.comboBox8.Text = "- Select customer...";
             // 
@@ -1177,7 +968,7 @@
             this.addPnl.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.addPnl.Location = new System.Drawing.Point(176, 41);
             this.addPnl.Name = "addPnl";
-            this.addPnl.Size = new System.Drawing.Size(528, 348);
+            this.addPnl.Size = new System.Drawing.Size(616, 459);
             this.addPnl.TabIndex = 45;
             // 
             // panel4
@@ -1186,18 +977,19 @@
             this.panel4.Controls.Add(this.label22);
             this.panel4.Controls.Add(this.sfBtn);
             this.panel4.Controls.Add(this.fpBtn);
-            this.panel4.Location = new System.Drawing.Point(40, 49);
+            this.panel4.Location = new System.Drawing.Point(70, 109);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(443, 234);
+            this.panel4.Size = new System.Drawing.Size(473, 227);
             this.panel4.TabIndex = 46;
+            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label22
             // 
             this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(23, 17);
+            this.label22.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(16, 24);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(218, 17);
+            this.label22.Size = new System.Drawing.Size(232, 17);
             this.label22.TabIndex = 45;
             this.label22.Text = "Choose from the following options :";
             // 
@@ -1209,7 +1001,7 @@
             this.sfBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sfBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.sfBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtdddd;
-            this.sfBtn.Location = new System.Drawing.Point(249, 60);
+            this.sfBtn.Location = new System.Drawing.Point(279, 60);
             this.sfBtn.Name = "sfBtn";
             this.sfBtn.Size = new System.Drawing.Size(118, 134);
             this.sfBtn.TabIndex = 30;
@@ -1226,7 +1018,7 @@
             this.fpBtn.Font = new System.Drawing.Font("Cascadia Code", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fpBtn.ForeColor = System.Drawing.SystemColors.Control;
             this.fpBtn.Image = global::FP_Gen_1._0.Properties.Resources.box__6_;
-            this.fpBtn.Location = new System.Drawing.Point(74, 60);
+            this.fpBtn.Location = new System.Drawing.Point(78, 60);
             this.fpBtn.Name = "fpBtn";
             this.fpBtn.Size = new System.Drawing.Size(118, 134);
             this.fpBtn.TabIndex = 31;
@@ -1235,9 +1027,275 @@
             this.fpBtn.UseVisualStyleBackColor = false;
             this.fpBtn.Click += new System.EventHandler(this.fpBtn_Click);
             // 
+            // PF
+            // 
+            this.PF.BackColor = System.Drawing.Color.SlateGray;
+            this.PF.Controls.Add(this.label43);
+            this.PF.Controls.Add(this.pfItemBox);
+            this.PF.Controls.Add(this.pfQuaTxtBox);
+            this.PF.Controls.Add(this.label30);
+            this.PF.Controls.Add(this.label3);
+            this.PF.Controls.Add(this.label31);
+            this.PF.Controls.Add(this.label27);
+            this.PF.Controls.Add(this.pfDimTxtBx);
+            this.PF.Controls.Add(this.label24);
+            this.PF.Controls.Add(this.pfAdrTxtBx);
+            this.PF.Controls.Add(this.printAddBtn2);
+            this.PF.Controls.Add(this.printAddBtn1);
+            this.PF.Controls.Add(this.prevBtn);
+            this.PF.Controls.Add(this.printBtn);
+            this.PF.Controls.Add(this.pfCusBox);
+            this.PF.Controls.Add(this.label2);
+            this.PF.Controls.Add(this.label1);
+            this.PF.Location = new System.Drawing.Point(202, 100);
+            this.PF.Name = "PF";
+            this.PF.Size = new System.Drawing.Size(553, 370);
+            this.PF.TabIndex = 41;
+            // 
+            // pfItemBox
+            // 
+            this.pfItemBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfItemBox.FormattingEnabled = true;
+            this.pfItemBox.Location = new System.Drawing.Point(88, 185);
+            this.pfItemBox.Name = "pfItemBox";
+            this.pfItemBox.Size = new System.Drawing.Size(158, 25);
+            this.pfItemBox.TabIndex = 41;
+            this.pfItemBox.Text = "- Select Item...";
+            this.pfItemBox.SelectedIndexChanged += new System.EventHandler(this.pfItemBox_SelectedIndexChanged_1);
+            // 
+            // pfQuaTxtBox
+            // 
+            this.pfQuaTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfQuaTxtBox.Location = new System.Drawing.Point(88, 242);
+            this.pfQuaTxtBox.Name = "pfQuaTxtBox";
+            this.pfQuaTxtBox.Size = new System.Drawing.Size(158, 23);
+            this.pfQuaTxtBox.TabIndex = 56;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.Location = new System.Drawing.Point(11, 245);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(63, 17);
+            this.label30.TabIndex = 57;
+            this.label30.Text = "Quantity :";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(342, 250);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(13, 17);
+            this.label3.TabIndex = 53;
+            this.label3.Text = "*";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.label31.Location = new System.Drawing.Point(295, 247);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(221, 17);
+            this.label31.TabIndex = 52;
+            this.label31.Text = "Note : (   ) These fields are required.";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(295, 189);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(44, 17);
+            this.label27.TabIndex = 51;
+            this.label27.Text = "Dims :";
+            // 
+            // pfDimTxtBx
+            // 
+            this.pfDimTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfDimTxtBx.Location = new System.Drawing.Point(345, 185);
+            this.pfDimTxtBx.Name = "pfDimTxtBx";
+            this.pfDimTxtBx.ReadOnly = true;
+            this.pfDimTxtBx.Size = new System.Drawing.Size(150, 23);
+            this.pfDimTxtBx.TabIndex = 50;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.Location = new System.Drawing.Point(11, 135);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(63, 17);
+            this.label24.TabIndex = 49;
+            this.label24.Text = "Address :";
+            // 
+            // pfAdrTxtBx
+            // 
+            this.pfAdrTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfAdrTxtBx.Location = new System.Drawing.Point(91, 131);
+            this.pfAdrTxtBx.Name = "pfAdrTxtBx";
+            this.pfAdrTxtBx.ReadOnly = true;
+            this.pfAdrTxtBx.Size = new System.Drawing.Size(405, 23);
+            this.pfAdrTxtBx.TabIndex = 48;
+            // 
+            // printAddBtn2
+            // 
+            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
+            this.printAddBtn2.FlatAppearance.BorderSize = 0;
+            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
+            this.printAddBtn2.Location = new System.Drawing.Point(501, 121);
+            this.printAddBtn2.Name = "printAddBtn2";
+            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn2.TabIndex = 45;
+            this.printAddBtn2.Text = "+";
+            this.printAddBtn2.UseVisualStyleBackColor = false;
+            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
+            // 
+            // printAddBtn1
+            // 
+            this.printAddBtn1.FlatAppearance.BorderSize = 0;
+            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
+            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
+            this.printAddBtn1.Location = new System.Drawing.Point(501, 67);
+            this.printAddBtn1.Name = "printAddBtn1";
+            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
+            this.printAddBtn1.TabIndex = 44;
+            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.printAddBtn1.UseVisualStyleBackColor = true;
+            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
+            // 
+            // prevBtn
+            // 
+            this.prevBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prevBtn.Location = new System.Drawing.Point(325, 298);
+            this.prevBtn.Name = "prevBtn";
+            this.prevBtn.Size = new System.Drawing.Size(88, 32);
+            this.prevBtn.TabIndex = 43;
+            this.prevBtn.Text = "Preview";
+            this.prevBtn.UseVisualStyleBackColor = true;
+            // 
+            // printBtn
+            // 
+            this.printBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.printBtn.Location = new System.Drawing.Point(150, 298);
+            this.printBtn.Name = "printBtn";
+            this.printBtn.Size = new System.Drawing.Size(88, 32);
+            this.printBtn.TabIndex = 42;
+            this.printBtn.Text = "Print";
+            this.printBtn.UseVisualStyleBackColor = true;
+            this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
+            // 
+            // pfCusBox
+            // 
+            this.pfCusBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfCusBox.FormattingEnabled = true;
+            this.pfCusBox.Location = new System.Drawing.Point(89, 73);
+            this.pfCusBox.Name = "pfCusBox";
+            this.pfCusBox.Size = new System.Drawing.Size(408, 25);
+            this.pfCusBox.TabIndex = 40;
+            this.pfCusBox.Text = "- Select customer...";
+            this.pfCusBox.SelectedIndexChanged += new System.EventHandler(this.pfCusBox_SelectedIndexChanged_1);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(11, 190);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(41, 17);
+            this.label2.TabIndex = 47;
+            this.label2.Text = "Item :";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 77);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "Customer :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(17, 24);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(313, 17);
+            this.label14.TabIndex = 0;
+            this.label14.Text = "Please enter the customer name and his address :";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(38, 67);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(71, 17);
+            this.label16.TabIndex = 27;
+            this.label16.Text = "Customer :";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(127, 65);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(321, 23);
+            this.textBox5.TabIndex = 8;
+            // 
+            // addCusSaveBtn
+            // 
+            this.addCusSaveBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCusSaveBtn.Location = new System.Drawing.Point(110, 167);
+            this.addCusSaveBtn.Name = "addCusSaveBtn";
+            this.addCusSaveBtn.Size = new System.Drawing.Size(88, 32);
+            this.addCusSaveBtn.TabIndex = 10;
+            this.addCusSaveBtn.Text = "Save";
+            this.addCusSaveBtn.UseVisualStyleBackColor = true;
+            this.addCusSaveBtn.Click += new System.EventHandler(this.addCusSaveBtn_Click);
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(126, 115);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(322, 23);
+            this.textBox6.TabIndex = 9;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(37, 117);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 17);
+            this.label8.TabIndex = 37;
+            this.label8.Text = "Address :";
+            // 
+            // addCusCancelBtn
+            // 
+            this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addCusCancelBtn.Location = new System.Drawing.Point(290, 167);
+            this.addCusCancelBtn.Name = "addCusCancelBtn";
+            this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
+            this.addCusCancelBtn.TabIndex = 11;
+            this.addCusCancelBtn.Text = "Cancel";
+            this.addCusCancelBtn.UseVisualStyleBackColor = true;
+            // 
             // SF
             // 
             this.SF.BackColor = System.Drawing.Color.SlateGray;
+            this.SF.Controls.Add(this.label42);
             this.SF.Controls.Add(this.label40);
             this.SF.Controls.Add(this.sfTypeTxtBox);
             this.SF.Controls.Add(this.label39);
@@ -1260,14 +1318,14 @@
             this.SF.Controls.Add(this.label37);
             this.SF.Location = new System.Drawing.Point(201, 100);
             this.SF.Name = "SF";
-            this.SF.Size = new System.Drawing.Size(469, 270);
+            this.SF.Size = new System.Drawing.Size(553, 370);
             this.SF.TabIndex = 42;
             // 
             // label40
             // 
             this.label40.AutoSize = true;
             this.label40.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(16, 121);
+            this.label40.Location = new System.Drawing.Point(12, 192);
             this.label40.Name = "label40";
             this.label40.Size = new System.Drawing.Size(43, 17);
             this.label40.TabIndex = 77;
@@ -1276,17 +1334,17 @@
             // sfTypeTxtBox
             // 
             this.sfTypeTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfTypeTxtBox.Location = new System.Drawing.Point(91, 118);
+            this.sfTypeTxtBox.Location = new System.Drawing.Point(88, 185);
             this.sfTypeTxtBox.Name = "sfTypeTxtBox";
             this.sfTypeTxtBox.ReadOnly = true;
-            this.sfTypeTxtBox.Size = new System.Drawing.Size(130, 23);
+            this.sfTypeTxtBox.Size = new System.Drawing.Size(160, 23);
             this.sfTypeTxtBox.TabIndex = 76;
             // 
             // label39
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label39.Location = new System.Drawing.Point(266, 122);
+            this.label39.Location = new System.Drawing.Point(295, 189);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(45, 17);
             this.label39.TabIndex = 75;
@@ -1295,25 +1353,25 @@
             // sfFrmTxtBox
             // 
             this.sfFrmTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfFrmTxtBox.Location = new System.Drawing.Point(329, 117);
+            this.sfFrmTxtBox.Location = new System.Drawing.Point(367, 188);
             this.sfFrmTxtBox.Name = "sfFrmTxtBox";
             this.sfFrmTxtBox.ReadOnly = true;
-            this.sfFrmTxtBox.Size = new System.Drawing.Size(121, 23);
+            this.sfFrmTxtBox.Size = new System.Drawing.Size(160, 23);
             this.sfFrmTxtBox.TabIndex = 74;
             // 
             // sfQuaTxtBox
             // 
             this.sfQuaTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfQuaTxtBox.Location = new System.Drawing.Point(90, 167);
+            this.sfQuaTxtBox.Location = new System.Drawing.Point(88, 242);
             this.sfQuaTxtBox.Name = "sfQuaTxtBox";
-            this.sfQuaTxtBox.Size = new System.Drawing.Size(131, 23);
+            this.sfQuaTxtBox.Size = new System.Drawing.Size(161, 23);
             this.sfQuaTxtBox.TabIndex = 72;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 170);
+            this.label4.Location = new System.Drawing.Point(11, 245);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(63, 17);
             this.label4.TabIndex = 73;
@@ -1325,7 +1383,7 @@
             this.label25.BackColor = System.Drawing.Color.Transparent;
             this.label25.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Red;
-            this.label25.Location = new System.Drawing.Point(284, 173);
+            this.label25.Location = new System.Drawing.Point(342, 250);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(13, 17);
             this.label25.TabIndex = 71;
@@ -1336,7 +1394,7 @@
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label26.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label26.Location = new System.Drawing.Point(237, 170);
+            this.label26.Location = new System.Drawing.Point(295, 247);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(221, 17);
             this.label26.TabIndex = 70;
@@ -1346,26 +1404,27 @@
             // 
             this.label28.AutoSize = true;
             this.label28.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(266, 74);
+            this.label28.Location = new System.Drawing.Point(296, 137);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(44, 17);
             this.label28.TabIndex = 69;
             this.label28.Text = "Dims :";
+            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // sfDimTxtBox
             // 
             this.sfDimTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfDimTxtBox.Location = new System.Drawing.Point(329, 69);
+            this.sfDimTxtBox.Location = new System.Drawing.Point(367, 132);
             this.sfDimTxtBox.Name = "sfDimTxtBox";
             this.sfDimTxtBox.ReadOnly = true;
-            this.sfDimTxtBox.Size = new System.Drawing.Size(121, 23);
+            this.sfDimTxtBox.Size = new System.Drawing.Size(160, 23);
             this.sfDimTxtBox.TabIndex = 68;
             // 
             // label29
             // 
             this.label29.AutoSize = true;
             this.label29.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(266, 26);
+            this.label29.Location = new System.Drawing.Point(296, 78);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(63, 17);
             this.label29.TabIndex = 67;
@@ -1374,10 +1433,10 @@
             // adrTxtBx2
             // 
             this.adrTxtBx2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adrTxtBx2.Location = new System.Drawing.Point(329, 21);
+            this.adrTxtBx2.Location = new System.Drawing.Point(367, 74);
             this.adrTxtBx2.Name = "adrTxtBx2";
             this.adrTxtBx2.ReadOnly = true;
-            this.adrTxtBx2.Size = new System.Drawing.Size(121, 23);
+            this.adrTxtBx2.Size = new System.Drawing.Size(160, 23);
             this.adrTxtBx2.TabIndex = 66;
             this.adrTxtBx2.TextChanged += new System.EventHandler(this.adrTxtBx2_TextChanged);
             // 
@@ -1389,7 +1448,7 @@
             this.button8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button8.ForeColor = System.Drawing.SystemColors.Control;
             this.button8.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.button8.Location = new System.Drawing.Point(225, 59);
+            this.button8.Location = new System.Drawing.Point(252, 122);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(35, 35);
             this.button8.TabIndex = 63;
@@ -1404,7 +1463,7 @@
             this.button9.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ForeColor = System.Drawing.SystemColors.Control;
             this.button9.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.button9.Location = new System.Drawing.Point(225, 18);
+            this.button9.Location = new System.Drawing.Point(251, 69);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(35, 35);
             this.button9.TabIndex = 62;
@@ -1416,9 +1475,9 @@
             // 
             this.comboBox4.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(91, 68);
+            this.comboBox4.Location = new System.Drawing.Point(91, 131);
             this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(130, 25);
+            this.comboBox4.Size = new System.Drawing.Size(156, 25);
             this.comboBox4.TabIndex = 59;
             this.comboBox4.Text = "- Select Item...";
             this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.sfItemBox_SelectedIndexChanged);
@@ -1426,7 +1485,7 @@
             // sfPrvBtn
             // 
             this.sfPrvBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sfPrvBtn.Location = new System.Drawing.Point(259, 212);
+            this.sfPrvBtn.Location = new System.Drawing.Point(325, 298);
             this.sfPrvBtn.Name = "sfPrvBtn";
             this.sfPrvBtn.Size = new System.Drawing.Size(88, 32);
             this.sfPrvBtn.TabIndex = 61;
@@ -1436,7 +1495,7 @@
             // printBtn1
             // 
             this.printBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBtn1.Location = new System.Drawing.Point(123, 212);
+            this.printBtn1.Location = new System.Drawing.Point(150, 298);
             this.printBtn1.Name = "printBtn1";
             this.printBtn1.Size = new System.Drawing.Size(88, 32);
             this.printBtn1.TabIndex = 60;
@@ -1448,9 +1507,9 @@
             // 
             this.comboBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(91, 23);
+            this.comboBox5.Location = new System.Drawing.Point(89, 73);
             this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(130, 25);
+            this.comboBox5.Size = new System.Drawing.Size(158, 25);
             this.comboBox5.TabIndex = 58;
             this.comboBox5.Text = "- Select customer...";
             this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.sfCusBox_SelectedIndexChanged);
@@ -1459,7 +1518,7 @@
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(17, 72);
+            this.label32.Location = new System.Drawing.Point(14, 135);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(41, 17);
             this.label32.TabIndex = 65;
@@ -1469,227 +1528,91 @@
             // 
             this.label37.AutoSize = true;
             this.label37.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.Location = new System.Drawing.Point(17, 28);
+            this.label37.Location = new System.Drawing.Point(14, 77);
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(71, 17);
             this.label37.TabIndex = 64;
             this.label37.Text = "Customer :";
             // 
-            // PF
+            // addCusPnl
             // 
-            this.PF.BackColor = System.Drawing.Color.SlateGray;
-            this.PF.Controls.Add(this.pfItemBox);
-            this.PF.Controls.Add(this.pfQuaTxtBox);
-            this.PF.Controls.Add(this.label30);
-            this.PF.Controls.Add(this.label3);
-            this.PF.Controls.Add(this.label31);
-            this.PF.Controls.Add(this.label27);
-            this.PF.Controls.Add(this.pfDimTxtBx);
-            this.PF.Controls.Add(this.label24);
-            this.PF.Controls.Add(this.pfAdrTxtBx);
-            this.PF.Controls.Add(this.printAddBtn2);
-            this.PF.Controls.Add(this.printAddBtn1);
-            this.PF.Controls.Add(this.prevBtn);
-            this.PF.Controls.Add(this.printBtn);
-            this.PF.Controls.Add(this.pfCusBox);
-            this.PF.Controls.Add(this.label2);
-            this.PF.Controls.Add(this.label1);
-            this.PF.Location = new System.Drawing.Point(202, 100);
-            this.PF.Name = "PF";
-            this.PF.Size = new System.Drawing.Size(469, 270);
-            this.PF.TabIndex = 41;
+            this.addCusPnl.Controls.Add(this.panel8);
+            this.addCusPnl.Location = new System.Drawing.Point(177, 38);
+            this.addCusPnl.Name = "addCusPnl";
+            this.addCusPnl.Size = new System.Drawing.Size(615, 462);
+            this.addCusPnl.TabIndex = 4;
             // 
-            // pfItemBox
+            // dataGridView1
             // 
-            this.pfItemBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pfItemBox.FormattingEnabled = true;
-            this.pfItemBox.Location = new System.Drawing.Point(91, 97);
-            this.pfItemBox.Name = "pfItemBox";
-            this.pfItemBox.Size = new System.Drawing.Size(130, 25);
-            this.pfItemBox.TabIndex = 41;
-            this.pfItemBox.Text = "- Select Item...";
-            this.pfItemBox.SelectedIndexChanged += new System.EventHandler(this.pfItemBox_SelectedIndexChanged_1);
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(46, 59);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(524, 367);
+            this.dataGridView1.TabIndex = 30;
             // 
-            // pfQuaTxtBox
+            // panel8
             // 
-            this.pfQuaTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pfQuaTxtBox.Location = new System.Drawing.Point(90, 142);
-            this.pfQuaTxtBox.Name = "pfQuaTxtBox";
-            this.pfQuaTxtBox.Size = new System.Drawing.Size(131, 23);
-            this.pfQuaTxtBox.TabIndex = 56;
+            this.panel8.BackColor = System.Drawing.Color.SlateGray;
+            this.panel8.Controls.Add(this.label14);
+            this.panel8.Controls.Add(this.textBox6);
+            this.panel8.Controls.Add(this.label16);
+            this.panel8.Controls.Add(this.addCusSaveBtn);
+            this.panel8.Controls.Add(this.addCusCancelBtn);
+            this.panel8.Controls.Add(this.label8);
+            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Location = new System.Drawing.Point(69, 112);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(473, 227);
+            this.panel8.TabIndex = 47;
             // 
-            // label30
+            // panel3
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(17, 145);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(63, 17);
-            this.label30.TabIndex = 57;
-            this.label30.Text = "Quantity :";
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Location = new System.Drawing.Point(67, 109);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(473, 227);
+            this.panel3.TabIndex = 48;
             // 
-            // label3
+            // label42
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(277, 148);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(13, 17);
-            this.label3.TabIndex = 53;
-            this.label3.Text = "*";
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(12, 28);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(303, 17);
+            this.label42.TabIndex = 78;
+            this.label42.Text = "Fill the required fields to print the pallet sheet :";
             // 
-            // label31
+            // label43
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.MidnightBlue;
-            this.label31.Location = new System.Drawing.Point(230, 145);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(221, 17);
-            this.label31.TabIndex = 52;
-            this.label31.Text = "Note : (   ) These fields are required.";
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(266, 103);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(44, 17);
-            this.label27.TabIndex = 51;
-            this.label27.Text = "Dims :";
-            // 
-            // pfDimTxtBx
-            // 
-            this.pfDimTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pfDimTxtBx.Location = new System.Drawing.Point(329, 100);
-            this.pfDimTxtBx.Name = "pfDimTxtBx";
-            this.pfDimTxtBx.ReadOnly = true;
-            this.pfDimTxtBx.Size = new System.Drawing.Size(121, 23);
-            this.pfDimTxtBx.TabIndex = 50;
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(266, 55);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(63, 17);
-            this.label24.TabIndex = 49;
-            this.label24.Text = "Address :";
-            // 
-            // pfAdrTxtBx
-            // 
-            this.pfAdrTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pfAdrTxtBx.Location = new System.Drawing.Point(329, 50);
-            this.pfAdrTxtBx.Name = "pfAdrTxtBx";
-            this.pfAdrTxtBx.ReadOnly = true;
-            this.pfAdrTxtBx.Size = new System.Drawing.Size(121, 23);
-            this.pfAdrTxtBx.TabIndex = 48;
-            // 
-            // printAddBtn2
-            // 
-            this.printAddBtn2.BackColor = System.Drawing.Color.SlateGray;
-            this.printAddBtn2.FlatAppearance.BorderSize = 0;
-            this.printAddBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn2.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn2.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__8_;
-            this.printAddBtn2.Location = new System.Drawing.Point(225, 88);
-            this.printAddBtn2.Name = "printAddBtn2";
-            this.printAddBtn2.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn2.TabIndex = 45;
-            this.printAddBtn2.Text = "+";
-            this.printAddBtn2.UseVisualStyleBackColor = false;
-            this.printAddBtn2.Click += new System.EventHandler(this.printAddBtn2_Click);
-            // 
-            // printAddBtn1
-            // 
-            this.printAddBtn1.FlatAppearance.BorderSize = 0;
-            this.printAddBtn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.printAddBtn1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printAddBtn1.ForeColor = System.Drawing.SystemColors.Control;
-            this.printAddBtn1.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__9_;
-            this.printAddBtn1.Location = new System.Drawing.Point(225, 47);
-            this.printAddBtn1.Name = "printAddBtn1";
-            this.printAddBtn1.Size = new System.Drawing.Size(35, 35);
-            this.printAddBtn1.TabIndex = 44;
-            this.printAddBtn1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.printAddBtn1.UseVisualStyleBackColor = true;
-            this.printAddBtn1.Click += new System.EventHandler(this.printAddBtn1_Click);
-            // 
-            // prevBtn
-            // 
-            this.prevBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prevBtn.Location = new System.Drawing.Point(256, 188);
-            this.prevBtn.Name = "prevBtn";
-            this.prevBtn.Size = new System.Drawing.Size(88, 32);
-            this.prevBtn.TabIndex = 43;
-            this.prevBtn.Text = "Preview";
-            this.prevBtn.UseVisualStyleBackColor = true;
-            // 
-            // printBtn
-            // 
-            this.printBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.printBtn.Location = new System.Drawing.Point(120, 188);
-            this.printBtn.Name = "printBtn";
-            this.printBtn.Size = new System.Drawing.Size(88, 32);
-            this.printBtn.TabIndex = 42;
-            this.printBtn.Text = "Print";
-            this.printBtn.UseVisualStyleBackColor = true;
-            this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
-            // 
-            // pfCusBox
-            // 
-            this.pfCusBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pfCusBox.FormattingEnabled = true;
-            this.pfCusBox.Location = new System.Drawing.Point(91, 52);
-            this.pfCusBox.Name = "pfCusBox";
-            this.pfCusBox.Size = new System.Drawing.Size(130, 25);
-            this.pfCusBox.TabIndex = 40;
-            this.pfCusBox.Text = "- Select customer...";
-            this.pfCusBox.SelectedIndexChanged += new System.EventHandler(this.pfCusBox_SelectedIndexChanged_1);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 101);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 17);
-            this.label2.TabIndex = 47;
-            this.label2.Text = "Item :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 57);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "Customer :";
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(11, 28);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(303, 17);
+            this.label43.TabIndex = 79;
+            this.label43.Text = "Fill the required fields to print the pallet sheet :";
             // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.ClientSize = new System.Drawing.Size(703, 388);
+            this.ClientSize = new System.Drawing.Size(791, 499);
+            this.Controls.Add(this.SF);
+            this.Controls.Add(this.PF);
+            this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addPnl);
             this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.mainPnl);
-            this.Controls.Add(this.topPnl);
             this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.PF);
-            this.Controls.Add(this.SF);
-            this.Controls.Add(this.printPnl);
             this.Controls.Add(this.addPF);
-            this.Controls.Add(this.addSF);
-            this.Controls.Add(this.addCusPnl);
+            this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.listPnl);
+            this.Controls.Add(this.addSF);
+            this.Controls.Add(this.topPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Opacity = 0D;
@@ -1705,14 +1628,11 @@
             this.panel6.PerformLayout();
             this.listPnl.ResumeLayout(false);
             this.listPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.sfGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pfGridView)).EndInit();
             this.abtPnl.ResumeLayout(false);
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.addCusPnl.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.hisPnl.ResumeLayout(false);
             this.hisPnl.PerformLayout();
             this.printPnl.ResumeLayout(false);
@@ -1722,10 +1642,16 @@
             this.addPnl.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.SF.ResumeLayout(false);
-            this.SF.PerformLayout();
             this.PF.ResumeLayout(false);
             this.PF.PerformLayout();
+            this.SF.ResumeLayout(false);
+            this.SF.PerformLayout();
+            this.addCusPnl.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel8.ResumeLayout(false);
+            this.panel8.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1750,10 +1676,6 @@
         private System.Windows.Forms.Panel listPnl;
         private System.Windows.Forms.Panel abtPnl;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader name;
-        private System.Windows.Forms.ColumnHeader address;
-        private System.Windows.Forms.ColumnHeader item;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox textBox1;
@@ -1765,13 +1687,6 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel addCusBtnPnl;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Panel addCusPnl;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button addCusCancelBtn;
-        private System.Windows.Forms.Button addCusSaveBtn;
-        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label7;
@@ -1785,14 +1700,7 @@
         private System.Windows.Forms.Button hisBtn;
         private System.Windows.Forms.Panel hisPnl;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.ListView listView2;
-        private System.Windows.Forms.ColumnHeader cus1;
-        private System.Windows.Forms.ColumnHeader adr1;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ColumnHeader dimensions;
         private System.Windows.Forms.Timer timer3;
-        private System.Windows.Forms.ColumnHeader ite;
-        private System.Windows.Forms.ColumnHeader dat;
         private System.Windows.Forms.Panel printPnl;
         private System.Windows.Forms.Panel addSF;
         private System.Windows.Forms.ComboBox comboBox6;
@@ -1813,17 +1721,10 @@
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.ListView listView3;
-        private System.Windows.Forms.ColumnHeader cus;
-        private System.Windows.Forms.ColumnHeader adr;
-        private System.Windows.Forms.ColumnHeader tp;
-        private System.Windows.Forms.ColumnHeader frm;
-        private System.Windows.Forms.ColumnHeader dim;
         private System.Windows.Forms.Panel SFPnlBtn;
         private System.Windows.Forms.Button prntSFBtn;
         private System.Windows.Forms.Panel PFPnlBtn;
         private System.Windows.Forms.Button prntPFBtn;
-        private System.Windows.Forms.Panel SF;
         private System.Windows.Forms.Panel PF;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label31;
@@ -1839,6 +1740,23 @@
         private System.Windows.Forms.ComboBox pfCusBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox pfQuaTxtBox;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.DataGridView pfGridView;
+        private System.Windows.Forms.DataGridView sfGridView;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Button addCusSaveBtn;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button addCusCancelBtn;
+        private System.Windows.Forms.Panel SF;
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.TextBox sfTypeTxtBox;
         private System.Windows.Forms.Label label39;
@@ -1859,15 +1777,12 @@
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox pfQuaTxtBox;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Panel addCusPnl;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label42;
     }
 }
 

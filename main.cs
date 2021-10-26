@@ -23,8 +23,6 @@ namespace FP_Gen_1._0
         public main()
         {
             InitializeComponent();
-            displayListView();
-            displayListView1();
             printBtnPnl.Visible = false;
             addBtnPnl.Visible = false;
             listBtnPnl.Visible = false;
@@ -135,8 +133,8 @@ namespace FP_Gen_1._0
 
         private void listBtn_Click(object sender, EventArgs e)
         {
-            displayListView();
-            displayListView1();
+            displaypfGridView();
+            displaysfGridView();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -553,7 +551,7 @@ namespace FP_Gen_1._0
             }
         }
 
-        public void displayListView()
+        public void displaypfGridView()
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
@@ -561,22 +559,20 @@ namespace FP_Gen_1._0
             cmd.CommandText = "select customer.name, customer.address, item.itname," +
                 "item.dimensions from [customer] " +
                 "inner join item ON customer.id = item.customerid ORDER BY customer.id";
-            SqlDataReader reader = cmd.ExecuteReader();
-            listView1.Items.Clear();
-
-            while (reader.Read())
-            {
-                ListViewItem lv = new ListViewItem(reader.GetString(0));
-                lv.SubItems.Add(reader.GetString(1));
-                lv.SubItems.Add(reader.GetString(2));
-                lv.SubItems.Add(reader.GetString(3));
-                listView1.Items.Add(lv);
-            }
-            reader.Close();
+            cmd.ExecuteNonQuery();
             connection.Close();
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(dataTable);
+            pfGridView.DataSource = dataTable;
+            pfGridView.Columns[0].Width = 110;
+            pfGridView.Columns[1].Width = 110;
+            pfGridView.Columns[2].Width = 112;
+            pfGridView.Columns[3].Width = 112;
+
         }
 
-        public void displayListView1()
+        public void displaysfGridView()
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
@@ -584,20 +580,18 @@ namespace FP_Gen_1._0
             cmd.CommandText = "select customer.name, customer.address, cardboard.cname," +
                 "cardboard.type, cardboard.form, cardboard.dimensions from [customer] " +
                 "inner join cardboard ON customer.id = cardboard.customerid ORDER BY customer.id";
-            SqlDataReader reader = cmd.ExecuteReader();
-            listView3.Items.Clear();
-
-            while (reader.Read())
-            {
-                ListViewItem lv = new ListViewItem(reader.GetString(0));
-                lv.SubItems.Add(reader.GetString(1));
-                lv.SubItems.Add(reader.GetString(2));
-                lv.SubItems.Add(reader.GetString(3));
-                lv.SubItems.Add(reader.GetString(4));
-                listView3.Items.Add(lv);
-            }
-            reader.Close();
+            cmd.ExecuteNonQuery();
             connection.Close();
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(dataTable);
+            sfGridView.DataSource = dataTable;
+            sfGridView.Columns[0].Width = 70;
+            sfGridView.Columns[1].Width = 70;
+            sfGridView.Columns[2].Width = 75;
+            sfGridView.Columns[3].Width = 75;
+            sfGridView.Columns[4].Width = 77;
+            sfGridView.Columns[5].Width = 77;
         }
 
 
@@ -803,6 +797,16 @@ namespace FP_Gen_1._0
         }
 
         private void label38_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label28_Click(object sender, EventArgs e)
         {
 
         }

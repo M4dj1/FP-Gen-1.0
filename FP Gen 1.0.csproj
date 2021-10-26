@@ -145,13 +145,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Content Include="Database1.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Database1_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>Database1.mdf</DependentUpon>
-    </Content>
     <None Include="Resources\output-onlinepngtools %2814%29.png" />
     <None Include="Resources\output-onlinepngtools %2815%29.png" />
     <None Include="Resources\output-onlinepngtools %2816%29.png" />
@@ -165,6 +158,13 @@
     <None Include="Resources\box %285%29.png" />
     <None Include="Resources\box %286%29.png" />
     <None Include="Resources\output-onlinepngtdddd.png" />
+    <Content Include="Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Database1_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
     <Content Include="temp1.docx">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

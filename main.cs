@@ -256,7 +256,7 @@ namespace FP_Gen_1._0
             PF.Visible = false;
         }
 
-        private void button9_Click_1(object sender, EventArgs e)
+        private void sfAddCusBtn_Click_1(object sender, EventArgs e)
         {
             printBtnPnl.Visible = false;
             hisBtnPnl.Visible = false;
@@ -276,7 +276,7 @@ namespace FP_Gen_1._0
             PF.Visible = false;
         }
 
-        private void button8_Click_1(object sender, EventArgs e)
+        private void sfAddItBtn_Click_1(object sender, EventArgs e)
         {
             displayAddCusCombo();
             hisBtnPnl.Visible = false;
@@ -372,13 +372,13 @@ namespace FP_Gen_1._0
             DataRow itemrow = table1.NewRow();
             itemrow[1] = "- Select Customer...";
             table1.Rows.InsertAt(itemrow, 0);
-            comboBox1.DisplayMember = "name";
-            comboBox1.ValueMember = "id";
-            comboBox1.DataSource = table1;
+            pfCusBox.DisplayMember = "name";
+            pfCusBox.ValueMember = "id";
+            pfCusBox.DataSource = table1;
             comboBox5.DisplayMember = "name";
             comboBox5.ValueMember = "id";
             comboBox5.DataSource = table1;
-            comboBox3.Enabled = false;
+            pfItemBox.Enabled = false;
             comboBox4.Enabled = false;
         }
 
@@ -459,15 +459,15 @@ namespace FP_Gen_1._0
             this.Close();
         }
 
-        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void pfCusBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (comboBox1.SelectedValue.ToString() != null)
+            if (pfCusBox.SelectedValue.ToString() != null)
             {
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
                 cmd.CommandText = "select id,itname,dimensions,customerid from [item] where customerid = @cusid";
-                cmd.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
+                cmd.Parameters.AddWithValue("@cusid", pfCusBox.SelectedValue.ToString());
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 DataTable table1 = new DataTable();
@@ -476,27 +476,27 @@ namespace FP_Gen_1._0
                 DataRow itemrow = table1.NewRow();
                 itemrow[1] = "- Select Item...";
                 table1.Rows.InsertAt(itemrow, 0);
-                comboBox3.Enabled = true;
-                comboBox3.DisplayMember = "itname";
-                comboBox3.ValueMember = "id";
-                comboBox3.DataSource = table1;
+                pfItemBox.Enabled = true;
+                pfItemBox.DisplayMember = "itname";
+                pfItemBox.ValueMember = "id";
+                pfItemBox.DataSource = table1;
 
                 connection.Open();
                 SqlCommand cmd1 = connection.CreateCommand();
                 cmd1.CommandType = CommandType.Text;
                 cmd1.CommandText = "select address from [customer] where id = @cusid";
-                cmd1.Parameters.AddWithValue("@cusid", comboBox1.SelectedValue.ToString());
+                cmd1.Parameters.AddWithValue("@cusid", pfCusBox.SelectedValue.ToString());
                 SqlDataReader dr = cmd1.ExecuteReader();
                 while (dr.Read())
                 {
-                    adrTxtBx.Text = dr.GetValue(0).ToString();
+                    pfAdrTxtBx.Text = dr.GetValue(0).ToString();
                 }
                 dr.Close();
                 connection.Close();
             }
         }
 
-        private void comboBox5_SelectedIndexChanged(object sender, EventArgs e)
+        private void sfCusBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox5.SelectedValue.ToString() != null)
             {
@@ -591,23 +591,23 @@ namespace FP_Gen_1._0
             Opacity += .2;
         }
 
-        private void comboBox3_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void pfItemBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select dimensions from [item] where id = @itid";
-            cmd.Parameters.AddWithValue("@itid", comboBox3.SelectedValue.ToString());
+            cmd.Parameters.AddWithValue("@itid", pfItemBox.SelectedValue.ToString());
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                dimTxtBx.Text = dr.GetValue(0).ToString();
+                pfDimTxtBx.Text = dr.GetValue(0).ToString();
             }
             dr.Close();
             connection.Close();
         }
 
-        private void comboBox4_SelectedIndexChanged(object sender, EventArgs e)
+        private void sfItemBox_SelectedIndexChanged(object sender, EventArgs e)
         {
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
@@ -617,9 +617,9 @@ namespace FP_Gen_1._0
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                textBox8.Text = dr.GetValue(0).ToString();
-                textBox11.Text = dr.GetValue(1).ToString();
-                textBox10.Text = dr.GetValue(2).ToString();
+                sfDimTxtBox.Text = dr.GetValue(0).ToString();
+                sfTypeTxtBox.Text = dr.GetValue(1).ToString();
+                sfFrmTxtBox.Text = dr.GetValue(2).ToString();
             }
             dr.Close();
             connection.Close();
@@ -677,11 +677,11 @@ namespace FP_Gen_1._0
                 myWordDoc.Activate();
 
                 //find and replace
-                this.FindAndReplace(wordApp, "<cus>", this.comboBox1.GetItemText(this.comboBox1.SelectedItem));
-                this.FindAndReplace(wordApp, "<add>", adrTxtBx.Text);
-                this.FindAndReplace(wordApp, "<ite>", this.comboBox3.GetItemText(this.comboBox3.SelectedItem));
-                this.FindAndReplace(wordApp, "<dim>", dimTxtBx.Text);
-                this.FindAndReplace(wordApp, "<qua>", qBox.Text);
+                this.FindAndReplace(wordApp, "<cus>", this.pfCusBox.GetItemText(this.pfCusBox.SelectedItem));
+                this.FindAndReplace(wordApp, "<add>", pfAdrTxtBx.Text);
+                this.FindAndReplace(wordApp, "<ite>", this.pfItemBox.GetItemText(this.pfItemBox.SelectedItem));
+                this.FindAndReplace(wordApp, "<dim>", pfDimTxtBx.Text);
+                this.FindAndReplace(wordApp, "<qua>", pfQuaTxtBox.Text);
                 this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("dd/MM/yyyy"));
             }
             else
@@ -721,13 +721,13 @@ namespace FP_Gen_1._0
                 myWordDoc.Activate();
 
                 //find and replace
-                this.FindAndReplace(wordApp, "<cus>", this.comboBox5.GetItemText(this.comboBox1.SelectedItem));
+                this.FindAndReplace(wordApp, "<cus>", this.comboBox5.GetItemText(this.pfCusBox.SelectedItem));
                 this.FindAndReplace(wordApp, "<add>", adrTxtBx2.Text);
-                this.FindAndReplace(wordApp, "<ite>", this.comboBox4.GetItemText(this.comboBox3.SelectedItem));
-                this.FindAndReplace(wordApp, "<typ>", textBox11.Text);
-                this.FindAndReplace(wordApp, "<for>", textBox10.Text);
-                this.FindAndReplace(wordApp, "<dim>", textBox8.Text);
-                this.FindAndReplace(wordApp, "<qua>", textBox3.Text);
+                this.FindAndReplace(wordApp, "<ite>", this.comboBox4.GetItemText(this.pfItemBox.SelectedItem));
+                this.FindAndReplace(wordApp, "<typ>", sfTypeTxtBox.Text);
+                this.FindAndReplace(wordApp, "<for>", sfFrmTxtBox.Text);
+                this.FindAndReplace(wordApp, "<dim>", sfDimTxtBox.Text);
+                this.FindAndReplace(wordApp, "<qua>", sfQuaTxtBox.Text);
                 this.FindAndReplace(wordApp, "<date>", DateTime.Now.ToString("dd/MM/yyyy"));
             }
             else
@@ -757,7 +757,7 @@ namespace FP_Gen_1._0
             printDoc.Print();
         }
 
-        private void printBtn1_Click(object sender, EventArgs e)
+        private void sfPrintBtn_Click(object sender, EventArgs e)
         {
             CreateWordDocument2(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp2.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
             Document doc = new Document();
@@ -765,6 +765,11 @@ namespace FP_Gen_1._0
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();
+        }
+
+        private void adrTxtBx2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -125,40 +125,40 @@
             this.sfBtn = new System.Windows.Forms.Button();
             this.SF = new System.Windows.Forms.Panel();
             this.label40 = new System.Windows.Forms.Label();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.sfTypeTxtBox = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.sfFrmTxtBox = new System.Windows.Forms.TextBox();
+            this.sfQuaTxtBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.sfDimTxtBox = new System.Windows.Forms.TextBox();
             this.label29 = new System.Windows.Forms.Label();
             this.adrTxtBx2 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.button10 = new System.Windows.Forms.Button();
+            this.sfPrvBtn = new System.Windows.Forms.Button();
             this.printBtn1 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.PF = new System.Windows.Forms.Panel();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.qBox = new System.Windows.Forms.TextBox();
+            this.pfItemBox = new System.Windows.Forms.ComboBox();
+            this.pfQuaTxtBox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label31 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.dimTxtBx = new System.Windows.Forms.TextBox();
+            this.pfDimTxtBx = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
-            this.adrTxtBx = new System.Windows.Forms.TextBox();
+            this.pfAdrTxtBx = new System.Windows.Forms.TextBox();
             this.printAddBtn2 = new System.Windows.Forms.Button();
             this.printAddBtn1 = new System.Windows.Forms.Button();
             this.prevBtn = new System.Windows.Forms.Button();
             this.printBtn = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.pfCusBox = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.mainPnl.SuspendLayout();
@@ -1183,21 +1183,21 @@
             // 
             this.SF.BackColor = System.Drawing.Color.SlateGray;
             this.SF.Controls.Add(this.label40);
-            this.SF.Controls.Add(this.textBox11);
+            this.SF.Controls.Add(this.sfTypeTxtBox);
             this.SF.Controls.Add(this.label39);
-            this.SF.Controls.Add(this.textBox10);
-            this.SF.Controls.Add(this.textBox3);
+            this.SF.Controls.Add(this.sfFrmTxtBox);
+            this.SF.Controls.Add(this.sfQuaTxtBox);
             this.SF.Controls.Add(this.label4);
             this.SF.Controls.Add(this.label25);
             this.SF.Controls.Add(this.label26);
             this.SF.Controls.Add(this.label28);
-            this.SF.Controls.Add(this.textBox8);
+            this.SF.Controls.Add(this.sfDimTxtBox);
             this.SF.Controls.Add(this.label29);
             this.SF.Controls.Add(this.adrTxtBx2);
             this.SF.Controls.Add(this.button8);
             this.SF.Controls.Add(this.button9);
             this.SF.Controls.Add(this.comboBox4);
-            this.SF.Controls.Add(this.button10);
+            this.SF.Controls.Add(this.sfPrvBtn);
             this.SF.Controls.Add(this.printBtn1);
             this.SF.Controls.Add(this.comboBox5);
             this.SF.Controls.Add(this.label32);
@@ -1217,14 +1217,14 @@
             this.label40.TabIndex = 77;
             this.label40.Text = "Type :";
             // 
-            // textBox11
+            // sfTypeTxtBox
             // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(91, 118);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(130, 23);
-            this.textBox11.TabIndex = 76;
+            this.sfTypeTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfTypeTxtBox.Location = new System.Drawing.Point(91, 118);
+            this.sfTypeTxtBox.Name = "sfTypeTxtBox";
+            this.sfTypeTxtBox.ReadOnly = true;
+            this.sfTypeTxtBox.Size = new System.Drawing.Size(130, 23);
+            this.sfTypeTxtBox.TabIndex = 76;
             // 
             // label39
             // 
@@ -1236,22 +1236,22 @@
             this.label39.TabIndex = 75;
             this.label39.Text = "Form :";
             // 
-            // textBox10
+            // sfFrmTxtBox
             // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(329, 117);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(121, 23);
-            this.textBox10.TabIndex = 74;
+            this.sfFrmTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfFrmTxtBox.Location = new System.Drawing.Point(329, 117);
+            this.sfFrmTxtBox.Name = "sfFrmTxtBox";
+            this.sfFrmTxtBox.ReadOnly = true;
+            this.sfFrmTxtBox.Size = new System.Drawing.Size(121, 23);
+            this.sfFrmTxtBox.TabIndex = 74;
             // 
-            // textBox3
+            // sfQuaTxtBox
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(90, 167);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(131, 23);
-            this.textBox3.TabIndex = 72;
+            this.sfQuaTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfQuaTxtBox.Location = new System.Drawing.Point(90, 167);
+            this.sfQuaTxtBox.Name = "sfQuaTxtBox";
+            this.sfQuaTxtBox.Size = new System.Drawing.Size(131, 23);
+            this.sfQuaTxtBox.TabIndex = 72;
             // 
             // label4
             // 
@@ -1296,14 +1296,14 @@
             this.label28.TabIndex = 69;
             this.label28.Text = "Dims :";
             // 
-            // textBox8
+            // sfDimTxtBox
             // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(329, 69);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(121, 23);
-            this.textBox8.TabIndex = 68;
+            this.sfDimTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfDimTxtBox.Location = new System.Drawing.Point(329, 69);
+            this.sfDimTxtBox.Name = "sfDimTxtBox";
+            this.sfDimTxtBox.ReadOnly = true;
+            this.sfDimTxtBox.Size = new System.Drawing.Size(121, 23);
+            this.sfDimTxtBox.TabIndex = 68;
             // 
             // label29
             // 
@@ -1323,6 +1323,7 @@
             this.adrTxtBx2.ReadOnly = true;
             this.adrTxtBx2.Size = new System.Drawing.Size(121, 23);
             this.adrTxtBx2.TabIndex = 66;
+            this.adrTxtBx2.TextChanged += new System.EventHandler(this.adrTxtBx2_TextChanged);
             // 
             // button8
             // 
@@ -1338,7 +1339,7 @@
             this.button8.TabIndex = 63;
             this.button8.Text = "+";
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click_1);
+            this.button8.Click += new System.EventHandler(this.sfAddItBtn_Click_1);
             // 
             // button9
             // 
@@ -1353,7 +1354,7 @@
             this.button9.TabIndex = 62;
             this.button9.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click_1);
+            this.button9.Click += new System.EventHandler(this.sfAddCusBtn_Click_1);
             // 
             // comboBox4
             // 
@@ -1364,17 +1365,17 @@
             this.comboBox4.Size = new System.Drawing.Size(130, 25);
             this.comboBox4.TabIndex = 59;
             this.comboBox4.Text = "- Select Item...";
-            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.comboBox4_SelectedIndexChanged);
+            this.comboBox4.SelectedIndexChanged += new System.EventHandler(this.sfItemBox_SelectedIndexChanged);
             // 
-            // button10
+            // sfPrvBtn
             // 
-            this.button10.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.Location = new System.Drawing.Point(259, 212);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(88, 32);
-            this.button10.TabIndex = 61;
-            this.button10.Text = "Preview";
-            this.button10.UseVisualStyleBackColor = true;
+            this.sfPrvBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sfPrvBtn.Location = new System.Drawing.Point(259, 212);
+            this.sfPrvBtn.Name = "sfPrvBtn";
+            this.sfPrvBtn.Size = new System.Drawing.Size(88, 32);
+            this.sfPrvBtn.TabIndex = 61;
+            this.sfPrvBtn.Text = "Preview";
+            this.sfPrvBtn.UseVisualStyleBackColor = true;
             // 
             // printBtn1
             // 
@@ -1385,7 +1386,7 @@
             this.printBtn1.TabIndex = 60;
             this.printBtn1.Text = "Print";
             this.printBtn1.UseVisualStyleBackColor = true;
-            this.printBtn1.Click += new System.EventHandler(this.printBtn1_Click);
+            this.printBtn1.Click += new System.EventHandler(this.sfPrintBtn_Click);
             // 
             // comboBox5
             // 
@@ -1396,7 +1397,7 @@
             this.comboBox5.Size = new System.Drawing.Size(130, 25);
             this.comboBox5.TabIndex = 58;
             this.comboBox5.Text = "- Select customer...";
-            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.comboBox5_SelectedIndexChanged);
+            this.comboBox5.SelectedIndexChanged += new System.EventHandler(this.sfCusBox_SelectedIndexChanged);
             // 
             // label32
             // 
@@ -1420,21 +1421,21 @@
             // 
             // PF
             // 
-            this.PF.BackColor = System.Drawing.Color.LightSlateGray;
-            this.PF.Controls.Add(this.comboBox3);
-            this.PF.Controls.Add(this.qBox);
+            this.PF.BackColor = System.Drawing.Color.SlateGray;
+            this.PF.Controls.Add(this.pfItemBox);
+            this.PF.Controls.Add(this.pfQuaTxtBox);
             this.PF.Controls.Add(this.label30);
             this.PF.Controls.Add(this.label3);
             this.PF.Controls.Add(this.label31);
             this.PF.Controls.Add(this.label27);
-            this.PF.Controls.Add(this.dimTxtBx);
+            this.PF.Controls.Add(this.pfDimTxtBx);
             this.PF.Controls.Add(this.label24);
-            this.PF.Controls.Add(this.adrTxtBx);
+            this.PF.Controls.Add(this.pfAdrTxtBx);
             this.PF.Controls.Add(this.printAddBtn2);
             this.PF.Controls.Add(this.printAddBtn1);
             this.PF.Controls.Add(this.prevBtn);
             this.PF.Controls.Add(this.printBtn);
-            this.PF.Controls.Add(this.comboBox1);
+            this.PF.Controls.Add(this.pfCusBox);
             this.PF.Controls.Add(this.label2);
             this.PF.Controls.Add(this.label1);
             this.PF.Location = new System.Drawing.Point(202, 100);
@@ -1442,24 +1443,24 @@
             this.PF.Size = new System.Drawing.Size(469, 270);
             this.PF.TabIndex = 41;
             // 
-            // comboBox3
+            // pfItemBox
             // 
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(91, 97);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(130, 25);
-            this.comboBox3.TabIndex = 41;
-            this.comboBox3.Text = "- Select Item...";
-            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged_1);
+            this.pfItemBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfItemBox.FormattingEnabled = true;
+            this.pfItemBox.Location = new System.Drawing.Point(91, 97);
+            this.pfItemBox.Name = "pfItemBox";
+            this.pfItemBox.Size = new System.Drawing.Size(130, 25);
+            this.pfItemBox.TabIndex = 41;
+            this.pfItemBox.Text = "- Select Item...";
+            this.pfItemBox.SelectedIndexChanged += new System.EventHandler(this.pfItemBox_SelectedIndexChanged_1);
             // 
-            // qBox
+            // pfQuaTxtBox
             // 
-            this.qBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.qBox.Location = new System.Drawing.Point(90, 142);
-            this.qBox.Name = "qBox";
-            this.qBox.Size = new System.Drawing.Size(131, 23);
-            this.qBox.TabIndex = 56;
+            this.pfQuaTxtBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfQuaTxtBox.Location = new System.Drawing.Point(90, 142);
+            this.pfQuaTxtBox.Name = "pfQuaTxtBox";
+            this.pfQuaTxtBox.Size = new System.Drawing.Size(131, 23);
+            this.pfQuaTxtBox.TabIndex = 56;
             // 
             // label30
             // 
@@ -1504,14 +1505,14 @@
             this.label27.TabIndex = 51;
             this.label27.Text = "Dims :";
             // 
-            // dimTxtBx
+            // pfDimTxtBx
             // 
-            this.dimTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dimTxtBx.Location = new System.Drawing.Point(329, 100);
-            this.dimTxtBx.Name = "dimTxtBx";
-            this.dimTxtBx.ReadOnly = true;
-            this.dimTxtBx.Size = new System.Drawing.Size(121, 23);
-            this.dimTxtBx.TabIndex = 50;
+            this.pfDimTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfDimTxtBx.Location = new System.Drawing.Point(329, 100);
+            this.pfDimTxtBx.Name = "pfDimTxtBx";
+            this.pfDimTxtBx.ReadOnly = true;
+            this.pfDimTxtBx.Size = new System.Drawing.Size(121, 23);
+            this.pfDimTxtBx.TabIndex = 50;
             // 
             // label24
             // 
@@ -1523,14 +1524,14 @@
             this.label24.TabIndex = 49;
             this.label24.Text = "Address :";
             // 
-            // adrTxtBx
+            // pfAdrTxtBx
             // 
-            this.adrTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.adrTxtBx.Location = new System.Drawing.Point(329, 50);
-            this.adrTxtBx.Name = "adrTxtBx";
-            this.adrTxtBx.ReadOnly = true;
-            this.adrTxtBx.Size = new System.Drawing.Size(121, 23);
-            this.adrTxtBx.TabIndex = 48;
+            this.pfAdrTxtBx.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfAdrTxtBx.Location = new System.Drawing.Point(329, 50);
+            this.pfAdrTxtBx.Name = "pfAdrTxtBx";
+            this.pfAdrTxtBx.ReadOnly = true;
+            this.pfAdrTxtBx.Size = new System.Drawing.Size(121, 23);
+            this.pfAdrTxtBx.TabIndex = 48;
             // 
             // printAddBtn2
             // 
@@ -1584,16 +1585,16 @@
             this.printBtn.UseVisualStyleBackColor = true;
             this.printBtn.Click += new System.EventHandler(this.printBtn_Click_1);
             // 
-            // comboBox1
+            // pfCusBox
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(91, 52);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(130, 25);
-            this.comboBox1.TabIndex = 40;
-            this.comboBox1.Text = "- Select customer...";
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            this.pfCusBox.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.pfCusBox.FormattingEnabled = true;
+            this.pfCusBox.Location = new System.Drawing.Point(91, 52);
+            this.pfCusBox.Name = "pfCusBox";
+            this.pfCusBox.Size = new System.Drawing.Size(130, 25);
+            this.pfCusBox.TabIndex = 40;
+            this.pfCusBox.Text = "- Select customer...";
+            this.pfCusBox.SelectedIndexChanged += new System.EventHandler(this.pfCusBox_SelectedIndexChanged_1);
             // 
             // label2
             // 
@@ -1621,11 +1622,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(703, 388);
-            this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.hisPnl);
+            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
             this.Controls.Add(this.addCusPnl);
@@ -1766,38 +1767,38 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.TextBox dimTxtBx;
+        private System.Windows.Forms.TextBox pfDimTxtBx;
         private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.TextBox adrTxtBx;
+        private System.Windows.Forms.TextBox pfAdrTxtBx;
         private System.Windows.Forms.Button printAddBtn2;
         private System.Windows.Forms.Button printAddBtn1;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox pfItemBox;
         private System.Windows.Forms.Button prevBtn;
         private System.Windows.Forms.Button printBtn;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox pfCusBox;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox sfTypeTxtBox;
         private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox sfFrmTxtBox;
+        private System.Windows.Forms.TextBox sfQuaTxtBox;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.TextBox sfDimTxtBox;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.TextBox adrTxtBx2;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.ComboBox comboBox4;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button sfPrvBtn;
         private System.Windows.Forms.Button printBtn1;
         private System.Windows.Forms.ComboBox comboBox5;
         private System.Windows.Forms.Label label32;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox qBox;
+        private System.Windows.Forms.TextBox pfQuaTxtBox;
         private System.Windows.Forms.Label label30;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label label41;

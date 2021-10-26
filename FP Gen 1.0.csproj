@@ -95,17 +95,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printing.Designer.cs">
+      <DependentUpon>printing.cs</DependentUpon>
+    </Compile>
     <Compile Include="main.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="MyUser.cs" />
     <Compile Include="Program.cs" />
@@ -119,8 +119,8 @@
     <EmbeddedResource Include="main.resx">
       <DependentUpon>main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="printing.resx">
+      <DependentUpon>printing.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="progress.resx">
       <DependentUpon>progress.cs</DependentUpon>

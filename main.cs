@@ -196,6 +196,26 @@ namespace FP_Gen_1._0
             PF.Visible = false;
         }
 
+        private void his()
+        {
+            printBtnPnl.Visible = false;
+            hisBtnPnl.Visible = true;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = false;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = true;
+            addSF.Visible = false;
+            addPF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             hisBtnPnl.Visible = false;
@@ -698,7 +718,6 @@ namespace FP_Gen_1._0
 
             myWordDoc.Close();
             wordApp.Quit();
-            MessageBox.Show("File Created!");
         }
 
         private void CreateWordDocument2(object filename, object SaveAs)
@@ -744,27 +763,38 @@ namespace FP_Gen_1._0
 
             myWordDoc.Close();
             wordApp.Quit();
-            MessageBox.Show("File Created!");
         }
 
         private void printBtn_Click_1(object sender, EventArgs e)
         {
+            printing printing = new printing();
+            printing.Show(this);
+            this.Enabled = false;
             CreateWordDocument(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp1.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
             Document doc = new Document();
             doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();
+            this.Enabled = true;
+            printing.Close();
+            his();
         }
 
         private void sfPrintBtn_Click(object sender, EventArgs e)
         {
+            printing printing = new printing();
+            printing.Show(this);
+            this.Enabled = false;
             CreateWordDocument2(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp2.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
             Document doc = new Document();
             doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
             PrintDocument printDoc = doc.PrintDocument;
             printDoc.PrintController = new StandardPrintController();
             printDoc.Print();
+            this.Enabled = true;
+            printing.Close();
+            his();
         }
 
         private void adrTxtBx2_TextChanged(object sender, EventArgs e)

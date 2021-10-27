@@ -558,7 +558,7 @@ namespace FP_Gen_1._0
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
             cmd.CommandText = "select customer, address, item, dimensions," +
-                "quantity, date from [sheet] ";
+                "quantity, date from [sheet] order by date DESC";
             cmd.ExecuteNonQuery();
             connection.Close();
             DataTable dataTable = new DataTable();
@@ -570,7 +570,7 @@ namespace FP_Gen_1._0
             hisGridView.Columns[2].Width = 77;
             hisGridView.Columns[3].Width = 77;
             hisGridView.Columns[4].Width = 70;
-            hisGridView.Columns[5].Width = 107;
+            hisGridView.Columns[5].Width = 102;
 
         }
         public void displaypfGridView()
@@ -589,8 +589,8 @@ namespace FP_Gen_1._0
             pfGridView.DataSource = dataTable;
             pfGridView.Columns[0].Width = 110;
             pfGridView.Columns[1].Width = 110;
-            pfGridView.Columns[2].Width = 112;
-            pfGridView.Columns[3].Width = 112;
+            pfGridView.Columns[2].Width = 110;
+            pfGridView.Columns[3].Width = 111;
 
         }
 
@@ -612,8 +612,8 @@ namespace FP_Gen_1._0
             sfGridView.Columns[1].Width = 70;
             sfGridView.Columns[2].Width = 75;
             sfGridView.Columns[3].Width = 75;
-            sfGridView.Columns[4].Width = 77;
-            sfGridView.Columns[5].Width = 77;
+            sfGridView.Columns[4].Width = 75;
+            sfGridView.Columns[5].Width = 76;
         }
 
 

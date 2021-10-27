@@ -562,6 +562,7 @@
             // 
             // sfGridView
             // 
+            this.sfGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.sfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.sfGridView.Location = new System.Drawing.Point(19, 253);
             this.sfGridView.Name = "sfGridView";
@@ -570,6 +571,7 @@
             // 
             // pfGridView
             // 
+            this.pfGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.pfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.pfGridView.Location = new System.Drawing.Point(20, 31);
             this.pfGridView.Name = "pfGridView";
@@ -734,6 +736,7 @@
             // 
             // hisGridView
             // 
+            this.hisGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.hisGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hisGridView.Location = new System.Drawing.Point(46, 59);
             this.hisGridView.Name = "hisGridView";
@@ -1685,18 +1688,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
+            this.Controls.Add(this.topPnl);
+            this.Controls.Add(this.mainPnl);
+            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.mainPnl);
-            this.Controls.Add(this.topPnl);
+            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.addPF);
             this.Controls.Add(this.addSF);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addPnl);
             this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.listPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Opacity = 0D;

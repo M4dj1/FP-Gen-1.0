@@ -176,6 +176,7 @@ namespace FP_Gen_1._0
 
         private void hisBtn_Click(object sender, EventArgs e)
         {
+            displayhisGridView();
             printBtnPnl.Visible = false;
             hisBtnPnl.Visible = true;
             addCusBtnPnl.Visible = false;
@@ -551,6 +552,27 @@ namespace FP_Gen_1._0
             }
         }
 
+        public void displayhisGridView()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select customer, address, item, dimensions," +
+                "quantity, date from [sheet] ";
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(dataTable);
+            hisGridView.DataSource = dataTable;
+            hisGridView.Columns[0].Width = 77;
+            hisGridView.Columns[1].Width = 77;
+            hisGridView.Columns[2].Width = 77;
+            hisGridView.Columns[3].Width = 77;
+            hisGridView.Columns[4].Width = 70;
+            hisGridView.Columns[5].Width = 107;
+
+        }
         public void displaypfGridView()
         {
             connection.Open();
@@ -734,9 +756,9 @@ namespace FP_Gen_1._0
                 myWordDoc.Activate();
 
                 //find and replace
-                this.FindAndReplace(wordApp, "<cus>", this.comboBox5.GetItemText(this.pfCusBox.SelectedItem));
+                this.FindAndReplace(wordApp, "<cus>", this.comboBox5.GetItemText(this.comboBox5.SelectedItem));
                 this.FindAndReplace(wordApp, "<add>", adrTxtBx2.Text);
-                this.FindAndReplace(wordApp, "<ite>", this.comboBox4.GetItemText(this.pfItemBox.SelectedItem));
+                this.FindAndReplace(wordApp, "<ite>", this.comboBox4.GetItemText(this.comboBox4.SelectedItem));
                 this.FindAndReplace(wordApp, "<typ>", sfTypeTxtBox.Text);
                 this.FindAndReplace(wordApp, "<for>", sfFrmTxtBox.Text);
                 this.FindAndReplace(wordApp, "<dim>", sfDimTxtBox.Text);
@@ -761,34 +783,83 @@ namespace FP_Gen_1._0
 
         private void printBtn_Click_1(object sender, EventArgs e)
         {
-            printing printing = new printing();
-            printing.Show(this);
-            this.Enabled = false;
-            CreateWordDocument(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp1.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
-            Document doc = new Document();
-            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
-            PrintDocument printDoc = doc.PrintDocument;
-            printDoc.PrintController = new StandardPrintController();
-            printDoc.Print();
-            this.Enabled = true;
-            printing.Close();
-            his();
+            if (pfDimTxtBx.Text != null && pfAdrTxtBx.Text != null &&
+                pfCusBox.SelectedItem != null && pfItemBox.SelectedItem != null
+                && pfQuaTxtBox.Text != null)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into [sheet] (customer, address, item, dimensions, quantity, date) values ('" + pfCusBox.GetItemText(this.pfCusBox.SelectedItem) + "','" + pfAdrTxtBx.Text + "','" + this.pfItemBox.GetItemText(this.pfItemBox.SelectedItem) + "','" + pfDimTxtBx.Text + "','" + pfQuaTxtBox.Text + "','" + DateTime.Now.ToString("dd/MM/yyyy HH:mm") + "')";
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+                printing printing = new printing();
+                printing.Show(this);
+                this.Enabled = false;
+                CreateWordDocument(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp1.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
+                Document doc = new Document();
+                doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen1.docx")));
+                PrintDocument printDoc = doc.PrintDocument;
+                printDoc.PrintController = new StandardPrintController();
+                printDoc.Print();
+                this.Enabled = true;
+                printing.Close();
+
+                pfAdrTxtBx.Text = "";
+                pfDimTxtBx.Text = "";
+                pfQuaTxtBox.Text = "";
+                displayhisGridView();
+                displayAddCusCombo();
+                his();
+            }
+            else
+            {
+                MessageBox.Show("Please fill all the required fields !");
+            }
+
+            
         }
 
         private void sfPrintBtn_Click(object sender, EventArgs e)
         {
-            printing printing = new printing();
-            printing.Show(this);
-            this.Enabled = false;
-            CreateWordDocument2(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp2.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
-            Document doc = new Document();
-            doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
-            PrintDocument printDoc = doc.PrintDocument;
-            printDoc.PrintController = new StandardPrintController();
-            printDoc.Print();
-            this.Enabled = true;
-            printing.Close();
-            his();
+
+
+            if (adrTxtBx2.Text != null && sfDimTxtBox.Text != null &&
+                comboBox5.SelectedItem != null && comboBox4.SelectedItem != null
+                && sfQuaTxtBox.Text != null)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into [sheet] (customer, address, item, dimensions, quantity, date) values ('" + comboBox5.GetItemText(this.comboBox5.SelectedItem) + "','" + adrTxtBx2.Text + "','" + this.comboBox4.GetItemText(this.comboBox4.SelectedItem) + "','" + sfDimTxtBox.Text + "','" + sfQuaTxtBox.Text + "','" + DateTime.Now.ToString("dd/MM/yyyy HH:mm") + "')";
+                cmd.ExecuteNonQuery();
+                connection.Close();
+
+                printing printing = new printing();
+                printing.Show(this);
+                this.Enabled = false;
+                CreateWordDocument2(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "temp2.docx")), Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
+                Document doc = new Document();
+                doc.LoadFromFile(Path.GetFullPath(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "FP-Gen", "gen2.docx")));
+                PrintDocument printDoc = doc.PrintDocument;
+                printDoc.PrintController = new StandardPrintController();
+                printDoc.Print();
+                this.Enabled = true;
+                printing.Close();
+
+                pfAdrTxtBx.Text = "";
+                pfDimTxtBx.Text = "";
+                pfQuaTxtBox.Text = "";
+                displayhisGridView();
+                displayAddCusCombo();
+                his();
+            }
+            else
+            {
+                MessageBox.Show("Please fill all the required fields !");
+            }
+
         }
 
         private void adrTxtBx2_TextChanged(object sender, EventArgs e)

@@ -70,13 +70,15 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.abtPnl = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
             this.hisPnl = new System.Windows.Forms.Panel();
+            this.hisGridView = new System.Windows.Forms.DataGridView();
             this.label21 = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
             this.printPnl = new System.Windows.Forms.Panel();
@@ -105,6 +107,10 @@
             this.sfBtn = new System.Windows.Forms.Button();
             this.fpBtn = new System.Windows.Forms.Button();
             this.PF = new System.Windows.Forms.Panel();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.pfItemBox = new System.Windows.Forms.ComboBox();
             this.pfQuaTxtBox = new System.Windows.Forms.TextBox();
             this.label30 = new System.Windows.Forms.Label();
@@ -129,6 +135,10 @@
             this.label8 = new System.Windows.Forms.Label();
             this.addCusCancelBtn = new System.Windows.Forms.Button();
             this.SF = new System.Windows.Forms.Panel();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.sfTypeTxtBox = new System.Windows.Forms.TextBox();
             this.label39 = new System.Windows.Forms.Label();
@@ -150,17 +160,7 @@
             this.label32 = new System.Windows.Forms.Label();
             this.label37 = new System.Windows.Forms.Label();
             this.addCusPnl = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label42 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label44 = new System.Windows.Forms.Label();
-            this.label45 = new System.Windows.Forms.Label();
-            this.label46 = new System.Windows.Forms.Label();
-            this.label47 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.label49 = new System.Windows.Forms.Label();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
@@ -170,8 +170,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.sfGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pfGridView)).BeginInit();
             this.abtPnl.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.hisPnl.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hisGridView)).BeginInit();
             this.printPnl.SuspendLayout();
             this.addSF.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -180,9 +182,7 @@
             this.PF.SuspendLayout();
             this.SF.SuspendLayout();
             this.addCusPnl.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel8.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // mainPnl
@@ -645,6 +645,16 @@
             this.abtPnl.Size = new System.Drawing.Size(613, 459);
             this.abtPnl.TabIndex = 21;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.SlateGray;
+            this.panel3.Controls.Add(this.label9);
+            this.panel3.Controls.Add(this.panel1);
+            this.panel3.Location = new System.Drawing.Point(67, 109);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(473, 227);
+            this.panel3.TabIndex = 48;
+            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -680,6 +690,17 @@
             this.label20.TabIndex = 4;
             this.label20.Text = "Madji.kda@gmail.com";
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.DeepSkyBlue;
+            this.label17.Location = new System.Drawing.Point(13, 10);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(86, 17);
+            this.label17.TabIndex = 1;
+            this.label17.Text = "Contact Info :";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -702,25 +723,22 @@
             this.label19.TabIndex = 3;
             this.label19.Text = "0557775514";
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.DeepSkyBlue;
-            this.label17.Location = new System.Drawing.Point(13, 10);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(86, 17);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "Contact Info :";
-            // 
             // hisPnl
             // 
-            this.hisPnl.Controls.Add(this.dataGridView1);
+            this.hisPnl.Controls.Add(this.hisGridView);
             this.hisPnl.Controls.Add(this.label21);
             this.hisPnl.Location = new System.Drawing.Point(178, 38);
             this.hisPnl.Name = "hisPnl";
             this.hisPnl.Size = new System.Drawing.Size(614, 462);
             this.hisPnl.TabIndex = 44;
+            // 
+            // hisGridView
+            // 
+            this.hisGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.hisGridView.Location = new System.Drawing.Point(46, 59);
+            this.hisGridView.Name = "hisGridView";
+            this.hisGridView.Size = new System.Drawing.Size(524, 367);
+            this.hisGridView.TabIndex = 30;
             // 
             // label21
             // 
@@ -1061,6 +1079,52 @@
             this.PF.Size = new System.Drawing.Size(553, 370);
             this.PF.TabIndex = 41;
             // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.BackColor = System.Drawing.Color.Transparent;
+            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.Red;
+            this.label49.Location = new System.Drawing.Point(71, 242);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(13, 17);
+            this.label49.TabIndex = 82;
+            this.label49.Text = "*";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.BackColor = System.Drawing.Color.Transparent;
+            this.label48.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.Red;
+            this.label48.Location = new System.Drawing.Point(50, 189);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(13, 17);
+            this.label48.TabIndex = 81;
+            this.label48.Text = "*";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.BackColor = System.Drawing.Color.Transparent;
+            this.label47.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.Red;
+            this.label47.Location = new System.Drawing.Point(81, 73);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(13, 17);
+            this.label47.TabIndex = 80;
+            this.label47.Text = "*";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.Location = new System.Drawing.Point(11, 28);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(303, 17);
+            this.label43.TabIndex = 79;
+            this.label43.Text = "Fill the required fields to print the pallet sheet :";
+            // 
             // pfItemBox
             // 
             this.pfItemBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -1333,6 +1397,52 @@
             this.SF.Size = new System.Drawing.Size(553, 370);
             this.SF.TabIndex = 42;
             // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.BackColor = System.Drawing.Color.Transparent;
+            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.Red;
+            this.label46.Location = new System.Drawing.Point(71, 244);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(13, 17);
+            this.label46.TabIndex = 81;
+            this.label46.Text = "*";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.BackColor = System.Drawing.Color.Transparent;
+            this.label45.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.Red;
+            this.label45.Location = new System.Drawing.Point(51, 134);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(13, 17);
+            this.label45.TabIndex = 80;
+            this.label45.Text = "*";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.BackColor = System.Drawing.Color.Transparent;
+            this.label44.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.Red;
+            this.label44.Location = new System.Drawing.Point(82, 74);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(13, 17);
+            this.label44.TabIndex = 79;
+            this.label44.Text = "*";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.Location = new System.Drawing.Point(12, 28);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(303, 17);
+            this.label42.TabIndex = 78;
+            this.label42.Text = "Fill the required fields to print the pallet sheet :";
+            // 
             // label40
             // 
             this.label40.AutoSize = true;
@@ -1554,14 +1664,6 @@
             this.addCusPnl.Size = new System.Drawing.Size(615, 462);
             this.addCusPnl.TabIndex = 4;
             // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(46, 59);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(524, 367);
-            this.dataGridView1.TabIndex = 30;
-            // 
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.SlateGray;
@@ -1577,126 +1679,24 @@
             this.panel8.Size = new System.Drawing.Size(473, 227);
             this.panel8.TabIndex = 47;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.SlateGray;
-            this.panel3.Controls.Add(this.label9);
-            this.panel3.Controls.Add(this.panel1);
-            this.panel3.Location = new System.Drawing.Point(67, 109);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(473, 227);
-            this.panel3.TabIndex = 48;
-            // 
-            // label42
-            // 
-            this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(12, 28);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(303, 17);
-            this.label42.TabIndex = 78;
-            this.label42.Text = "Fill the required fields to print the pallet sheet :";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(11, 28);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(303, 17);
-            this.label43.TabIndex = 79;
-            this.label43.Text = "Fill the required fields to print the pallet sheet :";
-            // 
-            // label44
-            // 
-            this.label44.AutoSize = true;
-            this.label44.BackColor = System.Drawing.Color.Transparent;
-            this.label44.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.ForeColor = System.Drawing.Color.Red;
-            this.label44.Location = new System.Drawing.Point(82, 74);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(13, 17);
-            this.label44.TabIndex = 79;
-            this.label44.Text = "*";
-            // 
-            // label45
-            // 
-            this.label45.AutoSize = true;
-            this.label45.BackColor = System.Drawing.Color.Transparent;
-            this.label45.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.ForeColor = System.Drawing.Color.Red;
-            this.label45.Location = new System.Drawing.Point(51, 134);
-            this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(13, 17);
-            this.label45.TabIndex = 80;
-            this.label45.Text = "*";
-            // 
-            // label46
-            // 
-            this.label46.AutoSize = true;
-            this.label46.BackColor = System.Drawing.Color.Transparent;
-            this.label46.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.ForeColor = System.Drawing.Color.Red;
-            this.label46.Location = new System.Drawing.Point(71, 244);
-            this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(13, 17);
-            this.label46.TabIndex = 81;
-            this.label46.Text = "*";
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.BackColor = System.Drawing.Color.Transparent;
-            this.label47.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.ForeColor = System.Drawing.Color.Red;
-            this.label47.Location = new System.Drawing.Point(81, 73);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(13, 17);
-            this.label47.TabIndex = 80;
-            this.label47.Text = "*";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.BackColor = System.Drawing.Color.Transparent;
-            this.label48.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.Red;
-            this.label48.Location = new System.Drawing.Point(50, 189);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(13, 17);
-            this.label48.TabIndex = 81;
-            this.label48.Text = "*";
-            // 
-            // label49
-            // 
-            this.label49.AutoSize = true;
-            this.label49.BackColor = System.Drawing.Color.Transparent;
-            this.label49.Font = new System.Drawing.Font("Microsoft YaHei UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label49.ForeColor = System.Drawing.Color.Red;
-            this.label49.Location = new System.Drawing.Point(71, 242);
-            this.label49.Name = "label49";
-            this.label49.Size = new System.Drawing.Size(13, 17);
-            this.label49.TabIndex = 82;
-            this.label49.Text = "*";
-            // 
             // main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
-            this.Controls.Add(this.addPF);
-            this.Controls.Add(this.addSF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);
+            this.Controls.Add(this.hisPnl);
+            this.Controls.Add(this.mainPnl);
+            this.Controls.Add(this.topPnl);
+            this.Controls.Add(this.addPF);
+            this.Controls.Add(this.addSF);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addPnl);
             this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.listPnl);
-            this.Controls.Add(this.topPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Opacity = 0D;
@@ -1715,10 +1715,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.sfGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pfGridView)).EndInit();
             this.abtPnl.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.hisPnl.ResumeLayout(false);
             this.hisPnl.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hisGridView)).EndInit();
             this.printPnl.ResumeLayout(false);
             this.addSF.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -1731,11 +1734,8 @@
             this.SF.ResumeLayout(false);
             this.SF.PerformLayout();
             this.addCusPnl.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1863,7 +1863,7 @@
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Panel addCusPnl;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView hisGridView;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label43;
         private System.Windows.Forms.Label label42;

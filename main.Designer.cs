@@ -598,7 +598,7 @@
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(76, 33);
             this.button6.TabIndex = 33;
-            this.button6.Text = "Remove";
+            this.button6.Text = "Delete";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.removeSF_Click);
             // 
@@ -640,7 +640,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(76, 33);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Remove";
+            this.button2.Text = "Delete";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.removePF_Click);
             // 
@@ -1730,9 +1730,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
+            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.hisPnl);
-            this.Controls.Add(this.listPnl);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.printPnl);

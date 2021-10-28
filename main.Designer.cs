@@ -587,6 +587,7 @@
             this.button6.TabIndex = 33;
             this.button6.Text = "Remove";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.removeSF_Click);
             // 
             // button7
             // 
@@ -597,6 +598,7 @@
             this.button7.TabIndex = 32;
             this.button7.Text = "New Item";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label23
             // 
@@ -627,6 +629,7 @@
             this.button2.TabIndex = 1;
             this.button2.Text = "Remove";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.removePF_Click);
             // 
             // button1
             // 
@@ -876,7 +879,6 @@
             this.label38.Size = new System.Drawing.Size(76, 19);
             this.label38.TabIndex = 27;
             this.label38.Text = "Customer :";
-            this.label38.Click += new System.EventHandler(this.label38_Click);
             // 
             // label41
             // 
@@ -1008,7 +1010,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(473, 227);
             this.panel4.TabIndex = 46;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label22
             // 
@@ -1534,7 +1535,6 @@
             this.label28.Size = new System.Drawing.Size(47, 19);
             this.label28.TabIndex = 69;
             this.label28.Text = "Dims :";
-            this.label28.Click += new System.EventHandler(this.label28_Click);
             // 
             // sfDimTxtBox
             // 
@@ -1563,7 +1563,6 @@
             this.adrTxtBx2.ReadOnly = true;
             this.adrTxtBx2.Size = new System.Drawing.Size(160, 24);
             this.adrTxtBx2.TabIndex = 66;
-            this.adrTxtBx2.TextChanged += new System.EventHandler(this.adrTxtBx2_TextChanged);
             // 
             // button8
             // 
@@ -1688,18 +1687,18 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
+            this.Controls.Add(this.listPnl);
+            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.printPnl);
-            this.Controls.Add(this.addPnl);
             this.Controls.Add(this.abtPnl);
             this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.addSF);
             this.Controls.Add(this.addPF);
-            this.Controls.Add(this.listPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Opacity = 0D;

@@ -1,19 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using Spire.Doc;
+using System;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-
-using System.Reflection;
-using System.IO;
-using Word = Microsoft.Office.Interop.Word;
-using Spire.Doc;
-using System.Drawing.Printing;
 using System.Data.SqlClient;
+using System.Drawing.Printing;
+using System.IO;
+using System.Reflection;
+using System.Windows.Forms;
+using Word = Microsoft.Office.Interop.Word;
 
 namespace FP_Gen_1._0
 {
@@ -194,7 +187,6 @@ namespace FP_Gen_1._0
             SF.Visible = false;
             PF.Visible = false;
         }
-
         private void his()
         {
             printBtnPnl.Visible = false;
@@ -224,12 +216,32 @@ namespace FP_Gen_1._0
             listBtnPnl.Visible = false;
             abtBtnPnl.Visible = false;
             printPnl.Visible = false;
-            addPnl.Visible = true;
+            addPnl.Visible = false;
             listPnl.Visible = false;
             abtPnl.Visible = false;
             addCusPnl.Visible = false;
             hisPnl.Visible = false;
+            addPF.Visible = true;
             addSF.Visible = false;
+            SF.Visible = false;
+            PF.Visible = false;
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            hisBtnPnl.Visible = false;
+            printBtnPnl.Visible = false;
+            addCusBtnPnl.Visible = false;
+            addBtnPnl.Visible = true;
+            listBtnPnl.Visible = false;
+            abtBtnPnl.Visible = false;
+            printPnl.Visible = false;
+            addPnl.Visible = false;
+            listPnl.Visible = false;
+            abtPnl.Visible = false;
+            addCusPnl.Visible = false;
+            hisPnl.Visible = false;
+            addSF.Visible = true;
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
@@ -357,7 +369,7 @@ namespace FP_Gen_1._0
             PF.Visible = false;
         }
 
-
+        
 
         private void addCusSaveBtn_Click(object sender, EventArgs e)
         {
@@ -578,7 +590,7 @@ namespace FP_Gen_1._0
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select customer.name, customer.address, item.itname," +
+            cmd.CommandText = "select item.id, customer.name, customer.address, item.itname," +
                 "item.dimensions from [customer] " +
                 "inner join item ON customer.id = item.customerid ORDER BY customer.id";
             cmd.ExecuteNonQuery();
@@ -599,7 +611,7 @@ namespace FP_Gen_1._0
             connection.Open();
             SqlCommand cmd = connection.CreateCommand();
             cmd.CommandType = CommandType.Text;
-            cmd.CommandText = "select customer.name, customer.address, cardboard.cname," +
+            cmd.CommandText = "select cardboard.id, customer.name, customer.address, cardboard.cname," +
                 "cardboard.type, cardboard.form, cardboard.dimensions from [customer] " +
                 "inner join cardboard ON customer.id = cardboard.customerid ORDER BY customer.id";
             cmd.ExecuteNonQuery();
@@ -862,24 +874,45 @@ namespace FP_Gen_1._0
 
         }
 
-        private void adrTxtBx2_TextChanged(object sender, EventArgs e)
+        private void removePF_Click(object sender, EventArgs e)
         {
-
+            if (pfGridView.SelectedRows.Count != 0 )
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from item where id = @itid";
+                cmd.Parameters.AddWithValue("@itid", Convert.ToInt32(pfGridView[0, pfGridView.SelectedRows[0].Index].Value));
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Item Deleted Successfully!");
+                pfGridView.Rows.RemoveAt(pfGridView.SelectedRows[0].Index);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
+            
         }
 
-        private void label38_Click(object sender, EventArgs e)
+        private void removeSF_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label28_Click(object sender, EventArgs e)
-        {
-
+            if (sfGridView.SelectedRows.Count != 0)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from item where id = @cid";
+                cmd.Parameters.AddWithValue("@cid", Convert.ToInt32(sfGridView[0, sfGridView.SelectedRows[0].Index].Value));
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Item Deleted Successfully!");
+                sfGridView.Rows.RemoveAt(sfGridView.SelectedRows[0].Index);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
         }
     }
 }

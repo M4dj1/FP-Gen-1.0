@@ -576,6 +576,7 @@
             // 
             // pfGridView
             // 
+            this.pfGridView.AllowUserToAddRows = false;
             this.pfGridView.AllowUserToResizeRows = false;
             this.pfGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.pfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;

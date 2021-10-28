@@ -285,6 +285,7 @@ namespace FP_Gen_1._0
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
+            cusGridViewDisplay();
         }
 
         private void sfAddCusBtn_Click_1(object sender, EventArgs e)
@@ -384,6 +385,7 @@ namespace FP_Gen_1._0
             textBox6.Text = "";
             MessageBox.Show("Data Inserted Successfully !");
             displayPrintCusCombo();
+            cusGridViewDisplay();
         }
 
 
@@ -632,7 +634,40 @@ namespace FP_Gen_1._0
             sfGridView.Columns[6].Width = 75;
         }
 
-
+        public void cusGridViewDisplay()
+        {
+            connection.Open();
+            SqlCommand cmd = connection.CreateCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.CommandText = "select id, name from customer order by id";
+            cmd.ExecuteNonQuery();
+            connection.Close();
+            DataTable dataTable = new DataTable();
+            SqlDataAdapter ada = new SqlDataAdapter(cmd);
+            ada.Fill(dataTable);
+            cusGridView.DataSource = dataTable;
+            cusGridView.Columns[0].Width = 25;
+            cusGridView.Columns[1].Width = 100;
+        }
+        private void dltCusBtn_Click(object sender, EventArgs e)
+        {
+            if (cusGridView.SelectedRows.Count != 0)
+            {
+                connection.Open();
+                SqlCommand cmd = connection.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from customer where id = @cid";
+                cmd.Parameters.AddWithValue("@cid", Convert.ToInt32(cusGridView[0, cusGridView.SelectedRows[0].Index].Value));
+                cmd.ExecuteNonQuery();
+                connection.Close();
+                MessageBox.Show("Customer Deleted Successfully! / note that items are not deleter yet....");
+                sfGridView.Rows.RemoveAt(sfGridView.SelectedRows[0].Index);
+            }
+            else
+            {
+                MessageBox.Show("Please select a row to delete");
+            }
+        }
 
         private void timer3_tick(object sender, EventArgs e)
         {
@@ -915,5 +950,7 @@ namespace FP_Gen_1._0
                 MessageBox.Show("Please select a row to delete");
             }
         }
+
+
     }
 }

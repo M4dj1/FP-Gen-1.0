@@ -161,6 +161,8 @@
             this.label37 = new System.Windows.Forms.Label();
             this.addCusPnl = new System.Windows.Forms.Panel();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.cusGridView = new System.Windows.Forms.DataGridView();
+            this.dltCusBtn = new System.Windows.Forms.Button();
             this.mainPnl.SuspendLayout();
             this.panel2.SuspendLayout();
             this.topPnl.SuspendLayout();
@@ -183,6 +185,7 @@
             this.SF.SuspendLayout();
             this.addCusPnl.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cusGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // mainPnl
@@ -1340,13 +1343,13 @@
             this.textBox5.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.Location = new System.Drawing.Point(118, 66);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(321, 24);
+            this.textBox5.Size = new System.Drawing.Size(216, 24);
             this.textBox5.TabIndex = 8;
             // 
             // addCusSaveBtn
             // 
             this.addCusSaveBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCusSaveBtn.Location = new System.Drawing.Point(101, 168);
+            this.addCusSaveBtn.Location = new System.Drawing.Point(60, 168);
             this.addCusSaveBtn.Name = "addCusSaveBtn";
             this.addCusSaveBtn.Size = new System.Drawing.Size(88, 32);
             this.addCusSaveBtn.TabIndex = 10;
@@ -1359,7 +1362,7 @@
             this.textBox6.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.Location = new System.Drawing.Point(117, 116);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(322, 24);
+            this.textBox6.Size = new System.Drawing.Size(217, 24);
             this.textBox6.TabIndex = 9;
             // 
             // label8
@@ -1375,7 +1378,7 @@
             // addCusCancelBtn
             // 
             this.addCusCancelBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addCusCancelBtn.Location = new System.Drawing.Point(281, 168);
+            this.addCusCancelBtn.Location = new System.Drawing.Point(209, 168);
             this.addCusCancelBtn.Name = "addCusCancelBtn";
             this.addCusCancelBtn.Size = new System.Drawing.Size(88, 32);
             this.addCusCancelBtn.TabIndex = 11;
@@ -1673,6 +1676,8 @@
             // 
             // addCusPnl
             // 
+            this.addCusPnl.Controls.Add(this.dltCusBtn);
+            this.addCusPnl.Controls.Add(this.cusGridView);
             this.addCusPnl.Controls.Add(this.panel8);
             this.addCusPnl.Location = new System.Drawing.Point(177, 38);
             this.addCusPnl.Name = "addCusPnl";
@@ -1689,10 +1694,35 @@
             this.panel8.Controls.Add(this.addCusCancelBtn);
             this.panel8.Controls.Add(this.label8);
             this.panel8.Controls.Add(this.textBox5);
-            this.panel8.Location = new System.Drawing.Point(69, 112);
+            this.panel8.Location = new System.Drawing.Point(196, 101);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(473, 227);
+            this.panel8.Size = new System.Drawing.Size(387, 227);
             this.panel8.TabIndex = 47;
+            // 
+            // cusGridView
+            // 
+            this.cusGridView.AllowUserToAddRows = false;
+            this.cusGridView.AllowUserToResizeRows = false;
+            this.cusGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
+            this.cusGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.cusGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
+            this.cusGridView.Location = new System.Drawing.Point(27, 26);
+            this.cusGridView.Name = "cusGridView";
+            this.cusGridView.RowHeadersVisible = false;
+            this.cusGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.cusGridView.Size = new System.Drawing.Size(138, 408);
+            this.cusGridView.TabIndex = 48;
+            // 
+            // dltCusBtn
+            // 
+            this.dltCusBtn.Font = new System.Drawing.Font("Microsoft YaHei UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dltCusBtn.Location = new System.Drawing.Point(184, 26);
+            this.dltCusBtn.Name = "dltCusBtn";
+            this.dltCusBtn.Size = new System.Drawing.Size(88, 32);
+            this.dltCusBtn.TabIndex = 49;
+            this.dltCusBtn.Text = "Delete";
+            this.dltCusBtn.UseVisualStyleBackColor = true;
+            this.dltCusBtn.Click += new System.EventHandler(this.dltCusBtn_Click);
             // 
             // main
             // 
@@ -1700,6 +1730,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
+            this.Controls.Add(this.addCusPnl);
             this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.listPnl);
             this.Controls.Add(this.SF);
@@ -1711,7 +1742,6 @@
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.mainPnl);
             this.Controls.Add(this.abtPnl);
-            this.Controls.Add(this.addCusPnl);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "main";
             this.Opacity = 0D;
@@ -1751,6 +1781,7 @@
             this.addCusPnl.ResumeLayout(false);
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cusGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1888,6 +1919,8 @@
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.DataGridView cusGridView;
+        private System.Windows.Forms.Button dltCusBtn;
     }
 }
 

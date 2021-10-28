@@ -26,7 +26,6 @@ namespace FP_Gen_1._0
 
         private void printShBtn_Click(object sender, EventArgs e)
         {
-            displayPrintCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = true;
             addCusBtnPnl.Visible = false;
@@ -45,6 +44,7 @@ namespace FP_Gen_1._0
             PF.Visible = true;
             SFPnlBtn.Visible = false;
             PFPnlBtn.Visible = true;
+            displayPrintCusCombo();
         }
 
         private void prntSFBtn_Click(object sender, EventArgs e)
@@ -65,7 +65,6 @@ namespace FP_Gen_1._0
 
         private void addBtn_Click(object sender, EventArgs e)
         {
-            displayAddCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -82,6 +81,7 @@ namespace FP_Gen_1._0
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
+            displayAddCusCombo();
         }
 
         private void sfBtn_Click(object sender, EventArgs e)
@@ -126,8 +126,6 @@ namespace FP_Gen_1._0
 
         private void listBtn_Click(object sender, EventArgs e)
         {
-            displaypfGridView();
-            displaysfGridView();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -144,6 +142,8 @@ namespace FP_Gen_1._0
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
+            displaypfGridView();
+            displaysfGridView();
         }
 
         private void abtBtn_Click(object sender, EventArgs e)
@@ -169,7 +169,6 @@ namespace FP_Gen_1._0
 
         private void hisBtn_Click(object sender, EventArgs e)
         {
-            displayhisGridView();
             printBtnPnl.Visible = false;
             hisBtnPnl.Visible = true;
             addCusBtnPnl.Visible = false;
@@ -186,6 +185,7 @@ namespace FP_Gen_1._0
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
+            displayhisGridView();
         }
         private void his()
         {
@@ -309,7 +309,6 @@ namespace FP_Gen_1._0
 
         private void sfAddItBtn_Click_1(object sender, EventArgs e)
         {
-            displayAddCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -326,6 +325,7 @@ namespace FP_Gen_1._0
             addPF.Visible = false;
             SF.Visible = false;
             PF.Visible = false;
+            displayAddCusCombo();
         }
 
         private void printAddBtn1_Click(object sender, EventArgs e)
@@ -350,7 +350,6 @@ namespace FP_Gen_1._0
 
         private void printAddBtn2_Click(object sender, EventArgs e)
         {
-            displayAddCusCombo();
             hisBtnPnl.Visible = false;
             printBtnPnl.Visible = false;
             addCusBtnPnl.Visible = false;
@@ -367,6 +366,7 @@ namespace FP_Gen_1._0
             addPF.Visible = true;
             SF.Visible = false;
             PF.Visible = false;
+            displayAddCusCombo();
         }
 
         

@@ -599,10 +599,11 @@ namespace FP_Gen_1._0
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(dataTable);
             pfGridView.DataSource = dataTable;
-            pfGridView.Columns[0].Width = 110;
+            pfGridView.Columns[0].Width = 25;
             pfGridView.Columns[1].Width = 110;
             pfGridView.Columns[2].Width = 110;
-            pfGridView.Columns[3].Width = 111;
+            pfGridView.Columns[3].Width = 110;
+            pfGridView.Columns[4].Width = 111;
 
         }
 
@@ -620,12 +621,13 @@ namespace FP_Gen_1._0
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(dataTable);
             sfGridView.DataSource = dataTable;
-            sfGridView.Columns[0].Width = 70;
+            sfGridView.Columns[0].Width = 25;
             sfGridView.Columns[1].Width = 70;
             sfGridView.Columns[2].Width = 75;
             sfGridView.Columns[3].Width = 75;
             sfGridView.Columns[4].Width = 75;
             sfGridView.Columns[5].Width = 76;
+            sfGridView.Columns[6].Width = 76;
         }
 
 
@@ -902,7 +904,7 @@ namespace FP_Gen_1._0
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
-                cmd.CommandText = "delete from item where id = @cid";
+                cmd.CommandText = "delete from cardboard where id = @cid";
                 cmd.Parameters.AddWithValue("@cid", Convert.ToInt32(sfGridView[0, sfGridView.SelectedRows[0].Index].Value));
                 cmd.ExecuteNonQuery();
                 connection.Close();

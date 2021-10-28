@@ -562,19 +562,28 @@
             // 
             // sfGridView
             // 
+            this.sfGridView.AllowUserToAddRows = false;
+            this.sfGridView.AllowUserToResizeRows = false;
             this.sfGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.sfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.sfGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.sfGridView.Location = new System.Drawing.Point(19, 253);
             this.sfGridView.Name = "sfGridView";
+            this.sfGridView.RowHeadersVisible = false;
+            this.sfGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.sfGridView.Size = new System.Drawing.Size(485, 187);
             this.sfGridView.TabIndex = 35;
             // 
             // pfGridView
             // 
+            this.pfGridView.AllowUserToResizeRows = false;
             this.pfGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.pfGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.pfGridView.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
             this.pfGridView.Location = new System.Drawing.Point(20, 31);
             this.pfGridView.Name = "pfGridView";
+            this.pfGridView.RowHeadersVisible = false;
+            this.pfGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.pfGridView.Size = new System.Drawing.Size(485, 187);
             this.pfGridView.TabIndex = 34;
             // 
@@ -739,10 +748,13 @@
             // 
             // hisGridView
             // 
+            this.hisGridView.AllowUserToAddRows = false;
+            this.hisGridView.AllowUserToResizeRows = false;
             this.hisGridView.BackgroundColor = System.Drawing.Color.LightSteelBlue;
             this.hisGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.hisGridView.Location = new System.Drawing.Point(46, 59);
             this.hisGridView.Name = "hisGridView";
+            this.hisGridView.RowHeadersVisible = false;
             this.hisGridView.Size = new System.Drawing.Size(524, 367);
             this.hisGridView.TabIndex = 30;
             // 
@@ -1688,10 +1700,10 @@
             this.BackColor = System.Drawing.Color.LightSteelBlue;
             this.ClientSize = new System.Drawing.Size(791, 499);
             this.Controls.Add(this.listPnl);
+            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.addPnl);
             this.Controls.Add(this.topPnl);
             this.Controls.Add(this.mainPnl);
-            this.Controls.Add(this.hisPnl);
             this.Controls.Add(this.PF);
             this.Controls.Add(this.SF);
             this.Controls.Add(this.printPnl);

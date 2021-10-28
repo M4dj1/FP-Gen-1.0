@@ -577,12 +577,12 @@ namespace FP_Gen_1._0
             SqlDataAdapter ada = new SqlDataAdapter(cmd);
             ada.Fill(dataTable);
             hisGridView.DataSource = dataTable;
-            hisGridView.Columns[0].Width = 77;
-            hisGridView.Columns[1].Width = 77;
-            hisGridView.Columns[2].Width = 77;
-            hisGridView.Columns[3].Width = 77;
-            hisGridView.Columns[4].Width = 70;
-            hisGridView.Columns[5].Width = 102;
+            hisGridView.Columns[0].Width = 80;
+            hisGridView.Columns[1].Width = 80;
+            hisGridView.Columns[2].Width = 80;
+            hisGridView.Columns[3].Width = 85;
+            hisGridView.Columns[4].Width = 85;
+            hisGridView.Columns[5].Width = 110;
 
         }
         public void displaypfGridView()
@@ -603,7 +603,7 @@ namespace FP_Gen_1._0
             pfGridView.Columns[1].Width = 110;
             pfGridView.Columns[2].Width = 110;
             pfGridView.Columns[3].Width = 110;
-            pfGridView.Columns[4].Width = 111;
+            pfGridView.Columns[4].Width = 110;
 
         }
 
@@ -623,11 +623,11 @@ namespace FP_Gen_1._0
             sfGridView.DataSource = dataTable;
             sfGridView.Columns[0].Width = 25;
             sfGridView.Columns[1].Width = 70;
-            sfGridView.Columns[2].Width = 75;
+            sfGridView.Columns[2].Width = 70;
             sfGridView.Columns[3].Width = 75;
             sfGridView.Columns[4].Width = 75;
-            sfGridView.Columns[5].Width = 76;
-            sfGridView.Columns[6].Width = 76;
+            sfGridView.Columns[5].Width = 75;
+            sfGridView.Columns[6].Width = 75;
         }
 
 

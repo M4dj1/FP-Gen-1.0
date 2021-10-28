@@ -439,8 +439,8 @@ namespace FP_Gen_1._0
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text != null && textBox2.Text != null
-                && comboBox2.SelectedItem != null)
+            if (textBox1.Text != "" && textBox2.Text != ""
+                && comboBox2.SelectedIndex != 0)
             { connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.Text;
@@ -461,9 +461,9 @@ namespace FP_Gen_1._0
 
         private void SaveBtn2_Click(object sender, EventArgs e)
         {
-            if (textBox7.Text != null && textBox4.Text != null &&
+            if (textBox7.Text != "" && textBox4.Text != "" &&
                 comboBox6.SelectedItem != null && comboBox7.SelectedItem != null
-                && comboBox8.SelectedItem != null)
+                && comboBox8.SelectedIndex != 0)
             {
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
@@ -472,9 +472,11 @@ namespace FP_Gen_1._0
                 cmd.ExecuteNonQuery();
                 connection.Close();
 
-                textBox1.Text = "";
-                textBox2.Text = "";
-                comboBox2.Text = "- Select Customer...";
+                textBox7.Text = "";
+                textBox4.Text = "";
+                comboBox8.Text = "- Select Customer...";
+                comboBox7.Items.Clear();
+                comboBox6.Items.Clear();
                 MessageBox.Show("Data Inserted Successfully !");
                 displayAddCusCombo();
             }
@@ -492,7 +494,7 @@ namespace FP_Gen_1._0
 
         private void pfCusBox_SelectedIndexChanged_1(object sender, EventArgs e)
         {
-            if (pfCusBox.SelectedValue.ToString() != null)
+            if (pfCusBox.SelectedIndex !=0 )
             {
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
@@ -529,7 +531,7 @@ namespace FP_Gen_1._0
 
         private void sfCusBox_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBox5.SelectedValue.ToString() != null)
+            if (comboBox5.SelectedIndex != 0)
             {
                 connection.Open();
                 SqlCommand cmd = connection.CreateCommand();
@@ -674,10 +676,7 @@ namespace FP_Gen_1._0
             dr.Close();
             connection.Close();
         }
-        private void button4_Click(object sender, EventArgs e)
-        {
 
-        }
         private void FindAndReplace(Word.Application wordApp, object ToFindText, object replaceWithText)
         {
             object matchCase = true;

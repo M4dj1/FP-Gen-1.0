@@ -661,7 +661,8 @@ namespace FP_Gen_1._0
                 cmd.ExecuteNonQuery();
                 connection.Close();
                 MessageBox.Show("Customer Deleted Successfully! / note that items are not deleter yet....");
-                sfGridView.Rows.RemoveAt(sfGridView.SelectedRows[0].Index);
+                cusGridView.Rows.RemoveAt(cusGridView.SelectedRows[0].Index);
+                cusGridViewDisplay();
             }
             else
             {

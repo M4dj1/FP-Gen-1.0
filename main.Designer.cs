@@ -226,7 +226,7 @@
             this.hisBtn.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools__1_;
             this.hisBtn.Location = new System.Drawing.Point(0, 107);
             this.hisBtn.Name = "hisBtn";
-            this.hisBtn.Size = new System.Drawing.Size(196, 33);
+            this.hisBtn.Size = new System.Drawing.Size(207, 33);
             this.hisBtn.TabIndex = 29;
             this.hisBtn.Text = " History";
             this.hisBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -250,7 +250,7 @@
             this.button5.Image = global::FP_Gen_1._0.Properties.Resources.output_onlinepngtools_5_;
             this.button5.Location = new System.Drawing.Point(0, 225);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(244, 33);
+            this.button5.Size = new System.Drawing.Size(240, 33);
             this.button5.TabIndex = 27;
             this.button5.Text = " New Customer";
             this.button5.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;

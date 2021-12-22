@@ -12,7 +12,9 @@ namespace FP_Gen_1._0
 {
     public partial class main : Form
     {
-        SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\FP-Gen\Database1.mdf;Integrated Security=True");
+        // Release mode using LocalDB: SqlConnection connection = new SqlConnection(@"Data Source=machine_name;Initial Catalog=database_name;User ID=userid;Password=******");
+        // Release mode using LocalDB: SqlConnection connection = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=" + Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData) + @"\FP-Gen\Database1.mdf;Integrated Security=True");
+        SqlConnection connection = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\Dehmane\Source\Repos\M4dj1\FP-Gen-1.0\Database1.mdf;Integrated Security = True");
         public main()
         {
             InitializeComponent();
